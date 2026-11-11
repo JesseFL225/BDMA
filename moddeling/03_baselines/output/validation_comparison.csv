@@ -1,0 +1,3 @@
+"split","model","feature_set","n","log_loss","accuracy","macro_f1","within_one_class_pct","underestimation_rate","overestimation_rate","observed_classes","macro_f1_classes"
+"validation","global_frequency_laplace","time_only",5296,3.23089506255515,0.1172583081571,0.00205787909214726,22.8474320241692,0.8827416918429,0,97,102
+"validation","cause_group_shrinkage_retrospective","archived_context",5296,3.07156297891482,0.117824773413897,0.00470142667536224,27.1336858006042,0.824395770392749,0.0577794561933535,97,102

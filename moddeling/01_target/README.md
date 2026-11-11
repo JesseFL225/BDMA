@@ -1,39 +1,32 @@
-# 01_target
+# Step 01 — Fixed duration target
 
-Eigenaar: Mart, review Oliver
+Owner: Mart. Reviewer: Oliver. Status: completed; reused by Steps 02–04 and 07.
 
-## Doel
+Input: `data/disruptions_2011_2025_clean.csv`, 44,248 records. Base R only.
+The cutoff was selected using only 33,004 training events from 2011–2023.
+The chosen 1010-minute cutoff minimises the absolute difference between the
+tail count and the mean count of preceding ten-minute intervals.
 
-Definieer de 10-minutenklassen uitsluitend op trainingsdata.
+Frozen target: 102 ordered classes, IDs 0–101: [0,10), [10,20), ...,
+[1000,1010), [1010,+Inf). The tail has 322 training events; preceding
+classes average 323.58 events, median 34, minimum 4. Classes remain imbalanced.
+This construction does not imply equal class sizes or statistical insignificance.
 
-## Status
+Required outputs in `output/`: `classes.csv`, `training_class_counts.csv`,
+`selected_cutoff.csv`, `cutoff_candidates.csv`, and the method README.
+All models must use classes.csv order and keep the open-ended class separate.
+Do not assign an invented minute midpoint to the final class.
 
-Targetdefinitie uitgevoerd; nog geen modellen getraind.
+To reproduce target selection intentionally from the repository root:
+```r
+source("moddeling/01_target/define_duration_classes.R")
+```
 
-## Input
+This driver regenerates Step 01 outputs. Normal modelling must instead call
+Step 02 `prepare_data()`, which reuses the existing assignment function without
+executing the driver or reselecting the target. The frozen class CSV and target
+code were preserved during publication; boundary checks at 9, 10, 19, 20,
+1009, 1010 and 1440 minutes are executed in Step 02 validation.
 
-Beschrijf gebruikte bestanden, dataset-/commitversie en benodigde eerdere stappen. De datasets staan in ../../data/.
-
-## Wat is uitgevoerd?
-
-De klassegrens is gekozen door de restklasse te vergelijken met het gemiddelde aantal trainingsrijen per voorgaand 10-minutenvak. Zie define_duration_classes.R en output/.
-
-## Resultaten en output
-
-33.004 trainingsrijen; 101 gewone tijdvakken plus een restklasse. Restklasse: 322; gemiddelde gewone klasse: 323,58; minimum: 4.
-
-## Impact op het project
-
-102 klassen; restklasse vanaf 1010 minuten met 322 trainingsrijen. Zeldzame klassen vragen extra aandacht.
-
-## Controles en beperkingen
-
-De grens is uitsluitend gekozen op 2011–2023. Klassegrenzen en rijtotalen zijn gecontroleerd. De klassen zijn onderling niet even groot.
-
-## Volgende stap en overdracht
-
-Noteer wat de volgende stap gebruikt, wie verdergaat en welke besluiten nog openstaan.
-
-## Wijzigingslog
-
-- Structuur aangemaakt; geen modelprestaties geclaimd.
+Next member: source Step 02 for matrices/labels and Step 07 for evaluation.
+No 2025 target outcomes are needed to fit preprocessing or select models.

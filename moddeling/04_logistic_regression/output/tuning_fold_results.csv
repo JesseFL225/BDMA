@@ -1,0 +1,13 @@
+"feature_set","alpha","lambda","train_through","validation_year","train_n","validation_n","feature_columns","minimum_training_class","absent_classes","boundary_exclusions","preprocessing_training_only","convergence_code","log_loss"
+"time_only",0,0.1,2021,2022,23470,4975,45,1,0,0,TRUE,0,3.19489895482853
+"time_only",0,0.01,2021,2022,23470,4975,45,1,0,0,TRUE,0,3.19276381350459
+"time_only",0,0.001,2021,2022,23470,4975,45,1,0,0,TRUE,0,3.1844310673675
+"archived_context",0,0.1,2021,2022,23470,4975,86,1,0,0,TRUE,0,3.15591166237164
+"archived_context",0,0.01,2021,2022,23470,4975,86,1,0,0,TRUE,0,3.08437956497245
+"archived_context",0,0.001,2021,2022,23470,4975,86,1,0,0,TRUE,0,3.03617406069417
+"time_only",0,0.1,2022,2023,28445,4559,45,2,0,0,TRUE,0,3.361909475252
+"time_only",0,0.01,2022,2023,28445,4559,45,2,0,0,TRUE,0,3.3578648096971
+"time_only",0,0.001,2022,2023,28445,4559,45,2,0,0,TRUE,0,3.34697500008022
+"archived_context",0,0.1,2022,2023,28445,4559,86,2,0,0,TRUE,0,3.33090970547424
+"archived_context",0,0.01,2022,2023,28445,4559,86,2,0,0,TRUE,0,3.26170101797964
+"archived_context",0,0.001,2022,2023,28445,4559,86,2,0,0,TRUE,0,3.20817091513155

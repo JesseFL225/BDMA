@@ -1,0 +1,10 @@
+"cause_group","records","uses_global_fallback"
+"accidents",563,FALSE
+"engineering work",126,FALSE
+"external",769,FALSE
+"infrastructure",1303,FALSE
+"logistical",121,FALSE
+"rolling stock",2063,FALSE
+"staff",89,FALSE
+"unknown",246,FALSE
+"weather",16,FALSE

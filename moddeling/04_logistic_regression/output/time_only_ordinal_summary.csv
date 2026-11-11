@@ -1,0 +1,5 @@
+"subset","n","accuracy","within_one_class_pct","underestimation_rate","overestimation_rate"
+"all",5296,0.117824773413897,23.5083081570997,0.87726586102719,0.00490936555891239
+"both_finite_intervals",5264,0.11854103343465,23.6512158054711,0.876519756838906,0.00493920972644377
+"true_open_ended",32,0,0,1,0
+"either_open_ended",32,0,0,1,0
