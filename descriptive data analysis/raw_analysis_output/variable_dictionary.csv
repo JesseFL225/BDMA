@@ -1,0 +1,16 @@
+"variable","imported_type","meaning","nonmissing","missing","missing_pct","distinct_nonmissing"
+"rdt_id","integer","Record identifier; uniqueness is checked below.",62540,0,0,62540
+"ns_lines","character","Affected railway route(s), using the NS naming field.",62540,0,0,3371
+"rdt_lines","character","Affected railway route(s), using the RDT naming field.",61365,1175,1.88,686
+"rdt_lines_id","character","Route identifier(s); stored as text because a cell may contain multiple IDs.",61365,1175,1.88,686
+"rdt_station_names","character","Affected station name(s), where recorded.",47838,14702,23.51,2111
+"rdt_station_codes","character","Affected station code(s), where recorded.",47838,14702,23.51,2111
+"cause_nl","character","Reported disruption cause in Dutch.",62355,185,0.3,102
+"cause_en","character","Reported disruption cause in English.",62355,185,0.3,98
+"statistical_cause_nl","character","Statistical cause label in Dutch; exact coding rules are unverified.",62355,185,0.3,102
+"statistical_cause_en","character","Statistical cause label in English; exact coding rules are unverified.",62355,185,0.3,98
+"cause_group","character","Broad category grouping disruption causes.",62538,2,0,9
+"start_time","character","Recorded start timestamp; source timezone is unspecified.",62540,0,0,62458
+"end_time","character","Recorded end timestamp; source timezone is unspecified.",62430,110,0.18,61816
+"duration_minutes","integer","Recorded disruption duration in minutes.",62429,111,0.18,1792
+"source_year","integer","Year label of the source data; compared with the start timestamp below.",62540,0,0,15

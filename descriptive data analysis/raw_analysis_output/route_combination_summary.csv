@@ -1,0 +1,688 @@
+"group","records","pct_of_all_records","valid_duration_n","median_minutes","mean_minutes","total_recorded_minutes","pct_over_120_minutes"
+"Breda - Rotterdam Centraal (HSL)",1971,3.15,1959,41,102.4,200610,19.4
+"(Missing)",1175,1.88,1175,122,459.75,540207,50.47
+"'s-Hertogenbosch - Nijmegen",1172,1.87,1152,42,92.21,106226,22.22
+"Amersfoort - Zwolle",1073,1.72,1065,58,125.72,133897,29.3
+"Eindhoven - Venlo",1012,1.62,1004,51,103.9,104311,27.19
+"Amsterdam Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL)",1009,1.61,972,58,127.85,124270,27.06
+"Den Haag HS - Rotterdam Centraal",987,1.58,961,52,116.33,111789,26.74
+"Leiden Centraal - Schiphol Airport",979,1.57,967,34,119.95,115990,24.41
+"Breda - Tilburg",971,1.55,964,44,93.48,90115,25.41
+"Dordrecht - Rotterdam Centraal",916,1.46,893,52,196.79,175734,24.19
+"Arnhem Centraal - Winterswijk",871,1.39,868,89.5,143.34,124422,37.9
+"Leiden Centraal - Utrecht Centraal",870,1.39,860,80,122.81,105617,33.72
+"Alkmaar - Amsterdam Centraal",857,1.37,841,40,97.67,82143,23.19
+"Amersfoort - Ede-Wageningen",802,1.28,789,105,173.76,137100,45.37
+"Roosendaal - Vlissingen",788,1.26,771,71,165.12,127309,35.93
+"Rotterdam Centraal - Utrecht Centraal",775,1.24,767,62,128.35,98448,29.73
+"Rotterdam Centraal - Schiphol Airport (HSL)",773,1.24,727,33,106.95,77755,17.74
+"Eindhoven - Roermond",748,1.2,738,49.5,100.45,74134,25.88
+"Arnhem Centraal - Utrecht Centraal",742,1.19,729,76,126.93,92534,38
+"Dordrecht - Geldermalsen",733,1.17,726,86,182.41,132428,36.64
+"Nijmegen - Venlo",715,1.14,704,80,131.86,92832,34.38
+"Groningen - Zwolle",705,1.13,698,67,137.55,96010,35.82
+"Den Haag Centraal - Utrecht Centraal",681,1.09,677,62,181.36,122781,32.5
+"Emmen - Zwolle",674,1.08,669,97,171.49,114725,41.26
+"Arnhem Centraal - Nijmegen",671,1.07,661,46,101.7,67222,21.48
+"'s-Hertogenbosch - Utrecht Centraal, Tiel - Utrecht Centraal",648,1.04,633,48,96.05,60800,21.48
+"Arnhem Centraal - Zutphen",603,0.96,599,52,86.49,51807,24.87
+"Amsterdam Centraal - Haarlem",602,0.96,592,40,91.19,53983,20.61
+"'s-Hertogenbosch - Utrecht Centraal",593,0.95,583,62,137.12,79940,31.05
+"Leeuwarden - Zwolle",574,0.92,571,62,103.71,59217,31
+"Haarlem - Leiden Centraal",564,0.9,557,53,97.05,54056,28.37
+"Breda - Dordrecht",563,0.9,532,46,101.61,54058,24.25
+"Alphen a/d Rijn - Gouda",560,0.9,555,86,144.66,80285,36.4
+"Breda - Dordrecht, Dordrecht - Roosendaal",556,0.89,550,53,143.4,78871,27.09
+"Roermond - Venlo",555,0.89,546,50.5,105.27,57477,22.16
+"Den Haag Centraal - Leiden Centraal",554,0.89,539,69,137.19,73948,32.47
+"Almere Oostvaarders - Utrecht Centraal, Amsterdam Centraal - Lelystad Centrum, Lelystad Centrum - Schiphol Airport",531,0.85,522,30,70.08,36583,16.09
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Tilburg",527,0.84,521,39,80.98,42189,21.69
+"Dordrecht - Roosendaal",521,0.83,519,57,122.51,63583,27.36
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport",507,0.81,502,52,101.89,51150,27.09
+"Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden",501,0.8,490,39,99.44,48728,22.45
+"Groningen - Leeuwarden",498,0.8,493,73,218.39,107666,34.69
+"Amersfoort - Utrecht Centraal",484,0.77,481,69,164.21,78986,34.3
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Schiphol Airport - Utrecht Centraal, Schiphol Airport - Zaandam",482,0.77,469,54,117.89,55292,24.52
+"Den Haag Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",478,0.76,471,63,137.72,64866,31.63
+"Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Hengelo - Oldenzaal",455,0.73,450,225.5,617.64,277937,63.78
+"Breda - Roosendaal",423,0.68,420,56,105.65,44373,29.52
+"Almelo - Deventer",422,0.67,417,58,103,42951,31.65
+"Schiphol Airport - Utrecht Centraal",417,0.67,413,95,160.92,66460,39.71
+"Aachen Hbf - Heerlen",415,0.66,412,241,625.76,257812,65.53
+"Heerlen - Maastricht",410,0.66,408,73,560.66,228750,37.25
+"Amsterdam Centraal - Hoorn",409,0.65,404,46.5,88.47,35741,24.01
+"Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",408,0.65,404,47,105.72,42710,27.23
+"Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal",407,0.65,374,69,137.14,51289,30.21
+"Eindhoven - Tilburg",406,0.65,402,47,99.68,40071,28.36
+"Hengelo - Zutphen",398,0.64,392,86,151.42,59356,34.69
+"Groningen - Zwolle, Leeuwarden - Zwolle",388,0.62,385,58,112.71,43395,32.21
+"Hamm (Westf.) - Venlo",387,0.62,386,143,311.07,120073,55.44
+"'s-Hertogenbosch - Eindhoven",381,0.61,376,53.5,142.1,53431,28.99
+"Roermond - Sittard",376,0.6,375,67,237.57,89090,31.47
+"Amersfoort - Apeldoorn",374,0.6,373,71,121.07,45159,35.12
+"Amsterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",368,0.59,363,82,138.7,50347,37.74
+"'s-Hertogenbosch - Tilburg",359,0.57,352,70.5,127.61,44917,32.1
+"Amsterdam Centraal - Lelystad Centrum, Lelystad Centrum - Schiphol Airport",356,0.57,355,43,106.63,37855,25.07
+"Rhenen - Utrecht Centraal",354,0.57,345,86,130.83,45138,36.52
+"Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal",349,0.56,347,57,113.02,39219,25.94
+"Heerlen - Sittard",347,0.55,344,75,147.28,50664,37.21
+"Almelo - Zwolle",339,0.54,336,75,121.33,40768,31.25
+"Haarlem - Uitgeest",327,0.52,323,53,137.04,44264,20.12
+"Amersfoort - Schiphol Airport, Lelystad Centrum - Schiphol Airport",324,0.52,320,39,103.15,33007,20.62
+"Enkhuizen - Hoorn",317,0.51,310,26,66.39,20581,19.03
+"Almelo - Mariënberg",312,0.5,309,103,233.86,72264,43.04
+"Hoek van Holland Strand - Rotterdam Centraal",311,0.5,311,109,133.46,41505,43.73
+"Winterswijk - Zutphen",311,0.5,304,102,153.9,46785,43.09
+"Maastricht - Sittard",309,0.49,307,78,182.75,56103,35.5
+"Apeldoorn - Deventer",306,0.49,303,56,122.13,37005,28.71
+"Alkmaar - Den Helder",305,0.49,302,86.5,148.87,44958,36.42
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport",296,0.47,290,42,94.92,27528,23.45
+"Almere Oostvaarders - Utrecht Centraal, Hilversum - Utrecht Centraal",294,0.47,289,71,135.25,39086,35.99
+"Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf",293,0.47,291,85,370.22,107733,43.99
+"Almelo - Hengelo",286,0.46,283,47,126.42,35776,30.04
+"Leeuwarden - Stavoren",286,0.46,280,69.5,238.21,66699,28.93
+"Almere Oostvaarders - Utrecht Centraal",285,0.46,281,69,156.48,43972,32.74
+"Amersfoort - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",279,0.45,278,39,110.68,30768,23.38
+"Deventer - Zwolle",279,0.45,276,61,93.81,25891,28.26
+"Groningen - Eemshaven",279,0.45,276,99,149.34,41218,34.06
+"Amsterdam Centraal - Utrecht Centraal",276,0.44,263,98,159.57,41966,43.35
+"Baarn - Utrecht Centraal",266,0.43,264,59,112.18,29615,28.41
+"Lelystad Centrum - Zwolle",266,0.43,261,55,347.74,90759,32.57
+"Kampen - Zwolle",260,0.42,256,97,236.87,60639,44.92
+"Enschede - Hengelo",259,0.41,258,56,88.71,22888,23.64
+"Amsterdam Centraal - Schiphol Airport, Schiphol Airport - Zaandam",251,0.4,247,25,77.35,19106,17
+"Antwerpen-Centraal - Roosendaal",250,0.4,249,75,308.8,76890,34.14
+"Haarlem - Zandvoort aan Zee",231,0.37,230,51,432.2,99407,35.22
+"Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck",224,0.36,222,121,540.82,120061,50.45
+"Groningen - Bad Nieuweschans, Groningen - Leer (Ostfriesland)",217,0.35,214,83,107.25,22952,27.57
+"Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Lelystad Centrum",212,0.34,208,29,63.93,13297,16.35
+"Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel",210,0.34,206,27,77.94,16055,17.48
+"Amersfoort - Schiphol Airport",209,0.33,205,96,250.13,51276,41.95
+"Arnhem Centraal - Tiel",209,0.33,207,79,195.03,40371,35.27
+"Amsterdam Centraal - Schiphol Airport",206,0.33,202,36,227.79,46013,22.77
+"Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf",203,0.32,201,94,173.27,34827,41.29
+"Apeldoorn - Zutphen",202,0.32,201,86,149.5,30050,32.84
+"Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden, Schiphol Airport - Utrecht Centraal",199,0.32,197,37,107.01,21081,26.4
+"Amersfoort - Utrecht Centraal, Baarn - Utrecht Centraal",192,0.31,191,39,80.19,15317,21.47
+"Alkmaar - Hoorn",190,0.3,189,44,86.03,16260,23.81
+"Delfzijl - Groningen",182,0.29,179,100,134.08,24000,38.55
+"Alkmaar - Den Helder, Alkmaar - Hoorn",178,0.28,177,58,83.03,14696,13.56
+"Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",172,0.28,169,56,122.67,20732,29.59
+"Harlingen Haven - Leeuwarden",164,0.26,162,79,119.86,19418,29.63
+"Amersfoort - Apeldoorn, Apeldoorn - Deventer",162,0.26,158,117,189.28,29907,48.73
+"Eindhoven - Venlo, Nijmegen - Venlo",158,0.25,156,30,46.02,7179,8.33
+"Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal",156,0.25,152,31,223.91,34035,23.03
+"Deventer - Zutphen",154,0.25,151,64,123.8,18694,35.1
+"Amsterdam Centraal - Woerden",145,0.23,141,89,134.6,18978,35.46
+"Tiel - Utrecht Centraal",144,0.23,143,50,201.66,28838,25.17
+"Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport",143,0.23,143,71,209.63,29977,33.57
+"Groningen - Bad Nieuweschans, Groningen - Leer (Ostfriesland), Groningen - Veendam",140,0.22,139,72,139.77,19428,26.62
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Schiphol Airport",134,0.21,131,25,49.82,6526,11.45
+"Den Haag Centraal - Den Haag HS",134,0.21,130,49.5,137.55,17881,23.85
+"Amsterdam Centraal - Lelystad Centrum",130,0.21,130,87,285.37,37098,41.54
+"Breda - Dordrecht, Dordrecht - Rotterdam Centraal",129,0.21,126,13.5,33.16,4178,6.35
+"Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Paris-Nord - Rotterdam Centraal (HSL)",124,0.2,110,86,377.2,41492,27.27
+"'s-Hertogenbosch - Tilburg, Breda - Tilburg",122,0.2,121,95,183.76,22235,38.84
+"Lelystad Centrum - Schiphol Airport",117,0.19,116,90,157.77,18301,39.66
+"Amsterdam Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",114,0.18,109,136,210.75,22972,55.96
+"Delfzijl - Groningen, Groningen - Eemshaven",111,0.18,110,62.5,183.56,20192,31.82
+"Heerlen - Kerkrade Centrum",111,0.18,110,97,166.11,18272,42.73
+"Amsterdam Centraal - Schiphol Airport, Breda - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL)",107,0.17,107,103,182.34,19510,39.25
+"Amersfoort - Schiphol Airport, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",104,0.17,102,55,126.65,12918,25.49
+"Antwerpen-Centraal - Breda (HSL)",104,0.17,102,17,38.94,3972,7.84
+"Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Winterswijk",102,0.16,101,49,89.48,9037,24.75
+"Bielefeld Hbf - Hengelo, Hengelo - Oldenzaal",100,0.16,99,432,622.3,61608,89.9
+"Breda - Tilburg, Eindhoven - Tilburg",100,0.16,100,68.5,149.88,14988,35
+"Amsterdam Centraal - Hoorn, Enkhuizen - Hoorn",99,0.16,95,102,250.35,23783,43.16
+"Antwerpen-Centraal - Breda (HSL), Breda - Dordrecht, Breda - Roosendaal, Breda - Rotterdam Centraal (HSL), Breda - Tilburg",98,0.16,84,65.5,131.87,11077,21.43
+"Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden",96,0.15,94,48,120.77,11352,21.28
+"Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Winterswijk",93,0.15,93,22,59.4,5524,15.05
+"Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport",92,0.15,87,106,216.07,18798,45.98
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Leiden Centraal - Schiphol Airport",87,0.14,84,16.5,40.86,3432,3.57
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Baarn - Utrecht Centraal, Hilversum - Utrecht Centraal",85,0.14,84,23,66.27,5567,14.29
+"Almelo - Deventer, Almelo - Zwolle",84,0.13,84,74,101.01,8485,27.38
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Hoorn, Schiphol Airport - Zaandam",83,0.13,82,30,114.66,9402,17.07
+"Amersfoort - Amsterdam Centraal",82,0.13,81,96,342.47,27740,45.68
+"Eindhoven - Roermond, Roermond - Sittard",81,0.13,80,87,183.51,14681,41.25
+"Aachen Hbf - Heerlen, Heerlen - Kerkrade Centrum",74,0.12,74,60,115.76,8566,31.08
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Roermond, Eindhoven - Tilburg, Eindhoven - Venlo",71,0.11,70,62.5,200.17,14012,37.14
+"Amersfoort - Schiphol Airport, Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",70,0.11,70,45,83.13,5819,14.29
+"Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Winterswijk",70,0.11,70,58,104.59,7321,28.57
+"Breda - Dordrecht, Breda - Rotterdam Centraal (HSL)",70,0.11,70,27.5,71.7,5019,18.57
+"Alkmaar - Amsterdam Centraal, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden",68,0.11,68,78.5,208.72,14193,39.71
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Amsterdam Centraal - Lelystad Centrum, Lelystad Centrum - Schiphol Airport",68,0.11,67,78,173.15,11601,40.3
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal",67,0.11,66,86,207.74,13711,36.36
+"'s-Hertogenbosch - Utrecht Centraal, Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Baarn - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal, Utrecht Centraal - Utrecht Maliebaan",66,0.11,65,78,217.75,14154,40
+"Alphen a/d Rijn - Gouda, Den Haag Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",64,0.1,64,67.5,142.22,9102,34.38
+"Liège-Guillemins - Maastricht",63,0.1,61,100,628.82,38358,42.62
+"Groningen - Bad Nieuweschans, Groningen - Leer (Ostfriesland), Groningen - Veendam, Groningen - Zwolle",62,0.1,62,60.5,364.27,22585,33.87
+"Almelo - Zwolle, Amersfoort - Zwolle, Deventer - Zwolle, Emmen - Zwolle, Groningen - Zwolle, Kampen - Zwolle, Leeuwarden - Zwolle, Lelystad Centrum - Zwolle",60,0.1,59,87,209.22,12344,38.98
+"Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Schiphol Airport - Zaandam",60,0.1,60,48.5,135.67,8140,28.33
+"Groningen - Veendam",60,0.1,59,69,146.54,8646,22.03
+"Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo",56,0.09,56,110.5,235.68,13198,44.64
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal",56,0.09,56,38,125.55,7031,28.57
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Nijmegen, 's-Hertogenbosch - Tilburg, 's-Hertogenbosch - Utrecht Centraal",54,0.09,52,62,164.79,8569,30.77
+"Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Amersfoort - Ede-Wageningen, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle",54,0.09,53,85,142.77,7567,35.85
+"Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",54,0.09,54,132,296.31,16001,51.85
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal",53,0.08,51,39,141.29,7206,29.41
+"Berlin Ostbahnhof - Hengelo, Hengelo - Oldenzaal",52,0.08,52,109.5,212.23,11036,44.23
+"Den Haag Centraal - Den Haag HS, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal",52,0.08,50,61.5,98.56,4928,24
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal, Schiphol Airport - Zaandam",51,0.08,51,62,103.98,5303,25.49
+"Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Leiden Centraal - Utrecht Centraal",51,0.08,51,64,98.9,5044,23.53
+"Hamm (Westf.) - Venlo, Roermond - Venlo",51,0.08,51,36,38.98,1988,3.92
+"Almelo - Hengelo, Enschede - Hengelo",50,0.08,50,76.5,121.76,6088,28
+"Almelo - Hengelo, Almelo - Zwolle, Enschede - Hengelo",49,0.08,49,309,405.35,19862,69.39
+"Amsterdam Centraal - Woerden, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",49,0.08,49,86,192.06,9411,40.82
+"Almelo - Deventer, Almelo - Hengelo, Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Apeldoorn - Deventer, Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Hengelo - Oldenzaal",47,0.08,44,55.5,98.66,4341,29.55
+"Groningen - Leer (Ostfriesland)",47,0.08,47,117,247.81,11647,44.68
+"Harlingen Haven - Leeuwarden, Leeuwarden - Stavoren",47,0.08,47,92,287.19,13498,34.04
+"Amersfoort - Apeldoorn, Amersfoort - Ede-Wageningen",46,0.07,45,38,74.29,3343,22.22
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport",46,0.07,46,203,366.15,16843,58.7
+"Amersfoort - Zwolle, Lelystad Centrum - Zwolle",45,0.07,44,61.5,87.89,3867,20.45
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal",45,0.07,45,102,272.73,12273,46.67
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Tiel - Utrecht Centraal",44,0.07,42,16.5,27.74,1165,2.38
+"Arnhem Centraal - Nijmegen, Arnhem Centraal - Utrecht Centraal",43,0.07,43,144,246.05,10580,55.81
+"'s-Hertogenbosch - Tilburg, Breda - Tilburg, Eindhoven - Tilburg",41,0.07,40,56.5,70.5,2820,15
+"Almelo - Deventer, Deventer - Zutphen",41,0.07,41,62,84.78,3476,34.15
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Hilversum - Utrecht Centraal",41,0.07,41,65,296.22,12145,31.71
+"Nijmegen - Venlo, Roermond - Venlo",41,0.07,41,213,1036.98,42516,56.1
+"Antwerpen-Centraal - Roosendaal, Breda - Roosendaal, Dordrecht - Roosendaal, Roosendaal - Vlissingen",39,0.06,39,59,250.64,9775,33.33
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Tilburg",38,0.06,38,67,163.16,6200,31.58
+"Antwerpen-Centraal - Breda (HSL), Breda - Rotterdam Centraal (HSL)",38,0.06,37,14,26.78,991,2.7
+"Almelo - Deventer, Almelo - Hengelo, Enschede - Hengelo",37,0.06,36,90,147.28,5302,30.56
+"Breda - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL)",37,0.06,37,112,354.89,13131,45.95
+"Heerlen - Maastricht, Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck",37,0.06,36,170.5,564.97,20339,72.22
+"Amsterdam Centraal - Haarlem, Haarlem - Leiden Centraal, Haarlem - Uitgeest, Haarlem - Zandvoort aan Zee",35,0.06,34,74,223.06,7584,32.35
+"Breda - Rotterdam Centraal (HSL), Dordrecht - Rotterdam Centraal",35,0.06,35,82,89.11,3119,20
+"Dortmund Hbf - Enschede, Enschede - Gronau (Westf.), Enschede - Münster (Westf.) Hbf",35,0.06,35,169,324.31,11351,57.14
+"Amersfoort - Schiphol Airport, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport",34,0.05,34,86.5,176.56,6003,29.41
+"Amsterdam Centraal - Hoorn, Schiphol Airport - Zaandam",34,0.05,33,53,146.39,4831,33.33
+"Breda - Rotterdam Centraal (HSL), Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal",34,0.05,34,99.5,138.85,4721,38.24
+"Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Hengelo - Oldenzaal, Hengelo - Zutphen",33,0.05,33,506,607.52,20048,81.82
+"Breda - Rotterdam Centraal (HSL), Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Paris-Nord - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",33,0.05,32,75.5,190.19,6086,37.5
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",32,0.05,32,115,188.06,6018,43.75
+"Almelo - Deventer, Apeldoorn - Deventer, Deventer - Zutphen, Deventer - Zwolle",32,0.05,31,55,115.26,3573,22.58
+"Amersfoort - Schiphol Airport, Leiden Centraal - Schiphol Airport",32,0.05,32,67,222.34,7115,37.5
+"Amersfoort - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Schiphol Airport - Utrecht Centraal",32,0.05,31,46,102.26,3170,22.58
+"'s-Hertogenbosch - Nijmegen, Arnhem Centraal - Nijmegen, Nijmegen - Venlo",31,0.05,30,32,65.13,1954,10
+"'s-Hertogenbosch - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal",31,0.05,30,85.5,445.6,13368,43.33
+"Apeldoorn - Zutphen, Arnhem Centraal - Zutphen, Deventer - Zutphen, Hengelo - Zutphen, Winterswijk - Zutphen",31,0.05,31,61,125.39,3887,25.81
+"Breda - Roosendaal, Dordrecht - Roosendaal",31,0.05,29,37,80.03,2321,17.24
+"Eindhoven - Venlo, Hamm (Westf.) - Venlo, Nijmegen - Venlo, Roermond - Venlo",31,0.05,30,84.5,91.33,2740,26.67
+"Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal",30,0.05,29,45,55.93,1622,6.9
+"Amersfoort - Utrecht Centraal, Amersfoort - Zwolle",29,0.05,29,107,311.55,9035,44.83
+"Almelo - Hengelo, Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Enschede - Hengelo, Hengelo - Oldenzaal, Hengelo - Zutphen",28,0.04,27,30,166,4482,22.22
+"Alkmaar - Amsterdam Centraal, Alkmaar - Den Helder, Alkmaar - Hoorn",27,0.04,27,74,236.7,6391,40.74
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal, Schiphol Airport - Zaandam",27,0.04,26,22,62.19,1617,11.54
+"Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",27,0.04,25,40,63.44,1586,20
+"Apeldoorn - Zutphen, Arnhem Centraal - Zutphen",26,0.04,26,51.5,53.46,1390,7.69
+"Arnhem Centraal - Nijmegen, Arnhem Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",26,0.04,26,222.5,443.62,11534,76.92
+"Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Apeldoorn - Deventer",25,0.04,23,100,109.61,2521,34.78
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal",24,0.04,19,66,85.32,1621,36.84
+"Den Haag HS - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal",24,0.04,24,100.5,147.04,3529,37.5
+"'s-Hertogenbosch - Utrecht Centraal, Dordrecht - Geldermalsen, Tiel - Utrecht Centraal",23,0.04,23,33,95.74,2202,30.43
+"Heerlen - Maastricht, Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck, Maastricht - Sittard",23,0.04,21,70,132.43,2781,42.86
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal",22,0.04,21,194,385.14,8088,76.19
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Hoorn",22,0.04,21,54,81,1701,28.57
+"Amsterdam Centraal - Schiphol Airport, Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Paris-Nord - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL)",22,0.04,13,117,2382.77,30976,38.46
+"Den Haag Centraal - Leiden Centraal, Haarlem - Leiden Centraal",21,0.03,21,102,177.9,3736,38.1
+"Groningen - Leeuwarden, Harlingen Haven - Leeuwarden, Leeuwarden - Stavoren, Leeuwarden - Zwolle",21,0.03,20,112,2183.5,43670,50
+"'s-Hertogenbosch - Nijmegen, Arnhem Centraal - Nijmegen",20,0.03,20,118,169.5,3390,45
+"Breda - Dordrecht, Dordrecht - Geldermalsen, Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal",20,0.03,20,100,139.95,2799,45
+"Eindhoven - Roermond, Eindhoven - Venlo",20,0.03,19,19,40.11,762,5.26
+"Aachen Hbf - Heerlen, Heerlen - Kerkrade Centrum, Heerlen - Maastricht, Heerlen - Sittard",19,0.03,19,393,1612.32,30634,63.16
+"Alkmaar - Amsterdam Centraal, Haarlem - Uitgeest",19,0.03,19,64,87.89,1670,31.58
+"Arnhem Centraal - Frankfurt (M) Hbf",19,0.03,19,129,609.95,11589,57.89
+"Breda - Dordrecht, Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",19,0.03,19,112,136.79,2599,47.37
+"'s-Hertogenbosch - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",18,0.03,18,142,184.44,3320,55.56
+"Almelo - Deventer, Almelo - Hengelo, Almelo - Mariënberg, Almelo - Zwolle",18,0.03,18,62,112.83,2031,33.33
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Schiphol Airport - Zaandam",18,0.03,17,70,165.71,2817,35.29
+"Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Utrecht Centraal",18,0.03,15,86,154.27,2314,40
+"Arnhem Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",18,0.03,18,71.5,107.89,1942,38.89
+"Groningen - Leeuwarden, Leeuwarden - Zwolle",18,0.03,18,180,175.11,3152,72.22
+"Breda - Dordrecht, Breda - Roosendaal, Breda - Rotterdam Centraal (HSL), Breda - Tilburg",17,0.03,17,148,159.06,2704,64.71
+"Heerlen - Sittard, Maastricht - Sittard, Roermond - Sittard",17,0.03,17,168,494.24,8402,64.71
+"Leiden Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL)",17,0.03,17,10,20.06,341,5.88
+"Utrecht Centraal - Utrecht Maliebaan",17,0.03,17,64,202.65,3445,41.18
+"Alkmaar - Hoorn, Amsterdam Centraal - Hoorn, Enkhuizen - Hoorn",16,0.03,15,95,306.07,4591,46.67
+"Amsterdam Centraal - Lelystad Centrum, Lelystad Centrum - Schiphol Airport, Lelystad Centrum - Zwolle",16,0.03,16,24,51,816,25
+"Berlin Ostbahnhof - Hengelo, Hengelo - Oldenzaal, Hengelo - Zutphen",16,0.03,16,137,177.81,2845,56.25
+"Den Haag HS - Leiden Centraal",16,0.03,16,97,133.19,2131,31.25
+"'s-Hertogenbosch - Tilburg, Eindhoven - Tilburg",15,0.02,15,77,112,1680,40
+"Alkmaar - Amsterdam Centraal, Schiphol Airport - Zaandam",15,0.02,15,40,73.33,1100,13.33
+"Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",15,0.02,15,60,88.73,1331,33.33
+"Arnhem Centraal - Nijmegen, Arnhem Centraal - Zutphen",15,0.02,15,55,85.2,1278,13.33
+"Delfzijl - Groningen, Groningen - Bad Nieuweschans, Groningen - Eemshaven, Groningen - Leer (Ostfriesland), Groningen - Leeuwarden, Groningen - Veendam, Groningen - Zwolle",15,0.02,15,64,2780.27,41704,33.33
+"Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport",15,0.02,15,150,200.13,3002,53.33
+"Amersfoort - Ede-Wageningen, Arnhem Centraal - Utrecht Centraal",14,0.02,12,94,120.25,1443,41.67
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",14,0.02,14,76.5,143.21,2005,42.86
+"Heerlen - Kerkrade Centrum, Heerlen - Sittard",14,0.02,14,241.5,1563.93,21895,78.57
+"Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck, Maastricht - Sittard, Roermond - Sittard",14,0.02,14,1099,1978.43,27698,92.86
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Schiphol Airport, Schiphol Airport - Zaandam",13,0.02,13,30,58.92,766,15.38
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport",13,0.02,13,728,886,11518,69.23
+"Amsterdam Centraal - Haarlem, Haarlem - Leiden Centraal",13,0.02,13,201,158.92,2066,61.54
+"Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",13,0.02,13,42,63.15,821,15.38
+"Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",13,0.02,13,55,62.15,808,15.38
+"Berlin Ostbahnhof - Hengelo",13,0.02,13,233,354.85,4613,69.23
+"Delfzijl - Groningen, Groningen - Eemshaven, Groningen - Leeuwarden",13,0.02,13,44,59.85,778,15.38
+"Alkmaar - Amsterdam Centraal, Alkmaar - Den Helder",12,0.02,12,66.5,216.33,2596,33.33
+"Amersfoort - Amsterdam Centraal, Amersfoort - Zwolle",12,0.02,12,122,130.33,1564,50
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden, Lelystad Centrum - Schiphol Airport",12,0.02,12,25,41.5,498,8.33
+"Amersfoort - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",12,0.02,12,96.5,137.5,1650,41.67
+"Amersfoort - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",12,0.02,12,215,207.08,2485,83.33
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Utrecht Centraal",12,0.02,12,53,82.92,995,25
+"Emmen - Zwolle, Groningen - Zwolle, Leeuwarden - Zwolle",12,0.02,12,81.5,127.25,1527,33.33
+"Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport",12,0.02,11,33,49,539,9.09
+"Heerlen - Maastricht, Heerlen - Sittard",12,0.02,12,77,159.17,1910,33.33
+"Leiden Centraal - Schiphol Airport, Schiphol Airport - Zaandam",12,0.02,12,78,100.58,1207,33.33
+"Almelo - Deventer, Almelo - Hengelo, Almelo - Zwolle",11,0.02,11,55,226.45,2491,18.18
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal",11,0.02,11,26,57.36,631,18.18
+"Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",11,0.02,11,16,27.91,307,0
+"Arnhem Centraal - Zutphen, Deventer - Zutphen",11,0.02,11,90,122.45,1347,27.27
+"Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Leiden Centraal - Schiphol Airport",11,0.02,11,61,74.82,823,9.09
+"Eindhoven - Roermond, Roermond - Sittard, Roermond - Venlo",11,0.02,11,80,82.91,912,36.36
+"Heerlen - Maastricht, Maastricht - Sittard",11,0.02,11,47,87.36,961,18.18
+"Heerlen - Sittard, Maastricht - Sittard",11,0.02,11,26,166.09,1827,9.09
+"Leiden Centraal - Schiphol Airport, Schiphol Airport - Utrecht Centraal",11,0.02,11,219,227,2497,54.55
+"Maastricht - Sittard, Roermond - Sittard",11,0.02,11,123,673.27,7406,54.55
+"'s-Hertogenbosch - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Tiel - Utrecht Centraal",9,0.01,9,35,51.11,460,11.11
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Baarn - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",9,0.01,8,11,10.12,81,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Baarn - Utrecht Centraal, Hilversum - Utrecht Centraal, Utrecht Centraal - Utrecht Maliebaan",9,0.01,9,76,65.56,590,11.11
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Amersfoort - Zwolle",9,0.01,9,110,255.67,2301,44.44
+"Breda - Dordrecht, Breda - Tilburg, Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Eindhoven - Tilburg",9,0.01,9,230,244.56,2201,77.78
+"Breda - Dordrecht, Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal",9,0.01,9,126,256,2304,55.56
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",9,0.01,9,170,388.11,3493,55.56
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Roermond, Roermond - Sittard",8,0.01,8,120.5,142.75,1142,50
+"'s-Hertogenbosch - Utrecht Centraal, Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Baarn - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal",8,0.01,8,26.5,36.25,290,0
+"Aachen Hbf - Heerlen, Heerlen - Maastricht",8,0.01,8,516.5,1013.88,8111,87.5
+"Alkmaar - Amsterdam Centraal, Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Schiphol Airport - Utrecht Centraal, Schiphol Airport - Zaandam",8,0.01,8,323,373.75,2990,87.5
+"Almelo - Deventer, Almelo - Hengelo, Amersfoort - Apeldoorn, Apeldoorn - Deventer, Enschede - Hengelo",8,0.01,8,82,250.38,2003,50
+"Almelo - Deventer, Apeldoorn - Deventer",8,0.01,8,111,196.5,1572,50
+"Alphen a/d Rijn - Gouda, Leiden Centraal - Utrecht Centraal",8,0.01,8,96,106.5,852,37.5
+"Antwerpen-Centraal - Breda (HSL), Breda - Dordrecht, Breda - Rotterdam Centraal (HSL)",8,0.01,8,11,8.62,69,0
+"Apeldoorn - Deventer, Apeldoorn - Zutphen",8,0.01,8,31,50.62,405,12.5
+"Apeldoorn - Deventer, Deventer - Zwolle",8,0.01,7,27,78.57,550,42.86
+"Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Innsbruck Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Wien Hbf, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen, Arnhem Centraal - Zürich HB",8,0.01,8,245.5,602.62,4821,62.5
+"Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",8,0.01,8,93,125.5,1004,25
+"Breda - Dordrecht, Breda - Roosendaal, Breda - Tilburg, Dordrecht - Rotterdam Centraal",8,0.01,8,42.5,71.88,575,25
+"Deventer - Zutphen, Hengelo - Zutphen, Winterswijk - Zutphen",8,0.01,8,25.5,180,1440,25
+"Haarlem - Leiden Centraal, Haarlem - Uitgeest, Haarlem - Zandvoort aan Zee",8,0.01,8,41.5,161,1288,12.5
+"Schiphol Airport - Zaandam",8,0.01,8,18.5,52.88,423,25
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Eindhoven - Roermond, Roermond - Sittard",7,0.01,6,790.5,768.17,4609,100
+"Almelo - Deventer, Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Apeldoorn - Deventer",7,0.01,6,119.5,110.5,663,50
+"Almelo - Mariënberg, Emmen - Zwolle",7,0.01,7,106,498.29,3488,42.86
+"Almere Oostvaarders - Utrecht Centraal, Amsterdam Centraal - Lelystad Centrum, Lelystad Centrum - Schiphol Airport, Lelystad Centrum - Zwolle",7,0.01,7,10,18.14,127,0
+"Amsterdam Centraal - Haarlem, Haarlem - Zandvoort aan Zee",7,0.01,7,452,420.14,2941,85.71
+"Antwerpen-Centraal - Roosendaal, Roosendaal - Vlissingen",7,0.01,7,52,47.29,331,0
+"Arnhem Centraal - Düsseldorf Hbf",7,0.01,7,55,83.57,585,28.57
+"Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Innsbruck Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Wien Hbf, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen, Arnhem Centraal - Zürich HB",7,0.01,7,13,381.29,2669,42.86
+"Breda - Dordrecht, Breda - Roosendaal",7,0.01,6,16.5,36.67,220,0
+"Breda - Rotterdam Centraal (HSL), Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal, Paris-Nord - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",7,0.01,7,166,250.86,1756,71.43
+"Dortmund Hbf - Enschede, Enschede - Gronau (Westf.), Enschede - Hengelo, Enschede - Münster (Westf.) Hbf",7,0.01,7,23,89,623,28.57
+"Heerlen - Kerkrade Centrum, Heerlen - Maastricht, Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck",7,0.01,7,205,529.43,3706,71.43
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Utrecht Centraal",6,0.01,6,161.5,466,2796,50
+"Almelo - Hengelo, Berlin Ostbahnhof - Hengelo, Enschede - Hengelo, Hengelo - Oldenzaal, Hengelo - Zutphen",6,0.01,6,67,110.83,665,33.33
+"Amersfoort - Amsterdam Centraal, Amersfoort - Ede-Wageningen, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle",6,0.01,6,48,55.67,334,16.67
+"Amersfoort - Apeldoorn, Apeldoorn - Deventer, Apeldoorn - Zutphen",6,0.01,6,133,122.33,734,66.67
+"Amersfoort - Ede-Wageningen, Amersfoort - Zwolle",6,0.01,6,49,42.17,253,0
+"Amersfoort - Schiphol Airport, Schiphol Airport - Utrecht Centraal",6,0.01,6,27.5,152.17,913,16.67
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport",6,0.01,6,27.5,35.67,214,0
+"Amsterdam Centraal - Hoorn, Enkhuizen - Hoorn, Schiphol Airport - Zaandam",6,0.01,6,129,183,1098,50
+"Antwerpen-Centraal - Breda (HSL), Breda - Rotterdam Centraal (HSL), Dordrecht - Rotterdam Centraal",6,0.01,6,27,24.17,145,0
+"Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Innsbruck Hbf, Arnhem Centraal - Zürich HB",6,0.01,6,367,389.33,2336,83.33
+"Breda - Dordrecht, Breda - Rotterdam Centraal (HSL), Dordrecht - Roosendaal",6,0.01,6,29.5,50,300,16.67
+"Breda - Dordrecht, Breda - Tilburg",6,0.01,6,52.5,68.33,410,16.67
+"'s-Hertogenbosch - Nijmegen, 's-Hertogenbosch - Utrecht Centraal",5,0.01,5,56,43,215,0
+"Almelo - Deventer, Almelo - Hengelo",5,0.01,5,140,205.2,1026,80
+"Almelo - Deventer, Almelo - Hengelo, Almelo - Zwolle, Enschede - Hengelo",5,0.01,5,1253,2842.4,14212,80
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Baarn - Utrecht Centraal",5,0.01,5,40,57,285,0
+"Amersfoort - Apeldoorn, Amersfoort - Utrecht Centraal",5,0.01,3,170,358.67,1076,66.67
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Schiphol Airport - Zaandam",5,0.01,5,90,194.6,973,40
+"Amsterdam Centraal - Schiphol Airport, Antwerpen-Centraal - Breda (HSL), Breda - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL)",5,0.01,5,74,74,370,40
+"Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Schiphol Airport - Utrecht Centraal",5,0.01,5,32,88.2,441,20
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Utrecht Centraal",5,0.01,4,46.5,116.75,467,25
+"Antwerpen-Centraal - Breda (HSL), Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Paris-Nord - Rotterdam Centraal (HSL)",5,0.01,5,23,31.4,157,0
+"Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal, Leiden Centraal - Schiphol Airport, Paris-Nord - Rotterdam Centraal (HSL), Rotterdam Centraal - Utrecht Centraal",5,0.01,5,53,80,400,20
+"Den Haag HS - Rotterdam Centraal, Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal",5,0.01,5,283,447.8,2239,80
+"Deventer - Zutphen, Deventer - Zwolle",5,0.01,5,123,132.2,661,60
+"Eindhoven - Roermond, Roermond - Venlo",5,0.01,5,36,92.6,463,40
+"Enkhuizen - Hoorn, Leiden Centraal - Schiphol Airport, Schiphol Airport - Zaandam",5,0.01,5,127,281.4,1407,60
+"Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Schiphol Airport - Zaandam",5,0.01,5,84,82.6,413,20
+"Haarlem - Uitgeest, Haarlem - Zandvoort aan Zee",5,0.01,5,53,65,325,20
+"Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck, Maastricht - Sittard",5,0.01,5,256,549.6,2748,60
+"'s-Hertogenbosch - Tilburg, 's-Hertogenbosch - Utrecht Centraal",4,0.01,4,131,141.25,565,50
+"'s-Hertogenbosch - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Tiel - Utrecht Centraal",4,0.01,3,19,33.33,100,0
+"Aachen Hbf - Heerlen, Eindhoven - Roermond, Heerlen - Kerkrade Centrum, Heerlen - Maastricht, Heerlen - Sittard, Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck, Maastricht - Sittard, Roermond - Sittard, Roermond - Venlo",4,0.01,4,144.5,194,776,75
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn",4,0.01,4,46,42,168,0
+"Almelo - Deventer, Almelo - Hengelo, Apeldoorn - Deventer, Enschede - Hengelo",4,0.01,4,83.5,71.5,286,0
+"Almelo - Deventer, Almelo - Mariënberg, Almelo - Zwolle",4,0.01,4,25,26,104,0
+"Almelo - Hengelo, Hengelo - Zutphen",4,0.01,4,31,42.75,171,0
+"Almelo - Zwolle, Deventer - Zwolle",4,0.01,4,52,59,236,0
+"Almere Oostvaarders - Utrecht Centraal, Amsterdam Centraal - Lelystad Centrum",4,0.01,4,238,421.75,1687,75
+"Amersfoort - Apeldoorn, Amersfoort - Utrecht Centraal, Apeldoorn - Deventer",4,0.01,4,222.5,300.5,1202,75
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",4,0.01,4,158.5,214.5,858,50
+"Amersfoort - Schiphol Airport, Leiden Centraal - Schiphol Airport, Schiphol Airport - Utrecht Centraal",4,0.01,4,188.5,228.5,914,75
+"Amersfoort - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",4,0.01,4,146,189.5,758,75
+"Amsterdam Centraal - Haarlem, Den Haag Centraal - Leiden Centraal, Haarlem - Leiden Centraal",4,0.01,4,334.5,381.5,1526,75
+"Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL)",4,0.01,4,10.5,28.25,113,0
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal",4,0.01,4,272,297.25,1189,100
+"Antwerpen-Centraal - Breda (HSL), Breda - Roosendaal",4,0.01,4,20,17,68,0
+"Antwerpen-Centraal - Roosendaal, Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Paris-Nord - Rotterdam Centraal (HSL)",4,0.01,4,102,2817.25,11269,50
+"Breda - Dordrecht, Breda - Roosendaal, Breda - Tilburg",4,0.01,4,21,22.5,90,0
+"Breda - Rotterdam Centraal (HSL), Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Paris-Nord - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",4,0.01,4,1329,1022.25,4089,75
+"Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal",4,0.01,4,169,208,832,50
+"Den Haag HS - Rotterdam Centraal, Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",4,0.01,4,9,19.75,79,0
+"Den Haag HS - Rotterdam Centraal, Rotterdam Centraal - Utrecht Centraal",4,0.01,4,18,91.75,367,25
+"Deventer - Zutphen, Hengelo - Zutphen",4,0.01,4,102.5,96,384,50
+"Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",4,0.01,4,2,6,24,0
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Venlo",3,0,3,59,103,309,33.33
+"'s-Hertogenbosch - Nijmegen, Apeldoorn - Zutphen, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen, Deventer - Zutphen, Hengelo - Zutphen, Nijmegen - Venlo, Winterswijk - Zutphen",3,0,1,75,75,75,0
+"'s-Hertogenbosch - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",3,0,3,268,243.33,730,66.67
+"'s-Hertogenbosch - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal",3,0,3,62,42.33,127,0
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal",3,0,3,26,31.67,95,0
+"'s-Hertogenbosch - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Tiel - Utrecht Centraal",3,0,3,30,30.33,91,0
+"Alkmaar - Amsterdam Centraal, Alkmaar - Den Helder, Alkmaar - Hoorn, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden",3,0,3,1426,1367.67,4103,100
+"Alkmaar - Amsterdam Centraal, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Schiphol Airport",3,0,3,12,16.33,49,0
+"Alkmaar - Hoorn, Amsterdam Centraal - Hoorn",3,0,3,180,154,462,66.67
+"Almelo - Deventer, Almelo - Hengelo, Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Hengelo - Oldenzaal",3,0,3,205,207,621,66.67
+"Almelo - Zwolle, Deventer - Zwolle, Emmen - Zwolle, Groningen - Zwolle, Leeuwarden - Zwolle",3,0,3,8,5.67,17,0
+"Almelo - Zwolle, Groningen - Zwolle, Leeuwarden - Zwolle",3,0,3,23,30.67,92,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Amersfoort - Ede-Wageningen, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Hilversum - Utrecht Centraal",3,0,3,230,214,642,66.67
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Hilversum - Utrecht Centraal",3,0,3,143,159.67,479,66.67
+"Almere Oostvaarders - Utrecht Centraal, Lelystad Centrum - Schiphol Airport",3,0,3,73,108.33,325,33.33
+"Amersfoort - Apeldoorn, Amersfoort - Ede-Wageningen, Apeldoorn - Deventer",3,0,3,145,120.67,362,66.67
+"Amersfoort - Apeldoorn, Amersfoort - Zwolle",3,0,3,169,122,366,66.67
+"Amersfoort - Schiphol Airport, Amersfoort - Zwolle",3,0,3,72,83.33,250,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",3,0,3,40,38,114,0
+"Amersfoort - Schiphol Airport, Breda - Rotterdam Centraal (HSL), Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",3,0,3,59,59,177,0
+"Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Harlingen Haven - Leeuwarden, Leeuwarden - Zwolle, Leiden Centraal - Utrecht Centraal",3,0,3,192,200.67,602,66.67
+"Amersfoort - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal",3,0,3,242,184,552,66.67
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL)",3,0,3,126,119.33,358,66.67
+"Amsterdam Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal",3,0,2,82.5,82.5,165,50
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",3,0,2,299.5,299.5,599,100
+"Antwerpen-Centraal - Breda (HSL), Breda - Dordrecht, Breda - Roosendaal",3,0,3,10,11.67,35,0
+"Antwerpen-Centraal - Roosendaal, Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal",3,0,2,60.5,60.5,121,0
+"Apeldoorn - Zutphen, Winterswijk - Zutphen",3,0,3,1290,1347.33,4042,100
+"Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Nijmegen, Nijmegen - Venlo",3,0,3,144,180,540,66.67
+"Breda - Dordrecht, Breda - Tilburg, Dordrecht - Rotterdam Centraal, Eindhoven - Tilburg",3,0,3,125,544.33,1633,66.67
+"Breda - Roosendaal, Breda - Tilburg",3,0,3,79,61.33,184,0
+"Breda - Roosendaal, Dordrecht - Roosendaal, Roosendaal - Vlissingen",3,0,3,28,103.67,311,33.33
+"Delfzijl - Groningen, Groningen - Bad Nieuweschans, Groningen - Eemshaven, Groningen - Leer (Ostfriesland), Groningen - Leeuwarden, Groningen - Veendam",3,0,3,338,277,831,100
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Leiden Centraal",3,0,3,57,59.33,178,0
+"Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Leiden Centraal - Utrecht Centraal",3,0,3,16,17,51,0
+"Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport",3,0,3,143,122.33,367,66.67
+"Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",3,0,3,142,140,420,100
+"Den Haag HS - Rotterdam Centraal, Rotterdam Centraal - Schiphol Airport (HSL)",3,0,3,15,27.67,83,0
+"Dordrecht - Roosendaal, Roosendaal - Vlissingen",3,0,3,70,60,180,0
+"Groningen - Bad Nieuweschans, Groningen - Leer (Ostfriesland), Groningen - Leeuwarden, Groningen - Veendam, Groningen - Zwolle",3,0,3,45,103.67,311,33.33
+"Harlingen Haven - Leeuwarden, Leeuwarden - Stavoren, Leeuwarden - Zwolle",3,0,3,12,75.33,226,33.33
+"Roermond - Sittard, Roermond - Venlo",3,0,3,669,888,2664,100
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Roermond",2,0,2,267,267,534,50
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Roermond, Eindhoven - Tilburg",2,0,2,113,113,226,50
+"'s-Hertogenbosch - Utrecht Centraal, Almere Oostvaarders - Utrecht Centraal, Alphen a/d Rijn - Gouda, Amersfoort - Ede-Wageningen, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Baarn - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal, Utrecht Centraal - Utrecht Maliebaan",2,0,2,292.5,292.5,585,100
+"'s-Hertogenbosch - Utrecht Centraal, Almere Oostvaarders - Utrecht Centraal, Alphen a/d Rijn - Gouda, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Baarn - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal, Utrecht Centraal - Utrecht Maliebaan",2,0,2,349,349,698,100
+"'s-Hertogenbosch - Utrecht Centraal, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",2,0,2,487,487,974,100
+"'s-Hertogenbosch - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal",2,0,2,26.5,26.5,53,0
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Tiel - Utrecht Centraal",2,0,2,2.5,2.5,5,0
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",2,0,2,201,201,402,100
+"'s-Hertogenbosch - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",2,0,2,260,260,520,100
+"Aachen Hbf - Heerlen, Heerlen - Kerkrade Centrum, Heerlen - Sittard",2,0,2,693,693,1386,100
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Schiphol Airport - Zaandam",2,0,2,28,28,56,0
+"Alkmaar - Hoorn, Enkhuizen - Hoorn",2,0,2,20.5,20.5,41,0
+"Almelo - Deventer, Almelo - Hengelo, Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Amersfoort - Ede-Wageningen, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Apeldoorn - Deventer, Enschede - Hengelo",2,0,2,714.5,714.5,1429,50
+"Almelo - Deventer, Almelo - Hengelo, Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Apeldoorn - Deventer, Berlin Ostbahnhof - Hengelo, Hengelo - Oldenzaal",2,0,2,1865.5,1865.5,3731,100
+"Almelo - Deventer, Amersfoort - Apeldoorn, Apeldoorn - Deventer",2,0,2,108,108,216,50
+"Almelo - Hengelo, Almelo - Zwolle",2,0,2,18,18,36,0
+"Almelo - Hengelo, Almelo - Zwolle, Enschede - Hengelo, Kampen - Zwolle",2,0,2,4015.5,4015.5,8031,100
+"Almelo - Hengelo, Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Amersfoort - Ede-Wageningen, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Enschede - Hengelo, Hengelo - Oldenzaal, Hengelo - Zutphen",2,0,2,1328.5,1328.5,2657,100
+"Alphen a/d Rijn - Gouda, Den Haag Centraal - Utrecht Centraal",2,0,1,4,4,4,0
+"Amersfoort - Apeldoorn, Amersfoort - Zwolle, Apeldoorn - Deventer",2,0,2,52.5,52.5,105,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",2,0,2,125,125,250,50
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Lelystad Centrum, Lelystad Centrum - Schiphol Airport",2,0,2,103.5,103.5,207,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport",2,0,2,38,38,76,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport",2,0,2,137.5,137.5,275,50
+"Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Den Haag Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",2,0,2,105.5,105.5,211,0
+"Amsterdam Centraal - Haarlem, Haarlem - Uitgeest",2,0,2,92.5,92.5,185,50
+"Amsterdam Centraal - Lelystad Centrum, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport",2,0,2,136,136,272,50
+"Amsterdam Centraal - Lelystad Centrum, Lelystad Centrum - Zwolle",2,0,2,570.5,570.5,1141,100
+"Amsterdam Centraal - Schiphol Airport, Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal, Rotterdam Centraal - Schiphol Airport (HSL)",2,0,2,65,65,130,0
+"Amsterdam Centraal - Schiphol Airport, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Leiden Centraal - Schiphol Airport",2,0,2,188,188,376,50
+"Amsterdam Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",2,0,2,30,30,60,0
+"Amsterdam Centraal - Utrecht Centraal, Nijmegen - Venlo",2,0,2,49.5,49.5,99,0
+"Amsterdam Centraal - Woerden, Den Haag Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",2,0,2,63,63,126,0
+"Antwerpen-Centraal - Breda (HSL), Antwerpen-Centraal - Roosendaal",2,0,2,96.5,96.5,193,50
+"Antwerpen-Centraal - Brussels Airport-Zaventem, Antwerpen-Centraal - Roosendaal, Brussel-Zuid/Midi - Brussels Airport-Zaventem",2,0,2,1097.5,1097.5,2195,100
+"Antwerpen-Centraal - Brussels Airport-Zaventem, Antwerpen-Centraal - Roosendaal, Brussel-Zuid/Midi - Brussels Airport-Zaventem, Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal, Paris-Nord - Rotterdam Centraal (HSL)",2,0,2,132.5,132.5,265,50
+"Antwerpen-Centraal - Roosendaal, Breda - Roosendaal",2,0,2,75,75,150,0
+"Apeldoorn - Zutphen, Arnhem Centraal - Winterswijk, Winterswijk - Zutphen",2,0,2,3192,3192,6384,100
+"Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal",2,0,2,16.5,16.5,33,0
+"Arnhem Centraal - Tiel, Tiel - Utrecht Centraal",2,0,2,98.5,98.5,197,50
+"Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Zutphen",2,0,2,11,11,22,0
+"Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",2,0,2,134,134,268,50
+"Arnhem Centraal - Winterswijk, Winterswijk - Zutphen",2,0,2,574.5,574.5,1149,100
+"Berlin Ostbahnhof - Hengelo, Enschede - Hengelo, Hengelo - Oldenzaal",2,0,2,34,34,68,0
+"Bielefeld Hbf - Hengelo",2,0,2,370,370,740,50
+"Breda - Dordrecht, Breda - Tilburg, Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",2,0,2,135,135,270,50
+"Breda - Dordrecht, Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal, Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal",2,0,2,94,94,188,50
+"Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag HS - Rotterdam Centraal, Paris-Nord - Rotterdam Centraal (HSL)",2,0,2,921,921,1842,100
+"Delfzijl - Groningen, Groningen - Bad Nieuweschans, Groningen - Eemshaven, Groningen - Leer (Ostfriesland)",2,0,2,1295.5,1295.5,2591,100
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal",2,0,2,142,142,284,50
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Leiden Centraal - Utrecht Centraal",2,0,2,220.5,220.5,441,50
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Haarlem - Leiden Centraal",2,0,2,167,167,334,100
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Rotterdam Centraal",2,0,2,147,147,294,50
+"Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal",2,0,2,86,86,172,50
+"Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal",2,0,2,40.5,40.5,81,0
+"Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Haarlem - Leiden Centraal",2,0,2,242.5,242.5,485,100
+"Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal",2,0,2,218.5,218.5,437,50
+"Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal, Rotterdam Centraal - Utrecht Centraal",2,0,2,97,97,194,50
+"Deventer - Zwolle, Groningen - Zwolle, Leeuwarden - Zwolle",2,0,1,57,57,57,0
+"Eindhoven - Roermond, Heerlen - Sittard, Roermond - Sittard",2,0,2,46.5,46.5,93,0
+"Eindhoven - Roermond, Maastricht - Sittard, Roermond - Sittard",2,0,2,112,112,224,50
+"Eindhoven - Venlo, Hamm (Westf.) - Venlo, Roermond - Venlo",2,0,2,10.5,10.5,21,0
+"Eindhoven - Venlo, Roermond - Venlo",2,0,2,7.5,7.5,15,0
+"Hamm (Westf.) - Venlo, Nijmegen - Venlo, Roermond - Venlo",2,0,2,11.5,11.5,23,0
+"Hengelo - Zutphen, Winterswijk - Zutphen",2,0,2,110.5,110.5,221,50
+"Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",2,0,2,57.5,57.5,115,0
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Nijmegen, 's-Hertogenbosch - Tilburg, 's-Hertogenbosch - Utrecht Centraal, Antwerpen-Centraal - Breda (HSL), Antwerpen-Centraal - Roosendaal, Breda - Dordrecht, Breda - Roosendaal, Breda - Rotterdam Centraal (HSL), Breda - Tilburg, Dordrecht - Roosendaal, Eindhoven - Roermond, Eindhoven - Tilburg, Eindhoven - Venlo, Roosendaal - Vlissingen",1,0,1,1429,1429,1429,100
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Nijmegen, 's-Hertogenbosch - Tilburg, 's-Hertogenbosch - Utrecht Centraal, Breda - Tilburg, Eindhoven - Tilburg",1,0,1,89,89,89,0
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Nijmegen, 's-Hertogenbosch - Utrecht Centraal, Breda - Tilburg",1,0,1,508,508,508,100
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Eindhoven - Roermond, Roermond - Sittard",1,0,1,447,447,447,100
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal",1,0,1,60,60,60,0
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Eindhoven - Roermond",1,0,1,1173,1173,1173,100
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Heerlen - Sittard",1,0,1,258,258,258,100
+"'s-Hertogenbosch - Eindhoven, 's-Hertogenbosch - Utrecht Centraal, Tiel - Utrecht Centraal",1,0,1,178,178,178,100
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Roermond, Eindhoven - Tilburg, Eindhoven - Venlo, Hamm (Westf.) - Venlo, Nijmegen - Venlo, Roermond - Venlo",1,0,1,96,96,96,0
+"'s-Hertogenbosch - Eindhoven, Eindhoven - Tilburg, Eindhoven - Venlo",1,0,1,92,92,92,0
+"'s-Hertogenbosch - Nijmegen, 's-Hertogenbosch - Tilburg, Breda - Tilburg",1,0,1,205,205,205,100
+"'s-Hertogenbosch - Nijmegen, Arnhem Centraal - Nijmegen, Arnhem Centraal - Utrecht Centraal",1,0,1,66,66,66,0
+"'s-Hertogenbosch - Nijmegen, Breda - Dordrecht",1,0,1,20,20,20,0
+"'s-Hertogenbosch - Nijmegen, Nijmegen - Venlo",1,0,1,56,56,56,0
+"'s-Hertogenbosch - Tilburg, 's-Hertogenbosch - Utrecht Centraal, Breda - Tilburg",1,0,1,12,12,12,0
+"'s-Hertogenbosch - Tilburg, Breda - Dordrecht",1,0,1,243,243,243,100
+"'s-Hertogenbosch - Utrecht Centraal, Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal",1,0,1,548,548,548,100
+"'s-Hertogenbosch - Utrecht Centraal, Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Baarn - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",1,0,1,218,218,218,100
+"'s-Hertogenbosch - Utrecht Centraal, Amersfoort - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,601,601,601,100
+"'s-Hertogenbosch - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,160,160,160,100
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Nijmegen, Arnhem Centraal - Utrecht Centraal",1,0,1,62,62,62,0
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Nijmegen, Arnhem Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,90,90,90,0
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal, Tiel - Utrecht Centraal",1,0,1,150,150,150,100
+"'s-Hertogenbosch - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,52,52,52,0
+"'s-Hertogenbosch - Utrecht Centraal, Dordrecht - Geldermalsen",1,0,1,348,348,348,100
+"Aachen Hbf - Heerlen, Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Innsbruck Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Wien Hbf, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen, Arnhem Centraal - Zürich HB, Heerlen - Kerkrade Centrum, Heerlen - Maastricht, Heerlen - Sittard",1,0,1,317,317,317,100
+"Aachen Hbf - Heerlen, Heerlen - Kerkrade Centrum, Heerlen - Maastricht, Heerlen - Sittard, Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck, Maastricht - Sittard",1,0,1,1031,1031,1031,100
+"Alkmaar - Amsterdam Centraal, Alkmaar - Den Helder, Alkmaar - Hoorn, Amersfoort - Amsterdam Centraal, Amersfoort - Zwolle, Amsterdam Centraal - Lelystad Centrum, Groningen - Eemshaven, Groningen - Zwolle, Lelystad Centrum - Zwolle",1,0,0,,,0,
+"Alkmaar - Amsterdam Centraal, Alkmaar - Den Helder, Alkmaar - Hoorn, Amsterdam Centraal - Hoorn, Enkhuizen - Hoorn",1,0,1,344,344,344,100
+"Alkmaar - Amsterdam Centraal, Alkmaar - Den Helder, Alkmaar - Hoorn, Haarlem - Uitgeest",1,0,1,120,120,120,0
+"Alkmaar - Amsterdam Centraal, Alkmaar - Hoorn",1,0,1,98,98,98,0
+"Alkmaar - Amsterdam Centraal, Alkmaar - Hoorn, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Utrecht Centraal",1,0,1,951,951,951,100
+"Alkmaar - Amsterdam Centraal, Alkmaar - Hoorn, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden, Den Haag Centraal - Leiden Centraal, Haarlem - Leiden Centraal, Haarlem - Uitgeest, Lelystad Centrum - Zwolle, Schiphol Airport - Zaandam",1,0,1,9,9,9,0
+"Alkmaar - Amsterdam Centraal, Almere Oostvaarders - Utrecht Centraal, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum, Hilversum - Utrecht Centraal, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",1,0,1,58,58,58,0
+"Alkmaar - Amsterdam Centraal, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal",1,0,1,496,496,496,100
+"Alkmaar - Amsterdam Centraal, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden, Leiden Centraal - Schiphol Airport",1,0,1,121,121,121,100
+"Alkmaar - Amsterdam Centraal, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Lelystad Centrum",1,0,1,12,12,12,0
+"Alkmaar - Amsterdam Centraal, Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Lelystad Centrum, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden",1,0,1,317,317,317,100
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem",1,0,1,36,36,36,0
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal",1,0,1,3508,3508,3508,100
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Schiphol Airport, Schiphol Airport - Utrecht Centraal",1,0,1,77,77,77,0
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Hoorn, Haarlem - Leiden Centraal, Haarlem - Uitgeest, Haarlem - Zandvoort aan Zee, Schiphol Airport - Zaandam",1,0,1,681,681,681,100
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport",1,0,1,263,263,263,100
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Hoorn, Amsterdam Centraal - Utrecht Centraal",1,0,1,39,39,39,0
+"Alkmaar - Amsterdam Centraal, Amsterdam Centraal - Hoorn, Enkhuizen - Hoorn",1,0,1,17,17,17,0
+"Almelo - Deventer, Almelo - Hengelo, Almelo - Zwolle, Apeldoorn - Deventer, Enschede - Hengelo",1,0,1,62,62,62,0
+"Almelo - Deventer, Almelo - Hengelo, Amersfoort - Apeldoorn, Amersfoort - Utrecht Centraal, Apeldoorn - Deventer",1,0,1,1,1,1,0
+"Almelo - Deventer, Almelo - Hengelo, Berlin Ostbahnhof - Hengelo, Hengelo - Oldenzaal",1,0,1,12,12,12,0
+"Almelo - Deventer, Apeldoorn - Deventer, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Innsbruck Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Wien Hbf, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen, Arnhem Centraal - Zürich HB, Deventer - Zutphen, Deventer - Zwolle",1,0,1,1431,1431,1431,100
+"Almelo - Deventer, Apeldoorn - Deventer, Deventer - Zutphen",1,0,1,507,507,507,100
+"Almelo - Deventer, Apeldoorn - Deventer, Deventer - Zwolle",1,0,1,158,158,158,100
+"Almelo - Deventer, Hengelo - Zutphen",1,0,1,122,122,122,100
+"Almelo - Hengelo, Almelo - Zwolle, Amersfoort - Zwolle, Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Deventer - Zwolle, Emmen - Zwolle, Enschede - Hengelo, Groningen - Zwolle, Hengelo - Oldenzaal, Hengelo - Zutphen, Kampen - Zwolle, Leeuwarden - Zwolle, Lelystad Centrum - Zwolle",1,0,1,272,272,272,100
+"Almelo - Hengelo, Berlin Ostbahnhof - Hengelo, Hengelo - Oldenzaal",1,0,1,30,30,30,0
+"Almelo - Hengelo, Berlin Ostbahnhof - Hengelo, Hengelo - Oldenzaal, Hengelo - Zutphen",1,0,1,12,12,12,0
+"Almelo - Mariënberg, Almelo - Zwolle",1,0,1,77,77,77,0
+"Almelo - Zwolle, Amersfoort - Zwolle, Apeldoorn - Deventer, Deventer - Zwolle, Emmen - Zwolle, Groningen - Zwolle, Kampen - Zwolle, Leeuwarden - Zwolle, Lelystad Centrum - Zwolle",1,0,1,635,635,635,100
+"Almelo - Zwolle, Amersfoort - Zwolle, Deventer - Zwolle, Emmen - Zwolle, Groningen - Zwolle, Leeuwarden - Zwolle",1,0,1,15,15,15,0
+"Almelo - Zwolle, Emmen - Zwolle",1,0,1,47,47,47,0
+"Almelo - Zwolle, Kampen - Zwolle",1,0,1,102,102,102,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Amsterdam Centraal",1,0,1,66,66,66,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Amersfoort - Zwolle, Hilversum - Utrecht Centraal",1,0,1,634,634,634,100
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Schiphol Airport",1,0,1,71,71,71,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Schiphol Airport, Amersfoort - Zwolle, Hilversum - Utrecht Centraal",1,0,1,191,191,191,100
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Schiphol Airport, Hilversum - Utrecht Centraal",1,0,1,46,46,46,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Schiphol Airport, Hilversum - Utrecht Centraal, Leiden Centraal - Schiphol Airport, Leiden Centraal - Utrecht Centraal",1,0,1,299,299,299,100
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Baarn - Utrecht Centraal, Hilversum - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,97,97,97,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Utrecht Centraal, Baarn - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",1,0,1,43,43,43,0
+"Almere Oostvaarders - Utrecht Centraal, Amersfoort - Zwolle, Amsterdam Centraal - Lelystad Centrum, Deventer - Zwolle, Groningen - Zwolle, Leeuwarden - Zwolle, Lelystad Centrum - Schiphol Airport, Lelystad Centrum - Zwolle",1,0,1,1162,1162,1162,100
+"Almere Oostvaarders - Utrecht Centraal, Baarn - Utrecht Centraal, Hilversum - Utrecht Centraal",1,0,1,18,18,18,0
+"Almere Oostvaarders - Utrecht Centraal, Hilversum - Utrecht Centraal, Leiden Centraal - Utrecht Centraal",1,0,1,2264,2264,2264,100
+"Amersfoort - Amsterdam Centraal, Amersfoort - Apeldoorn, Amersfoort - Schiphol Airport, Apeldoorn - Deventer",1,0,1,43,43,43,0
+"Amersfoort - Amsterdam Centraal, Amersfoort - Ede-Wageningen",1,0,1,95,95,95,0
+"Amersfoort - Amsterdam Centraal, Amersfoort - Ede-Wageningen, Amersfoort - Schiphol Airport",1,0,1,175,175,175,100
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle",1,0,1,54,54,54,0
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Amsterdam Centraal - Lelystad Centrum, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport",1,0,1,52,52,52,0
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Den Haag Centraal - Leiden Centraal",1,0,1,160,160,160,100
+"Amersfoort - Amsterdam Centraal, Amersfoort - Schiphol Airport, Lelystad Centrum - Schiphol Airport",1,0,1,2,2,2,0
+"Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Hoorn, Enkhuizen - Hoorn",1,0,1,1109,1109,1109,100
+"Amersfoort - Amsterdam Centraal, Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden",1,0,1,48,48,48,0
+"Amersfoort - Apeldoorn, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Apeldoorn - Deventer",1,0,1,288,288,288,100
+"Amersfoort - Apeldoorn, Amersfoort - Schiphol Airport, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Apeldoorn - Deventer, Den Haag Centraal - Utrecht Centraal",1,0,1,95,95,95,0
+"Amersfoort - Apeldoorn, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle",1,0,1,20,20,20,0
+"Amersfoort - Apeldoorn, Amersfoort - Utrecht Centraal, Apeldoorn - Deventer, Rotterdam Centraal - Utrecht Centraal",1,0,1,504,504,504,100
+"Amersfoort - Apeldoorn, Apeldoorn - Deventer, Deventer - Zutphen",1,0,1,94,94,94,0
+"Amersfoort - Apeldoorn, Apeldoorn - Deventer, Deventer - Zwolle",1,0,1,144,144,144,100
+"Amersfoort - Ede-Wageningen, Amersfoort - Utrecht Centraal, Amersfoort - Zwolle",1,0,1,18,18,18,0
+"Amersfoort - Ede-Wageningen, Arnhem Centraal - Utrecht Centraal, Leiden Centraal - Schiphol Airport, Schiphol Airport - Utrecht Centraal",1,0,1,12,12,12,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal, Schiphol Airport - Zaandam",1,0,1,127,127,127,100
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Lelystad Centrum",1,0,1,195,195,195,100
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Schiphol Airport - Utrecht Centraal",1,0,1,24,24,24,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Schiphol Airport - Zaandam",1,0,1,88,88,88,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL)",1,0,1,13,13,13,0
+"Amersfoort - Schiphol Airport, Amsterdam Centraal - Schiphol Airport, Schiphol Airport - Zaandam",1,0,1,18,18,18,0
+"Amersfoort - Schiphol Airport, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Schiphol Airport - Utrecht Centraal",1,0,1,968,968,968,100
+"Amersfoort - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL)",1,0,1,37,37,37,0
+"Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Baarn - Utrecht Centraal",1,0,1,163,163,163,100
+"Amersfoort - Utrecht Centraal, Amersfoort - Zwolle, Den Haag Centraal - Utrecht Centraal",1,0,1,311,311,311,100
+"Amersfoort - Utrecht Centraal, Breda - Dordrecht, Den Haag Centraal - Den Haag HS, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Utrecht Centraal",1,0,1,221,221,221,100
+"Amersfoort - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",1,0,1,274,274,274,100
+"Amersfoort - Zwolle, Kampen - Zwolle",1,0,1,85,85,85,0
+"Amersfoort - Zwolle, Leeuwarden - Zwolle",1,0,1,136,136,136,100
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Lelystad Centrum",1,0,1,127,127,127,100
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport",1,0,1,62,62,62,0
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Haarlem - Leiden Centraal, Haarlem - Zandvoort aan Zee, Leiden Centraal - Schiphol Airport",1,0,1,263,263,263,100
+"Amsterdam Centraal - Haarlem, Amsterdam Centraal - Schiphol Airport, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Schiphol Airport - Zaandam",1,0,1,55,55,55,0
+"Amsterdam Centraal - Haarlem, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal",1,0,1,180,180,180,100
+"Amsterdam Centraal - Haarlem, Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Haarlem - Leiden Centraal, Paris-Nord - Rotterdam Centraal (HSL)",1,0,1,63,63,63,0
+"Amsterdam Centraal - Haarlem, Den Haag HS - Leiden Centraal, Haarlem - Leiden Centraal",1,0,1,148,148,148,100
+"Amsterdam Centraal - Haarlem, Haarlem - Uitgeest, Haarlem - Zandvoort aan Zee",1,0,1,16,16,16,0
+"Amsterdam Centraal - Schiphol Airport, Amsterdam Centraal - Utrecht Centraal",1,0,1,25,25,25,0
+"Amsterdam Centraal - Schiphol Airport, Antwerpen-Centraal - Breda (HSL), Breda - Dordrecht, Breda - Roosendaal, Breda - Rotterdam Centraal (HSL), Breda - Tilburg, Rotterdam Centraal - Schiphol Airport (HSL)",1,0,1,301,301,301,100
+"Amsterdam Centraal - Schiphol Airport, Antwerpen-Centraal - Roosendaal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Leiden Centraal - Schiphol Airport",1,0,1,680,680,680,100
+"Amsterdam Centraal - Schiphol Airport, Breda - Rotterdam Centraal (HSL), Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Schiphol Airport (HSL)",1,0,1,161,161,161,100
+"Amsterdam Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport",1,0,1,100,100,100,0
+"Amsterdam Centraal - Schiphol Airport, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Leiden Centraal - Schiphol Airport, Schiphol Airport - Zaandam",1,0,1,193,193,193,100
+"Amsterdam Centraal - Schiphol Airport, Den Haag HS - Leiden Centraal, Leiden Centraal - Schiphol Airport",1,0,1,68,68,68,0
+"Amsterdam Centraal - Schiphol Airport, Den Haag HS - Rotterdam Centraal, Rotterdam Centraal - Schiphol Airport (HSL)",1,0,1,502,502,502,100
+"Amsterdam Centraal - Schiphol Airport, Den Haag HS - Rotterdam Centraal, Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",1,0,1,8,8,8,0
+"Amsterdam Centraal - Schiphol Airport, Leiden Centraal - Schiphol Airport, Schiphol Airport - Utrecht Centraal, Schiphol Airport - Zaandam",1,0,1,139,139,139,100
+"Amsterdam Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",1,0,1,140,140,140,100
+"Amsterdam Centraal - Schiphol Airport, Rotterdam Centraal - Schiphol Airport (HSL), Schiphol Airport - Zaandam",1,0,1,94,94,94,0
+"Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden, Arnhem Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,355,355,355,100
+"Amsterdam Centraal - Utrecht Centraal, Amsterdam Centraal - Woerden, Leiden Centraal - Schiphol Airport, Lelystad Centrum - Schiphol Airport",1,0,1,22,22,22,0
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Innsbruck Hbf, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Zürich HB",1,0,1,315,315,315,100
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Innsbruck Hbf, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Wien Hbf, Arnhem Centraal - Zürich HB",1,0,1,390,390,390,100
+"Amsterdam Centraal - Utrecht Centraal, Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,13,13,13,0
+"Amsterdam Centraal - Utrecht Centraal, Rotterdam Centraal - Schiphol Airport (HSL)",1,0,1,416,416,416,100
+"Amsterdam Centraal - Woerden, Schiphol Airport - Utrecht Centraal",1,0,1,337,337,337,100
+"Antwerpen-Centraal - Breda (HSL), Antwerpen-Centraal - Brussels Airport-Zaventem, Antwerpen-Centraal - Roosendaal, Breda - Roosendaal, Brussel-Zuid/Midi - Brussels Airport-Zaventem",1,0,1,12,12,12,0
+"Antwerpen-Centraal - Breda (HSL), Antwerpen-Centraal - Roosendaal, Breda - Dordrecht, Breda - Roosendaal",1,0,1,16,16,16,0
+"Antwerpen-Centraal - Breda (HSL), Breda - Dordrecht",1,0,1,4,4,4,0
+"Antwerpen-Centraal - Breda (HSL), Breda - Dordrecht, Breda - Rotterdam Centraal (HSL), Dordrecht - Roosendaal",1,0,1,14,14,14,0
+"Antwerpen-Centraal - Brussels Airport-Zaventem, Antwerpen-Centraal - Roosendaal",1,0,1,135,135,135,100
+"Antwerpen-Centraal - Brussels Airport-Zaventem, Antwerpen-Centraal - Roosendaal, Brussel-Zuid/Midi - Brussels Airport-Zaventem, Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal",1,0,1,81,81,81,0
+"Antwerpen-Centraal - Brussels Airport-Zaventem, Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Paris-Nord - Rotterdam Centraal (HSL)",1,0,1,231,231,231,100
+"Apeldoorn - Zutphen, Arnhem Centraal - Zutphen, Deventer - Zutphen",1,0,1,59,59,59,0
+"Apeldoorn - Zutphen, Deventer - Zutphen, Hengelo - Zutphen, Winterswijk - Zutphen",1,0,1,183,183,183,100
+"Apeldoorn - Zutphen, Hengelo - Zutphen",1,0,1,1014,1014,1014,100
+"Arnhem Centraal - Basel SBB, Arnhem Centraal - Düsseldorf Hbf, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Utrecht Centraal, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",1,0,1,20,20,20,0
+"Arnhem Centraal - Basel SBB, Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Winterswijk",1,0,1,53,53,53,0
+"Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Tiel, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",1,0,1,100,100,100,0
+"Arnhem Centraal - Frankfurt (M) Hbf, Arnhem Centraal - Nijmegen, Arnhem Centraal - Winterswijk, Arnhem Centraal - Zutphen",1,0,1,81,81,81,0
+"Arnhem Centraal - Nijmegen, Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,736,736,736,100
+"Arnhem Centraal - Tiel, Arnhem Centraal - Winterswijk",1,0,1,402,402,402,100
+"Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Den Haag HS, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Rotterdam Centraal",1,0,1,5,5,5,0
+"Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal",1,0,1,72,72,72,0
+"Arnhem Centraal - Utrecht Centraal, Den Haag Centraal - Utrecht Centraal, Rhenen - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Schiphol Airport - Utrecht Centraal",1,0,1,348,348,348,100
+"Arnhem Centraal - Zutphen, Deventer - Zutphen, Deventer - Zwolle",1,0,1,1455,1455,1455,100
+"Arnhem Centraal - Zutphen, Hengelo - Zutphen",1,0,1,11,11,11,0
+"Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Enschede - Hengelo, Hengelo - Oldenzaal",1,0,1,4,4,4,0
+"Berlin Ostbahnhof - Hengelo, Bielefeld Hbf - Hengelo, Hengelo - Oldenzaal, Hengelo - Zutphen, Winterswijk - Zutphen",1,0,1,2582,2582,2582,100
+"Breda - Dordrecht, Breda - Roosendaal, Breda - Rotterdam Centraal (HSL)",1,0,1,166,166,166,100
+"Breda - Dordrecht, Breda - Roosendaal, Dordrecht - Rotterdam Centraal",1,0,1,16,16,16,0
+"Breda - Dordrecht, Breda - Rotterdam Centraal (HSL), Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag HS - Rotterdam Centraal, Dordrecht - Geldermalsen, Dordrecht - Roosendaal, Dordrecht - Rotterdam Centraal, Paris-Nord - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",1,0,1,272,272,272,100
+"Breda - Dordrecht, Breda - Rotterdam Centraal (HSL), Den Haag Centraal - Den Haag HS, Den Haag HS - Rotterdam Centraal",1,0,1,106,106,106,0
+"Breda - Dordrecht, Breda - Tilburg, Dordrecht - Rotterdam Centraal",1,0,1,183,183,183,100
+"Breda - Dordrecht, Breda - Tilburg, Dordrecht - Rotterdam Centraal, Eindhoven - Roermond, Eindhoven - Tilburg, Maastricht - Sittard, Roermond - Sittard",1,0,1,10,10,10,0
+"Breda - Dordrecht, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Leiden Centraal - Schiphol Airport",1,0,1,136,136,136,100
+"Breda - Dordrecht, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",1,0,1,254,254,254,100
+"Breda - Dordrecht, Dordrecht - Geldermalsen, Dordrecht - Roosendaal",1,0,1,117,117,117,0
+"Breda - Roosendaal, Breda - Rotterdam Centraal (HSL)",1,0,1,2,2,2,0
+"Breda - Rotterdam Centraal (HSL), Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Paris-Nord - Rotterdam Centraal (HSL)",1,0,1,116,116,116,0
+"Breda - Rotterdam Centraal (HSL), Den Haag HS - Rotterdam Centraal",1,0,1,102,102,102,0
+"Breda - Rotterdam Centraal (HSL), Den Haag HS - Rotterdam Centraal, Rotterdam Centraal - Schiphol Airport (HSL), Rotterdam Centraal - Utrecht Centraal",1,0,1,23,23,23,0
+"Breda - Rotterdam Centraal (HSL), Rotterdam Centraal - Utrecht Centraal",1,0,1,12,12,12,0
+"Breda - Tilburg, Eindhoven - Roermond, Eindhoven - Tilburg",1,0,1,64,64,64,0
+"Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal, Paris-Nord - Rotterdam Centraal (HSL)",1,0,1,64,64,64,0
+"Brussel-Zuid/Midi - Rotterdam Centraal (HSL), Paris-Nord - Rotterdam Centraal (HSL), Rotterdam Centraal - Schiphol Airport (HSL)",1,0,1,246,246,246,100
+"Delfzijl - Groningen, Groningen - Bad Nieuweschans, Groningen - Eemshaven, Groningen - Leer (Ostfriesland), Groningen - Leeuwarden, Groningen - Veendam, Groningen - Zwolle, Harlingen Haven - Leeuwarden, Leeuwarden - Stavoren, Leeuwarden - Zwolle",1,0,1,123,123,123,100
+"Delfzijl - Groningen, Groningen - Bad Nieuweschans, Groningen - Eemshaven, Groningen - Leer (Ostfriesland), Groningen - Leeuwarden, Groningen - Zwolle",1,0,1,87,87,87,0
+"Delfzijl - Groningen, Groningen - Veendam",1,0,1,1020,1020,1020,100
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal",1,0,1,124,124,124,100
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Rotterdam Centraal",1,0,1,36,36,36,0
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Utrecht Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",1,0,1,58,58,58,0
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Haarlem - Leiden Centraal",1,0,1,211,211,211,100
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Leiden Centraal - Schiphol Airport",1,0,1,239,239,239,100
+"Den Haag Centraal - Den Haag HS, Den Haag Centraal - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal",1,0,1,98,98,98,0
+"Den Haag Centraal - Den Haag HS, Den Haag HS - Leiden Centraal",1,0,1,8,8,8,0
+"Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Haarlem - Leiden Centraal",1,0,1,111,111,111,0
+"Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport",1,0,1,10,10,10,0
+"Den Haag Centraal - Leiden Centraal, Haarlem - Leiden Centraal, Leiden Centraal - Schiphol Airport",1,0,1,134,134,134,100
+"Den Haag Centraal - Utrecht Centraal, Leiden Centraal - Utrecht Centraal, Rotterdam Centraal - Utrecht Centraal, Tiel - Utrecht Centraal",1,0,1,5,5,5,0
+"Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Dordrecht - Rotterdam Centraal, Hoek van Holland Strand - Rotterdam Centraal, Leiden Centraal - Schiphol Airport",1,0,1,65,65,65,0
+"Den Haag HS - Leiden Centraal, Den Haag HS - Rotterdam Centraal, Haarlem - Leiden Centraal",1,0,1,27,27,27,0
+"Den Haag HS - Leiden Centraal, Haarlem - Leiden Centraal",1,0,1,49,49,49,0
+"Den Haag HS - Leiden Centraal, Leiden Centraal - Schiphol Airport, Schiphol Airport - Utrecht Centraal",1,0,1,112,112,112,0
+"Deventer - Zutphen, Winterswijk - Zutphen",1,0,1,56,56,56,0
+"Dordrecht - Geldermalsen, Tiel - Utrecht Centraal",1,0,1,285,285,285,100
+"Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Utrecht Centraal",1,0,1,212,212,212,100
+"Eindhoven - Venlo, Hamm (Westf.) - Venlo, Nijmegen - Venlo",1,0,1,147,147,147,100
+"Eindhoven - Venlo, Nijmegen - Venlo, Roermond - Venlo",1,0,1,40,40,40,0
+"Haarlem - Leiden Centraal, Haarlem - Uitgeest",1,0,1,62,62,62,0
+"Heerlen - Kerkrade Centrum, Heerlen - Maastricht",1,0,1,290,290,290,100
+"Heerlen - Sittard, Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck",1,0,1,2280,2280,2280,100
+"Heerlen - Sittard, Liège-Guillemins - Maastricht, Maastricht - Maastricht Randwyck, Maastricht - Sittard, Roermond - Sittard",1,0,1,342,342,342,100
+"Heerlen - Sittard, Roermond - Sittard",1,0,1,245,245,245,100
+"Hilversum - Utrecht Centraal",1,0,1,92,92,92,0
+"Hoek van Holland Strand - Rotterdam Centraal, Rotterdam Centraal - Utrecht Centraal",1,0,1,204,204,204,100
+"Lelystad Centrum - Schiphol Airport, Lelystad Centrum - Zwolle",1,0,1,140,140,140,100
+"Lelystad Centrum - Schiphol Airport, Schiphol Airport - Utrecht Centraal",1,0,1,1233,1233,1233,100
+"Maastricht - Sittard, Nijmegen - Venlo, Roermond - Sittard, Roermond - Venlo",1,0,1,1344,1344,1344,100
+"Paris-Nord - Rotterdam Centraal (HSL)",1,0,1,733,733,733,100

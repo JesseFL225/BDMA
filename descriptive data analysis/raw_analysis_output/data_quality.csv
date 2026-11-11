@@ -1,0 +1,16 @@
+"check","count"
+"Rows",62540
+"Columns",15
+"Exact duplicate rows (after first occurrence)",0
+"Repeated nonmissing record IDs (after first occurrence)",0
+"Missing durations",111
+"Zero durations",827
+"Negative durations",0
+"Nonfinite nonmissing durations",0
+"Nonmissing start timestamps that fail parsing",0
+"Nonmissing end timestamps that fail parsing",0
+"End before start",0
+"Source year differs from start year",0
+"Duration differs from timestamp interval by more than 1 minute",12158
+"Positive durations over 24 hours",548
+"Positive durations over 7 days",46
