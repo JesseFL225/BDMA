@@ -1,0 +1,100 @@
+"group","records","pct_of_all_records","valid_duration_n","median_minutes","mean_minutes","total_recorded_minutes","pct_over_120_minutes"
+"broken down train",19121,30.57,18758,28,46.43,871005,8.05
+"signal failure",4946,7.91,4879,110,151.76,740434,44.6
+"points failure",4263,6.82,4198,102,142.27,597268,40.26
+"collision",3447,5.51,3406,106,123.51,420687,46.8
+"stranded train",2735,4.37,2659,28,51.22,136185,9.1
+"person hit by a train",2315,3.7,2295,158,163.82,375975,74.34
+"an emergency call",2092,3.35,2065,27,47.08,97228,8.18
+"repair works",1655,2.65,1631,124,387.81,632518,51.26
+"damaged overhead wires",1447,2.31,1420,184.5,336,477123,62.75
+"person on the railway track",1399,2.24,1376,28,33.32,45846,1.38
+"damaged railway bridge",1381,2.21,1366,80,153.05,209071,23.65
+"signalling and points failure",1108,1.77,1101,100,152.59,168006,41.96
+"an earlier disruption",1053,1.68,1049,111,166.96,175142,46.81
+"level crossing failure",1018,1.63,1005,87,121.4,122008,33.73
+"power failure",969,1.55,963,97,131.79,126916,40.19
+"problems with the rolling stock",962,1.54,952,329.5,840.08,799753,83.19
+"disruption elsewhere",950,1.52,931,116,189.61,176525,47.15
+"defective railway track",910,1.46,891,162,453.82,404356,58.81
+"signal and level crossing failure",827,1.32,825,101,138.64,114374,40.24
+"over-running engineering works",760,1.22,756,79,241.02,182212,36.64
+"technical investigation",692,1.11,689,55,68.42,47143,8.42
+"police action",638,1.02,630,32.5,55.44,34926,11.9
+"staffing problems",578,0.92,572,425.5,551.61,315520,91.26
+"logistical limitations",449,0.72,446,263,559.81,249675,71.75
+"railway problems abroad",371,0.59,368,127,380.7,140097,51.09
+"an animal on the railway track",353,0.56,343,43,48.33,16576,2.33
+"tree on the track",324,0.52,322,103.5,144.4,46498,41.3
+"weather circumstances",296,0.47,294,269.5,834.72,245407,74.49
+"fire alarm",293,0.47,288,43.5,67.53,19449,17.01
+"cause yet unknown",270,0.43,263,26,141.1,37110,30.04
+"garbage on the railway track",262,0.42,259,41,63.42,16426,12.74
+"deployment of the fire department",251,0.4,249,61,95.85,23866,22.49
+"people on the railway track",242,0.39,237,27,34.93,8278,2.95
+"strike",239,0.38,234,1086,1159.51,271326,88.89
+"problem in a tunnel",236,0.38,235,58,116.71,27428,18.72
+"unexpected engineering works",212,0.34,212,125.5,262.26,55600,51.42
+"collision with a vehicle",190,0.3,187,171,214.68,40145,69.52
+"(Missing)",185,0.3,185,167,572.09,105837,61.08
+"engineering works",179,0.29,174,264.5,593.36,103244,74.14
+"copper theft",175,0.28,175,177,303.17,53054,70.29
+"multiple disruptions",174,0.28,174,154,217.7,37880,62.64
+"system failure",171,0.27,171,95,131.22,22438,39.18
+"an obstruction on the line",170,0.27,170,62,91.46,15548,27.06
+"defective point",167,0.27,165,203,464.49,76641,62.42
+"slippery railway tracks",167,0.27,167,129,145.45,24290,57.49
+"lightning strike",152,0.24,146,177,229.01,33436,65.07
+"an object in the overhead wires",138,0.22,137,98,113.18,15506,31.39
+"person along the track",125,0.2,120,27.5,35.89,4307,1.67
+"defective trains",120,0.19,119,178,294.47,35042,70.59
+"hindrance on the railway",106,0.17,102,48,84.17,8585,18.63
+"lineside fire",102,0.16,102,40,55.05,5615,9.8
+"vehicle on the railway track",100,0.16,99,45,67.77,6709,10.1
+"strike of Arriva staff",85,0.14,85,1291,3109.44,264302,90.59
+"overhead wires covered with frost",71,0.11,70,117,162.61,11383,48.57
+"staking bij NS",71,0.11,71,1425,1365.94,96982,98.59
+"staff strikes abroad",66,0.11,66,936.5,2089,137874,93.94
+"strike at ProRail",66,0.11,63,330,320.65,20201,98.41
+"strong winds on the high speed line",64,0.1,63,161,195.75,12332,63.49
+"large signalling and points failure",54,0.09,52,130,176.98,9203,53.85
+"an amended timetable",48,0.08,46,980.5,1726.57,79422,89.13
+"damaged level crossing",47,0.08,47,65,93.7,4404,23.4
+"broken level crossing",46,0.07,46,119.5,138.41,6367,50
+"police investigation",41,0.07,41,38,67.24,2757,19.51
+"strike of Keolis staff",37,0.06,36,1267.5,2538.83,91398,100
+"vandalism",37,0.06,37,49,88.38,3270,16.22
+"people along the railway",30,0.05,30,23,27.43,823,0
+"collision with an animal",28,0.04,28,37.5,51.18,1433,10.71
+"dismantling a bomb from the Second World War",28,0.04,28,154.5,189.86,5316,53.57
+"emergency repairs",28,0.04,28,129.5,327.68,9175,53.57
+"large crowds",22,0.04,22,445.5,2882.32,63411,90.91
+"engineering works elsewhere",21,0.03,21,182,205.86,4323,71.43
+"flooding",18,0.03,18,302.5,2582.44,46484,55.56
+"shortage of train traffic controllers",15,0.02,15,433,600.27,9004,93.33
+"excessive delays",11,0.02,11,95,158.18,1740,36.36
+"the expected weather conditions",11,0.02,11,231,1375.91,15135,90.91
+"strike of Breng staff",10,0.02,10,872,1172.2,11722,100
+"strike of Connexxion staff",10,0.02,10,489,1200.8,12008,100
+"because of a change in the timetable",9,0.01,9,31,169.89,1529,33.33
+"fire in a train",9,0.01,8,93,114.75,918,25
+"ice formation on the overhead wires",8,0.01,8,289,321.25,2570,87.5
+"for security reasons",7,0.01,7,26,27,189,0
+"smoke in a train",7,0.01,7,27,81.14,568,14.29
+"strike of Qbuzz staff",6,0.01,6,1246,3887.67,23326,100
+"problems with the signalling system",5,0.01,5,122,153.8,769,60
+"service disruption",5,0.01,5,25,51.8,259,20
+"shortage of NS staff because of COVID-19",5,0.01,5,2587,2587.4,12937,100
+"deployment of security staff",4,0.01,4,26.5,26.5,106,0
+"derailed train",4,0.01,4,1448,1294.5,5178,100
+"storm damage",4,0.01,4,118,106.25,425,50
+"an event",3,0,3,64,157.33,472,33.33
+"necessary adjustment to the timetable",3,0,3,547,1078,3234,66.67
+"derailed cargo train",2,0,2,244,244,488,100
+"the construction of a new railway",2,0,1,3,3,3,0
+"the use of alternative train units",2,0,2,94.5,94.5,189,50
+"ice skating in the Thialf stadium",1,0,0,,,0,
+"large delays abroad",1,0,1,36,36,36,0
+"pilgrimage",1,0,1,2,2,2,0
+"snow",1,0,1,1173,1173,1173,100
+"the construction of a tunnel",1,0,1,2,2,2,0
