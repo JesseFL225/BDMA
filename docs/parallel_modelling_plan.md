@@ -9,27 +9,31 @@ Werktaal code/rapport: Engels. Dit document is een werkvoorstel, geen modelresul
 | Onderwerp | Voorstel voor vandaag |
 |---|---|
 | Vraag | Bij aanvang voorspellen in welk duurinterval een storing eindigt |
-| Dataset | Rootbestand `disruptions_2011_2025_clean.csv`, 44.248 rijen; geen eigen extra cleaning |
+| Dataset | `data/disruptions_2011_2025_clean.csv`, 44.248 rijen; geen eigen extra cleaning |
 | Startpunt | Commit `a78d13c`, of een gezamenlijk gecontroleerde opvolger op main |
 | Taal | R, passend bij het bestaande project |
 | Targetbron | `duration_minutes`; niet opnieuw eindtijd minus begintijd berekenen |
-| Tijdvakken | Voorstel: [0,10), [10,20), …, [110,120), [120,+∞). Eerst samen akkoord geven |
+| Tijdvakken | [0,10), [10,20), …, [1000,1010), [1010,+∞): 102 klassen |
 | Split | Train 2011–2023, validatie 2024, test 2025, conform aangeleverde tekst |
 | Seed | `set.seed(42)` |
 | Modelselectie | Laagste multiclass log loss op validatie; bij vrijwel gelijke resultaten eenvoud en stabiliteit meewegen |
 | Test | Pas openen voor modelevaluatie nadat modellen en instellingen definitief vaststaan |
 
-**Targetbesluit:** de voorgestelde laatste klasse betekent dat boven 120 minuten
-geen onderscheid per 10 minuten wordt gemaakt. Als jullie dat wél willen, maak
-dan overal 10-minutenklassen. Met de huidige bovengrens worden dat 144 klassen,
-waarbij alleen de laatste klasse [1430,1440] rechts gesloten is. Controleer lege
-of kleine trainingsklassen en leg die keuze vóór het trainen vast. Niet achteraf
-de target vereenvoudigen omdat testresultaten tegenvallen.
+**Targetbesluit bijgewerkt:** trek de 10-minutenklassen door totdat de restklasse
+het dichtst bij de gemiddelde grootte van alle voorgaande klassen ligt. Op alleen
+de training (2011–2023, 33.004 rijen) geeft dit een grens van **1010 minuten**.
+De restklasse bevat **322 rijen (0,98%)**, tegenover gemiddeld **323,58** in de
+overige 101 klassen. De eerdere restklasse ≥120 bevatte 9.274 rijen (28,1%).
 
-Op de huidige training (2011–2023, 33.004 rijen) bevat elk van de 12 vakken onder
-120 minuten minstens 789 voorbeelden. De verzamelklasse ≥120 bevat 9.274 rijen
-(28,1%). Dit ondersteunt een eerste 13-klassenexperiment, maar de verzamelklasse
-is aanzienlijk breder dan de overige klassen.
+Dit maakt niet alle klassen even groot: de mediaan van de gewone klassen is 34,
+het minimum 4 en het maximum 4.715. Een kleine restklasse bewijst geen statistische
+insignificantie. Verwacht moeilijke voorspellingen voor zeldzame lange tijdvakken.
+Wijzig de klassen niet afzonderlijk per model of op basis van de testresultaten.
+
+De keuze is reproduceerbaar met `moddeling/01_target/define_duration_classes.R`.
+De vaste klassevolgorde staat in `moddeling/01_target/output/classes.csv`;
+trainingsaantallen en alle kandidaatgrenzen staan in dezelfde map. De clean CSV
+wordt niet gewijzigd. Mart en Oliver gebruiken exact deze gedeelde definitie.
 
 Werk eerst de oude binaire target in Step 1, Step 3 en Step 5 bij. De binaire
 3:1-foutkosten, één kansdrempel en binaire PR-AUC zijn niet rechtstreeks de
@@ -38,7 +42,8 @@ datakolom; het is geen predictor van de nieuwe target.
 
 ## 2. Gedeeld contract — Mart beheert, Oliver reviewt
 
-Mart maakt `Predictive Analysis/shared/prepare_data.R` en `evaluate.R`.
+Mart maakt `moddeling/02_voorbereiding/prepare_data.R` en
+`moddeling/07_evaluatie/evaluate.R`.
 Beide modellenfolders importeren deze bestanden; niemand kopieert er een eigen
 variant van. Publiceer een kleine eerste versie na maximaal een uur, voordat
 Mart aan uitgebreide modeltuning begint.
@@ -67,9 +72,11 @@ krijgen. Eén rij blijft één storing, ook bij meerdere trajecten.
   komen: verwijder zulke grensoverschrijdende rijen uit die trainingsfold.
 
 Outputcontract per model: `rdt_id`, `split`, `model`, `feature_set`, `true_class`,
-`predicted_class`, plus `p_00_10`, …, `p_110_120`, `p_120_plus` bij de 13-klassenkeuze.
+`predicted_class`, plus `p_0000_0010`, …, `p_1000_1010`, `p_1010_plus`.
 Alle kansen zijn eindig, liggen tussen 0 en 1 en tellen per rij op tot 1.
-Bij een andere target moeten beide personen dezelfde afgesproken kolommen gebruiken.
+Gebruik de 102 klassen in `classes.csv`-volgorde. Als een klasse ontbreekt in een
+tuning-trainingsfold, spreek dan één beleid af voor die fold en alle modellen;
+renummer niet stilzwijgend de klasse-ID's. De uiteindelijke training bevat alle klassen.
 Sla daarnaast modelinstellingen, dataset-hash, seed en packageversies op.
 
 Dataset SHA-256 bij voorbereiding:
@@ -77,10 +84,11 @@ Dataset SHA-256 bij voorbereiding:
 
 ## 3. Mart — baselines, logistic regression en gedeelde evaluatie
 
-Bestanden onder `Predictive Analysis/mart/` en `Predictive Analysis/shared/`.
+Bestanden in `moddeling/02_voorbereiding/`, `03_baselines/`,
+`04_logistic_regression/` en `07_evaluatie/`.
 
 1. Implementeer en deel preprocessing, split en target met grenscontroles voor
-   9, 10, 19, 20, 119, 120 en 1440 minuten. Controleer hetzelfde ID-set bij beide personen.
+   9, 10, 19, 20, 1009, 1010 en 1440 minuten. Controleer hetzelfde ID-set bij beide personen.
 2. Maak een baseline met de trainingsfrequenties als constante kansverdeling.
    De voorspelde klasse is steeds de meest voorkomende trainingsklasse.
 3. Maak voor het archived-context experiment een oorzaakgroepbaseline met
@@ -99,7 +107,8 @@ voorspellingen door dezelfde evaluator kan sturen.
 
 ## 4. Oliver — random forest, boosting en foutanalyse
 
-Bestanden onder `Predictive Analysis/oliver/`.
+Bestanden in `moddeling/05_random_forest/`, `06_gradient_boosting/` en
+`08_foutanalyse/`.
 
 1. Terwijl Mart shared bouwt: maak modelscripts en kleine parametergrids die het
    afgesproken input/outputcontract gebruiken. Geen eigen cleaning schrijven.
@@ -130,7 +139,7 @@ Marts baselines en hun outputs onafhankelijk opnieuw te genereren zijn.
   ernaast. Dit is NIET hetzelfde als maximaal tien minuten fout. Bij de open
   eindklasse is klassenafstand geen vaste tijdsafstand; toon die klasse apart.
 - Rapporteer onder- en overschatting van de klasse. Verzin geen minuutfout met
-  125 minuten als representant voor alle storingen ≥120 minuten.
+  1015 minuten als representant voor alle storingen ≥1010 minuten.
 - Optioneel later: regressie op minuten, met MAE en daarna omzetting naar dezelfde
   tijdvakken. Vandaag eerst baseline plus drie vergelijkbare classifiers afronden.
 - Tuning: vaste, kleine grids op forward folds binnen training, bijvoorbeeld
@@ -161,7 +170,7 @@ trainen op 2017–2023 met de hoofdvariant, op dezelfde 2024-validatierijen.
   Commit scripts, kleine voorspeltabellen/metrics, figuren en korte teksten.
 - Aan het einde opent ieder een PR naar main; de ander reviewt. Mart eerst mergen
   vanwege shared, Oliver daarna main in zijn branch mergen en opnieuw controleren.
-- Maak pas daarna één `Predictive Analysis/run_all.R` (Mart eigenaar) en een
+- Maak pas daarna één `moddeling/run_all.R` (Mart eigenaar) en een
   eventueel gezamenlijk notebook dat de scripts aanroept; geen dubbele modellogica.
 
 ## 7. Tijdschema vanaf jullie startmoment
@@ -193,5 +202,34 @@ aanbeveling. Vul pas na de runs prestaties en conclusies in.
 - Multiclass log loss: https://yardstick.tidymodels.org/reference/mn_log_loss.html
 - Macro-F1: https://yardstick.tidymodels.org/reference/f_meas.html
 
-Plan opgesteld met AI-assistentie. Er zijn voor dit plan geen modellen getraind,
-branches aangemaakt, commits gemaakt of berichten aan Mart verzonden.
+Plan opgesteld met AI-assistentie. Het oorspronkelijke plan is naar main gepusht;
+de uitgebreidere targetdefinitie is lokaal berekend. Er zijn hiervoor geen modellen
+getraind of berichten aan Mart verzonden.
+
+## Verplichte documentatie per stap
+
+De map heet bewust `moddeling/`. Elke genummerde stap heeft een eigen
+`README.md`. Werk deze bij in dezelfde commit als de code/resultaten van die stap.
+Beschrijf doel, eigenaar, status, inputs en versies, wat daadwerkelijk is uitgevoerd,
+instellingen en motivatie, resultaten en outputbestanden, impact op het project,
+controles/beperkingen en de overdracht naar de volgende stap. Houd geplande acties
+en uitgevoerde acties uit elkaar; vermeld bij modelresultaten of het training,
+validatie of test betreft.
+
+| Stap | Eigenaar |
+|---|---|
+| `00_afspraken/` | Mart en Oliver |
+| `01_target/` | Mart, review Oliver |
+| `02_voorbereiding/` | Mart, review Oliver |
+| `03_baselines/` | Mart |
+| `04_logistic_regression/` | Mart |
+| `05_random_forest/` | Oliver |
+| `06_gradient_boosting/` | Oliver |
+| `07_evaluatie/` | Mart, review Oliver |
+| `08_foutanalyse/` | Oliver, review Mart |
+| `09_modelkeuze_en_test/` | Mart en Oliver |
+
+Sla code in de betreffende stapmap op en resultaten in een `output/`-submap.
+Voer scripts uit vanuit de BDMA-hoofdmap. Alleen cleaning mag de gedeelde clean
+CSV opnieuw opbouwen. Modelscripts lezen uit `data/` en schrijven daar niet naar.
+De bestaande `Data Cleaning/` en `descriptive data analysis/` blijven behouden.

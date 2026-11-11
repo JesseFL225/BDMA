@@ -5,8 +5,8 @@
 # Outputs: descriptive data analysis/raw_analysis_output/
 # The source CSV is read only; no observations are removed or overwritten.
 
-project_root <- if (file.exists("disruptions_2011_2025_raw.csv")) "." else ".."
-input_file <- file.path(project_root, "disruptions_2011_2025_raw.csv")
+project_root <- if (file.exists("data/disruptions_2011_2025_raw.csv")) "." else ".."
+input_file <- file.path(project_root, "data", "disruptions_2011_2025_raw.csv")
 output_dir <- file.path(project_root, "descriptive data analysis", "raw_analysis_output")
 if (!file.exists(input_file)) stop("Open the project folder before running this script.")
 dir.create(output_dir, showWarnings = FALSE)

@@ -6,8 +6,8 @@ Run from the BDMA project root (base R only):
 Rscript "Data Cleaning/clean_disruptions.R"
 ```
 
-This reads `disruptions_2011_2025_raw.csv` and regenerates the root file
-`disruptions_2011_2025_clean.csv`: 44,248 disruptions with the current input and settings.
+This reads `data/disruptions_2011_2025_raw.csv` and regenerates the file in data/
+`data/disruptions_2011_2025_clean.csv`: 44,248 disruptions with the current input and settings.
 The raw dataset is never overwritten.
 
 The `output` folder contains the step-by-step Dutch report, filter counts,

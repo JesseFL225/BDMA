@@ -1,6 +1,6 @@
 # Raw train disruption data: descriptive analysis
 
-Input: `./disruptions_2011_2025_raw.csv`. Contains 62,540 records and 15 variables. No raw records were removed.
+Input: `./data/disruptions_2011_2025_raw.csv`. Contains 62,540 records and 15 variables. No raw records were removed.
 
 ## Main findings
 

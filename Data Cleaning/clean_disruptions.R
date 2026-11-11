@@ -1,14 +1,14 @@
 # Reproducible, conservative domestic-disruption selection (base R only).
 # Run from the repository root: Rscript "Data Cleaning/clean_disruptions.R"
-# Raw input is NEVER overwritten. The root clean CSV is regenerated. All exclusions are logged.
+# Raw input is NEVER overwritten. The clean CSV in data/ is regenerated. All exclusions are logged.
 # An exclusion is not necessarily an error: scope and uncertainty are separate.
 
 MAX_DURATION_MINUTES <- 1440 # Analysis scope: at most 24 hours; not proof of error.
 MAX_DIFFERENCE_MINUTES <- 1 # Allows rounding to whole minutes.
 TIMEZONE <- "Europe/Amsterdam"
-INPUT <- "disruptions_2011_2025_raw.csv"
+INPUT <- "data/disruptions_2011_2025_raw.csv"
 OUTPUT <- "Data Cleaning/output"
-CLEAN_OUTPUT <- "disruptions_2011_2025_clean.csv"
+CLEAN_OUTPUT <- "data/disruptions_2011_2025_clean.csv"
 
 stopifnot(file.exists(INPUT))
 dir.create(OUTPUT, recursive = TRUE, showWarnings = FALSE)
@@ -203,7 +203,7 @@ report <- c("# Opschoning Nederlandse treinverstoringen", "",
  audit$description[i], audit$removed_this_step[i], audit$remaining_rows[i]), character(1)), "",
  "Een rij kan meerdere regels raken. De tabel telt iedere rij eenmaal, bij de eerste regel. `excluded_disruptions.csv` bewaart de originele waarden, CSV-rijnummer, eerste reden, alle redenen en gevonden buitenlandse namen.", "",
  "## Keuzes en beperkingen", "",
- "- Dit is een strenge, reproduceerbare analyseselectie, geen bewijs dat alle uitgesloten records onjuist zijn. De raw-data blijft behouden; de clean-CSV in de projectmap wordt opnieuw opgebouwd.",
+ "- Dit is een strenge, reproduceerbare analyseselectie, geen bewijs dat alle uitgesloten records onjuist zijn. De raw-data blijft behouden; de clean-CSV in data/ wordt opnieuw opgebouwd.",
  sprintf("- Maximumduur: %s minuten. Zowel de opgegeven als de berekende duur moet binnen de grens vallen. Langdurige brugschade, stakingen en weersproblemen kunnen echte incidenten zijn. Deze selectie voorspelt alleen binnen de geselecteerde duurpopulatie; bij aanvang weet je nog niet of een storing langer dan 24 uur duurt. Evalueer voor inzet ook op alle geldige duren.", MAX_DURATION_MINUTES),
  sprintf("- Een duurverschil groter dan %s minuut leidt tot uitsluiting, niet tot een verzonnen correctie. Dit verwijdert vooral vroege jaren en verandert de populatie. Zie `yearly_retention.csv` en `threshold_sensitivity.csv`.", MAX_DIFFERENCE_MINUTES),
  "- Binnenlands betekent: alle gestandaardiseerde trajecteindpunten staan op de expliciete Nederlandse lijst, en geen buitenlandse naam is gevonden in de locatievelden. Een gemengd binnenlands/internationaal record gaat volledig eruit. Dit is een bewuste, conservatieve afbakening; het bewijst niet dat de feitelijke storing over de grens lag.",
@@ -214,7 +214,7 @@ report <- c("# Opschoning Nederlandse treinverstoringen", "",
  "- Target: duration_minutes > 60. De oorspronkelijke statistische oorzaak blijft voor inspectie aanwezig, maar hoort niet in modelpredictoren. Ook eindtijd en alle duurvelden zijn geen predictoren. De laatste oorzaak kan eveneens informatie van na de start bevatten.",
  "- Geen automatische verwijdering van echte storingsgroepen zoals werkzaamheden, stakingen of onbekende oorzaken. Geen IQR-filter: dat zou juist lange storingen uit de te voorspellen klasse verwijderen.", "",
  "## Uitvoeren", "", "```sh", "Rscript \"Data Cleaning/clean_disruptions.R\"", "```", "",
- "Alleen base R nodig. Grenzen en lijsten staan bovenaan/in het script. Het script controleert totalen, IDs, filters, target en de opgeslagen CSV. Outputs en disruptions_2011_2025_clean.csv worden bij opnieuw uitvoeren vervangen; de raw-bron niet.", "",
+ "Alleen base R nodig. Grenzen en lijsten staan bovenaan/in het script. Het script controleert totalen, IDs, filters, target en de opgeslagen CSV. Outputs en data/disruptions_2011_2025_clean.csv worden bij opnieuw uitvoeren vervangen; de raw-bron niet.", "",
  "Brondefinities en beperkingen: https://www.rijdendetreinen.nl/open-data/treinstoringen",
  "Bronvermelding dataset: Rijden de Treinen, CC BY 4.0. Opschoonscript opgesteld met AI-assistentie.")
 writeLines(report, file.path(OUTPUT, "cleaning_report.md"), useBytes = TRUE)
