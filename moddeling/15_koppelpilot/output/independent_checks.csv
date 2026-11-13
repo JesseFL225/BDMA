@@ -1,0 +1,5 @@
+check,passed
+Every feature row reproduces its original first XML message,True
+One-to-one provisional links,True
+Coverage denominators reconcile,True
+No backdating of first-receipt prediction time,True

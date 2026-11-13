@@ -20,6 +20,16 @@ above one minute. These are explicit analysis choices, not proof that every
 excluded event is erroneous. In particular, they substantially reduce pre-2017
 coverage and exclude genuine long events. See `output/cleaning_report.md`.
 
+Describe how the clean data differ by year (retention, median duration, share
+over 60 minutes, cause mix); writes `output/yearly_profile.csv`:
+
+```sh
+python3 "Data Cleaning/yearly_profile.py"
+```
+
+Note: the `long_disruption` column (duration > 60) stems from the original binary
+plan. The modelling target is the 102-class duration target in `moddeling/01_target/`.
+
 Run validation, including rebuilding the outputs:
 
 ```sh

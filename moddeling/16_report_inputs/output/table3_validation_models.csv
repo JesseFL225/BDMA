@@ -1,0 +1,13 @@
+"feature_set","model","log_loss","gain_over_baseline","exact_class","within_one_class","rps"
+"time_only","Survival, 2017–2023",3.1905,0.0403,0.1193,0.23,0.05566
+"time_only","Survival, 2011–2023",3.1935,0.0374,0.1193,0.23,0.0558
+"time_only","Random forest",3.2139,0.017,0.1174,0.2332,0.056
+"time_only","Logistic regression",3.2173,0.0136,0.1178,0.2351,0.05782
+"time_only","Multiclass XGBoost",3.2195,0.0114,0.1186,0.2317,0.05716
+"time_only","Global frequency baseline",3.2309,0,0.1173,0.2285,0.05926
+"archived_context","Random forest",3.0591,0.0125,0.1231,0.2657,0.04991
+"archived_context","Survival, 2017–2023",3.0627,0.0089,0.1186,0.2296,0.0504
+"archived_context","Survival, 2011–2023",3.0678,0.0038,0.1188,0.2298,0.05052
+"archived_context","Cause-group baseline",3.0716,0,0.1178,0.2713,0.05114
+"archived_context","Logistic regression",3.082,-0.0105,0.1276,0.2796,0.05118
+"archived_context","Multiclass XGBoost",3.0844,-0.0128,0.1163,0.2844,0.05142

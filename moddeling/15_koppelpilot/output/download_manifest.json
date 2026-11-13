@@ -1,0 +1,110 @@
+[
+  {
+    "kind": "InfoPlusPIL",
+    "day": "2017-11-09",
+    "url": "https://trein.fwrite.org/dedup/2017-11/InfoPlusPIL_2017-11-09.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusPIL_2017-11-09.csv.xz",
+    "status": "ok",
+    "bytes": 15476,
+    "sha256": "04a6c448f77bfcfbb2b583e3476fa17e45e44b07ae6ea64fad1f5238efb61b22"
+  },
+  {
+    "kind": "InfoPlusVTBL",
+    "day": "2017-11-09",
+    "url": "https://trein.fwrite.org/dedup/2017-11/InfoPlusVTBL_2017-11-09.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusVTBL_2017-11-09.csv.xz",
+    "status": "ok",
+    "bytes": 4440,
+    "sha256": "80766af9042b113e31e2702359137acdac27cb810e2a478b442a14542950f875"
+  },
+  {
+    "kind": "InfoPlusPIL",
+    "day": "2017-11-10",
+    "url": "https://trein.fwrite.org/dedup/2017-11/InfoPlusPIL_2017-11-10.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusPIL_2017-11-10.csv.xz",
+    "status": "ok",
+    "bytes": 10780,
+    "sha256": "f35fec9077f166cd33ea7efc351d826b1ddc2331c83615a7c957ffc7ede29116"
+  },
+  {
+    "kind": "InfoPlusVTBL",
+    "day": "2017-11-10",
+    "url": "https://trein.fwrite.org/dedup/2017-11/InfoPlusVTBL_2017-11-10.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusVTBL_2017-11-10.csv.xz",
+    "status": "ok",
+    "bytes": 5868,
+    "sha256": "8a22cf47ad5c66f32d84d91983bbd8332087bd97f9d6b7a9fcd9dfa5e7010954"
+  },
+  {
+    "kind": "InfoPlusPIL",
+    "day": "2020-11-09",
+    "url": "https://trein.fwrite.org/dedup/2020-11/InfoPlusPIL_2020-11-09.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusPIL_2020-11-09.csv.xz",
+    "status": "ok",
+    "bytes": 33760,
+    "sha256": "c3562d3a537282e8ce2c67cf5423bcfbd70843b415e440bc5c41485f580a9108"
+  },
+  {
+    "kind": "InfoPlusVTBL",
+    "day": "2020-11-09",
+    "url": "https://trein.fwrite.org/dedup/2020-11/InfoPlusVTBL_2020-11-09.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusVTBL_2020-11-09.csv.xz",
+    "status": "ok",
+    "bytes": 1768,
+    "sha256": "fba3134962fc9b427cf6a874ec6f9b844ea6d0009515cadfd78ed5e4a54bad96"
+  },
+  {
+    "kind": "InfoPlusPIL",
+    "day": "2020-11-10",
+    "url": "https://trein.fwrite.org/dedup/2020-11/InfoPlusPIL_2020-11-10.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusPIL_2020-11-10.csv.xz",
+    "status": "ok",
+    "bytes": 37580,
+    "sha256": "7681cb85e8cb535d24768aa42d97e68226f1fc016b27daa1637cb367358d8c85"
+  },
+  {
+    "kind": "InfoPlusVTBL",
+    "day": "2020-11-10",
+    "url": "https://trein.fwrite.org/dedup/2020-11/InfoPlusVTBL_2020-11-10.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusVTBL_2020-11-10.csv.xz",
+    "status": "ok",
+    "bytes": 1536,
+    "sha256": "973e6b756b6f53d1d2818e9f5a9d57d6bd59cc5f13033dbed2058fd921bfd80e"
+  },
+  {
+    "kind": "InfoPlusPIL",
+    "day": "2023-11-09",
+    "url": "https://trein.fwrite.org/dedup/2023-11/InfoPlusPIL_2023-11-09.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusPIL_2023-11-09.csv.xz",
+    "status": "ok",
+    "bytes": 22292,
+    "sha256": "5b1d3e8d036b127ca688bb73c83dd3a9333d32c28fbc2bb21c5f958a8884be74"
+  },
+  {
+    "kind": "InfoPlusVTBL",
+    "day": "2023-11-09",
+    "url": "https://trein.fwrite.org/dedup/2023-11/InfoPlusVTBL_2023-11-09.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusVTBL_2023-11-09.csv.xz",
+    "status": "ok",
+    "bytes": 2404,
+    "sha256": "40a599598bad5693feb24dd777ffb837ddaad01fb04f2f7db64d5bf76fc625c1"
+  },
+  {
+    "kind": "InfoPlusPIL",
+    "day": "2023-11-10",
+    "url": "https://trein.fwrite.org/dedup/2023-11/InfoPlusPIL_2023-11-10.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusPIL_2023-11-10.csv.xz",
+    "status": "ok",
+    "bytes": 34120,
+    "sha256": "b4548f93d38055d98305b9f0357a8298cb4c3716a40345edae9e7d7fc1171732"
+  },
+  {
+    "kind": "InfoPlusVTBL",
+    "day": "2023-11-10",
+    "url": "https://trein.fwrite.org/dedup/2023-11/InfoPlusVTBL_2023-11-10.csv.xz",
+    "path": "data/external/ndov_pilot/InfoPlusVTBL_2023-11-10.csv.xz",
+    "status": "ok",
+    "bytes": 2124,
+    "sha256": "6d704195884dcb50297a76e3aaa726b95e30cd5cd4e236868443d78655c099d1"
+  }
+]

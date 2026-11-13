@@ -1,0 +1,5 @@
+check,passed
+Frozen test source/model/data hashes unchanged,True
+Only prespecified 2017/2020/2023 pilot dates retained,True
+Accepted links one-to-one,True
+Zero XML parse errors,True

@@ -1,0 +1,9 @@
+"check","passed"
+"2025 outcomes stay locked",TRUE
+"time_only saved model reproduces predictions",TRUE
+"time_only saved CSV reproduces metrics",TRUE
+"time_only fit IDs match training cohort",TRUE
+"archived_context saved model reproduces predictions",TRUE
+"archived_context saved CSV reproduces metrics",TRUE
+"archived_context fit IDs match training cohort",TRUE
+"Dataset and Mart-owned steps unchanged",TRUE

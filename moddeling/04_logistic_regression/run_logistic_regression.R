@@ -86,7 +86,6 @@ if(!identical(before,tools::md5sum(protected)))stop("Protected files changed.")
 checks<-rbind(checks,data.frame(check="Clean dataset and all files in Steps 01, 02, 03 and 07 unchanged",result="PASS"))
 write.csv(checks,file.path(output,"validation_checks.csv"),row.names=FALSE)
 source("moddeling/04_logistic_regression/plot_results.R")
-source("moddeling/04_logistic_regression/write_report.R")
 write.csv(data.frame(feature_set=features,n_train=vapply(models,`[[`,integer(1),"n_train"),
  convergence_code=vapply(models,`[[`,integer(1),"convergence_code"),
  passes=vapply(models,`[[`,integer(1),"passes")),file.path(output,"fit_diagnostics.csv"),row.names=FALSE)

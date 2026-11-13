@@ -1,0 +1,4 @@
+day,clean_disruptions,unique_provisional,ambiguous,no_candidate,initial_evidence,cause_available,impact_available,forecast_time_available,exact_start_available,cause_changed
+2017-11-10,7,7,0,0,7,7,7,2,0,2
+2020-11-10,18,17,0,1,15,17,17,4,9,0
+2023-11-10,17,16,1,0,16,16,16,16,0,3

@@ -1,0 +1,7 @@
+"feature_set","selected","comparator","log_loss_difference","lower_95","upper_95","days","replicates"
+"time_only","forest_time","logistic_time",-0.00336855514289022,-0.013588344060706,0.00608511606411117,366,500
+"time_only","forest_time","boosting_time",-0.00558423043068682,-0.016064014117886,0.00319881479755421,366,500
+"time_only","forest_time","global",-0.016964990337307,-0.0311944959512706,-0.00407327454734707,366,500
+"archived_context","forest_context","cause",-0.0124906306352033,-0.0209406625686226,-0.00368208058918747,366,500
+"archived_context","forest_context","logistic_context",-0.022963777095597,-0.0325254815223377,-0.014206920544745,366,500
+"archived_context","forest_context","boosting_context",-0.0253385365055601,-0.0382748472310216,-0.0142833424064187,366,500

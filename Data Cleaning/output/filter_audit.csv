@@ -1,13 +1,13 @@
 "step","rule","description","input_rows","matching_all_raw","removed_this_step","remaining_rows"
-1,"exact_duplicate","Exact dubbele rijen",62540,0,0,62540
-2,"invalid_or_conflicting_id","Ongeldige of conflicterende IDs",62540,0,0,62540
-3,"test_message","Testberichten",62540,1,1,62539
-4,"information_message","Informatie- en vervolgberichten",62539,49,49,62490
-5,"international_route","Buitenlands traject of station",62490,5078,5078,57412
-6,"unresolved_route","Traject niet betrouwbaar te classificeren",57412,1175,999,56413
-7,"invalid_or_ambiguous_time","Ontbrekende/ongeldige/ambigue tijd",56413,113,98,56315
-8,"invalid_duration","Ontbrekende, niet-eindige of niet-positieve duur",56315,938,692,55623
-9,"end_not_after_start","Einde niet na begin",55623,590,0,55623
-10,"invalid_source_year","Ongeldig of inconsistent bronjaar",55623,0,0,55623
-11,"duration_over_limit","Opgegeven of berekende duur boven 24 uur",55623,556,344,55279
-12,"duration_mismatch","Duurverschil groter dan 1 minuut",55279,12150,11031,44248
+1,"exact_duplicate","Exact duplicate rows",62540,0,0,62540
+2,"invalid_or_conflicting_id","Invalid or conflicting IDs",62540,0,0,62540
+3,"test_message","Test messages",62540,1,1,62539
+4,"information_message","Information and follow-up messages",62539,49,49,62490
+5,"international_route","Foreign route or station",62490,5078,5078,57412
+6,"unresolved_route","Route cannot be classified reliably",57412,1175,999,56413
+7,"invalid_or_ambiguous_time","Missing/invalid/ambiguous time",56413,113,98,56315
+8,"invalid_duration","Missing, non-finite or non-positive duration",56315,938,692,55623
+9,"end_not_after_start","End not after start",55623,590,0,55623
+10,"invalid_source_year","Invalid or inconsistent source year",55623,0,0,55623
+11,"duration_over_limit","Reported or calculated duration above 24 hours",55623,556,344,55279
+12,"duration_mismatch","Duration difference above 1 minute",55279,12150,11031,44248

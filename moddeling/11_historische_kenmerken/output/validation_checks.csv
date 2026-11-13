@@ -1,0 +1,9 @@
+"check","passed"
+"Synthetic history edge cases",TRUE
+"All development rows strictly as-of",TRUE
+"2025 outcomes unavailable",TRUE
+"Step 10 dataset/cohort/truth match",TRUE
+"time_only serialized predictions match",TRUE
+"archived_context serialized predictions match",TRUE
+"Saved CSV reproduces metrics",TRUE
+"Data and Steps 01–10 unchanged",TRUE

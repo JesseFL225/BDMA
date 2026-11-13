@@ -1,0 +1,43 @@
+rdt_id,start_time,rdt_station_codes,ns_lines,cause_nl,status,candidate_count,dossier,publication_delta_seconds,available_delta_seconds,station_overlap_coefficient
+19450,2017-11-10T04:37:05Z,"AMF, BRN, HVS",Hilversum-Amersfoort,defecte trein,unique_provisional,1,101971,0.0,34.544,1.0
+19451,2017-11-10T08:57:54Z,"GDG, WD",Utrecht-Gouda; Breukelen-Gouda,herstelwerkzaamheden,unique_provisional,1,101972,0.0,11.638,1.0
+19452,2017-11-10T11:16:26Z,"ASD, ASS",Amsterdam-Zaandam-Alkmaar; Amsterdam-Schiphol,onverwachte werkzaamheden,unique_provisional,1,101973,0.0,10.619,1.0
+19453,2017-11-10T14:53:29Z,"ASD, ASDL, ASS, HAD, HFD, HIL, HLM, HLMS, KMA, LEDN, NVP, SHL, UTG, VH, WM, ZD, SSH, HWZB, KZ, ZZS",Amsterdam-Schiphol-Leiden; Amsterdam-Uitgeest,seinstoring,unique_provisional,1,101974,0.0,14.76,1.0
+19454,2017-11-10T15:51:07Z,"BET, BTL, EHV, OT, TB, EHS",Tilburg-Eindhoven,defecte trein,unique_provisional,1,101975,0.0,13.897,1.0
+19455,2017-11-10T18:05:20Z,"ASD, ASS, BKF, BKG, EKZ, HKS, HN, HNK, PMO, PMR, PMW, ZD, ZDK",Amsterdam-Enkhuizen,verstoring elders,unique_provisional,1,101976,0.0,10.616,1.0
+19456,2017-11-10T21:15:07Z,"GV, GVMW",Den Haag-Rotterdam,defecte trein,unique_provisional,1,101977,0.0,16.019,1.0
+35076,2020-11-10T07:06:23Z,"HDE, WZ, ZL",Amersfoort-Zwolle,defecte trein,unique_provisional,1,6008046,0.0,3.0,1.0
+35078,2020-11-10T08:19:40Z,"ALM, ALMM, ASDZ, DMNZ, DVD, HFD, LEDN, NVP, RAI, SHL, WP, SSH, AMPO",Leiden-Duivendrecht-Lelystad,wisselstoring,unique_provisional,1,6008048,0.0,7.0,1.0
+35080,2020-11-10T11:41:23Z,"MP, ZL",Zwolle-Groningen; Zwolle-Leeuwarden,seinstoring,unique_provisional,1,6008050,0.0,1.0,1.0
+35081,2020-11-10T11:58:59Z,"DL, ZL",Zwolle-Emmen,seinstoring,unique_provisional,1,6008051,0.0,1.0,1.0
+35082,2020-11-10T12:38:57Z,"HFD, LEDN, NVP, SSH",Amsterdam-Schiphol-Leiden; Leiden-Duivendrecht-Lelystad,defecte trein,unique_provisional,1,6008052,0.0,0.0,1.0
+35083,2020-11-10T12:42:54Z,"RTD, SHL",Schiphol-Rotterdam (HSL),verstoring elders,unique_provisional,1,6008053,0.0,0.0,1.0
+35084,2020-11-10T14:24:37Z,"BKF, BKG, EKZ",Amsterdam-Enkhuizen,defecte trein,unique_provisional,1,6008054,0.0,0.0,1.0
+35085,2020-11-10T15:11:07Z,"PMO, PMR, PMW, ZD, ZDK",Amsterdam Sloterdijk-Hoorn Kersenboogerd,defecte spoorbrug,unique_provisional,1,6008055,0.0,0.0,1.0
+35086,2020-11-10T15:49:03Z,"AH, ED, OTB, WF",Ede-Wageningen-Arnhem,gestrande trein,unique_provisional,1,6008056,0.0,1.0,1.0
+35087,2020-11-10T16:10:04Z,"HFD, SHL",Amsterdam-Hoofddorp,gestrande trein,unique_provisional,1,6008057,0.0,1.0,1.0
+35088,2020-11-10T16:11:44Z,"ALM, ALMM, BSMZ, HVS, NDB, WP, AMPO, HVSM",Utrecht-Almere,defecte trein,unique_provisional,1,6008058,0.0,0.0,0.875
+35089,2020-11-10T17:45:32Z,"AKM, HR",Meppel-Leeuwarden,aanrijding,unique_provisional,1,6008059,0.0,1.0,1.0
+35090,2020-11-10T18:52:56Z,"AMF, APD",Amersfoort-Deventer,stroomstoring,no_candidate,0,,,,
+35091,2020-11-10T19:03:35Z,"AMF, BNC, BNN, HVL",Amersfoort-Ede-Wageningen,stroomstoring,unique_provisional,1,6008061,0.0,0.0,1.0
+35092,2020-11-10T20:06:04Z,"MP, ZL",Zwolle-Groningen,seinstoring,unique_provisional,1,6008064,0.0,0.0,1.0
+35093,2020-11-10T20:06:31Z,"HFD, LEDN, NVP, SSH",Schiphol-Leiden,beschadigde spoorbrug,unique_provisional,1,6008065,0.0,0.0,1.0
+35094,2020-11-10T21:30:48Z,"EC, RM, SRN, STD",Roermond-Sittard,defecte trein,unique_provisional,1,6008066,0.0,1.0,1.0
+35095,2020-11-10T21:32:17Z,"TG, VL",Venlo-Roermond,defecte trein,unique_provisional,1,6008067,0.0,0.0,1.0
+50475,2023-11-10T04:00:17Z,NM,Nijmegen,seinstoring,unique_provisional,1,6026863,0.664,1.0,1.0
+50476,2023-11-10T05:34:10Z,"GDM, TL, TPSW",Utrecht-Tiel,wisselstoring,unique_provisional,1,6026864,0.485,1.0,1.0
+50477,2023-11-10T08:33:25Z,"BD, RTD",Rotterdam-Breda (HSL),defecte trein,unique_provisional,1,6026868,0.064,0.064,1.0
+50478,2023-11-10T09:04:09Z,"BRD, DDR, DDZD, ODB, RLB, RSD, RTB, RTD, RTST, RTZ, ZLW, ZVB, ZWD",Rotterdam-Dordrecht; Dordrecht-Roosendaal,defecte trein,unique_provisional,1,6026869,0.583,1.0,1.0
+50479,2023-11-10T09:26:09Z,"ARN, BGN, BZL, GS, KBD, KRG, MDB, RB, RSD, VS, VSS",Roosendaal-Vlissingen,seinstoring,unique_provisional,1,6026870,0.341,0.341,1.0
+50480,2023-11-10T09:35:08Z,"GDM, TL, TPSW",Utrecht-Tiel,wisselstoring,unique_provisional,1,6026871,0.517,0.517,1.0
+50482,2023-11-10T11:54:53Z,"AML, DV, DVC, HON, RSN, WDN",Deventer-Almelo,defecte trein,unique_provisional,1,6026873,0.306,1.0,1.0
+50483,2023-11-10T13:50:26Z,"ASD, ASDL, ASS, RTD, SHL",Amsterdam-Schiphol-Rotterdam (HSL),defecte trein,unique_provisional,1,6026875,0.342,1.0,0.6666666666666666
+50484,2023-11-10T13:51:44Z,"BD, RTD",Rotterdam-Breda (HSL),defecte trein,unique_provisional,1,6026876,0.042,0.042,1.0
+50485,2023-11-10T13:59:21Z,"GVC, GVM, LAA",Amsterdam Zuid-Den Haag,stroomstoring,unique_provisional,1,6026877,0.489,1.0,1.0
+50486,2023-11-10T15:18:05Z,"DDR, DDRS, SDT, SDTB",Dordrecht-Geldermalsen,aanrijding,unique_provisional,1,6026879,0.281,0.281,1.0
+50488,2023-11-10T17:37:01Z,"BTL, HT, VG",'s-Hertogenbosch-Eindhoven,aanrijding,unique_provisional,1,6026881,0.79,1.0,1.0
+50490,2023-11-10T17:39:04Z,"BD, GZ, TB, TBR, TBU",Breda-'s-Hertogenbosch,storing in een tunnel,unique_provisional,1,6026883,0.823,1.0,1.0
+50491,2023-11-10T17:39:11Z,"DT, DTCP, GV, GVC, GVMW, RSW, RTD, SDM",Den Haag-Rotterdam,storing in een tunnel,ambiguous,2,,,,
+50492,2023-11-10T20:10:40Z,"BD, RTD",Rotterdam-Breda (HSL),defecte trein,unique_provisional,1,6026886,0.31,0.31,1.0
+50493,2023-11-10T20:40:25Z,"AH, AHP, AHPR, DR, RH, VP",Arnhem-Zutphen,rommel op het spoor,unique_provisional,1,6026887,0.761,1.0,1.0
+50494,2023-11-10T21:13:36Z,"BMN, DR, ZP",Arnhem-Zutphen,aanrijding,unique_provisional,1,6026888,0.773,1.0,1.0

@@ -1,0 +1,7 @@
+"check","passed"
+"Hand-calculated metric fixture",TRUE
+"2025 outcomes locked",TRUE
+"time_only saved model reproduces predictions",TRUE
+"archived_context saved model reproduces predictions",TRUE
+"Saved predictions reproduce metrics",TRUE
+"Data and Steps 01–09 unchanged",TRUE

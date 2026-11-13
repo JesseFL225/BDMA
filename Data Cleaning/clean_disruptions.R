@@ -126,12 +126,12 @@ flags <- data.frame(
  duration_mismatch = is.finite(difference) & abs(difference) > MAX_DIFFERENCE_MINUTES
 )
 flags[is.na(flags)] <- TRUE # Fail closed for unresolved validity checks.
-labels <- c("Exact dubbele rijen", "Ongeldige of conflicterende IDs", "Testberichten",
- "Informatie- en vervolgberichten", "Buitenlands traject of station",
- "Traject niet betrouwbaar te classificeren", "Ontbrekende/ongeldige/ambigue tijd",
- "Ontbrekende, niet-eindige of niet-positieve duur", "Einde niet na begin",
- "Ongeldig of inconsistent bronjaar", "Opgegeven of berekende duur boven 24 uur",
- "Duurverschil groter dan 1 minuut")
+labels <- c("Exact duplicate rows", "Invalid or conflicting IDs", "Test messages",
+ "Information and follow-up messages", "Foreign route or station",
+ "Route cannot be classified reliably", "Missing/invalid/ambiguous time",
+ "Missing, non-finite or non-positive duration", "End not after start",
+ "Invalid or inconsistent source year", "Reported or calculated duration above 24 hours",
+ "Duration difference above 1 minute")
 active <- rep(TRUE, n)
 first_reason <- rep(NA_character_, n)
 audit <- data.frame()
@@ -194,29 +194,29 @@ write(endpoint_audit, "endpoint_classification.csv")
 write(sensitivity, "threshold_sensitivity.csv")
 saved <- read.csv(CLEAN_OUTPUT, colClasses = "character")
 stopifnot(nrow(saved) == nrow(clean), identical(saved$rdt_id, clean$rdt_id))
-report <- c("# Opschoning Nederlandse treinverstoringen", "",
- sprintf("Bron: `%s` (MD5: `%s`).", INPUT, unname(tools::md5sum(INPUT))),
- sprintf("Van **%s** raw-rijen naar **%s** geselecteerde storingen. **%s** rijen apart gezet.", n, nrow(clean), nrow(excluded)), "",
- "## Stappen en aantallen", "",
- "| Stap | Regel | Verwijderd in deze stap | Over |", "|---|---|---:|---:|",
+report <- c("# Cleaning of Dutch train disruptions", "",
+ sprintf("Source: `%s` (MD5: `%s`).", INPUT, unname(tools::md5sum(INPUT))),
+ sprintf("From **%s** raw rows to **%s** selected disruptions. **%s** rows set aside.", n, nrow(clean), nrow(excluded)), "",
+ "## Steps and counts", "",
+ "| Step | Rule | Removed in this step | Remaining |", "|---|---|---:|---:|",
  vapply(seq_len(nrow(audit)), function(i) sprintf("| %s | %s | %s | %s |", i,
  audit$description[i], audit$removed_this_step[i], audit$remaining_rows[i]), character(1)), "",
- "Een rij kan meerdere regels raken. De tabel telt iedere rij eenmaal, bij de eerste regel. `excluded_disruptions.csv` bewaart de originele waarden, CSV-rijnummer, eerste reden, alle redenen en gevonden buitenlandse namen.", "",
- "## Keuzes en beperkingen", "",
- "- Dit is een strenge, reproduceerbare analyseselectie, geen bewijs dat alle uitgesloten records onjuist zijn. De raw-data blijft behouden; de clean-CSV in data/ wordt opnieuw opgebouwd.",
- sprintf("- Maximumduur: %s minuten. Zowel de opgegeven als de berekende duur moet binnen de grens vallen. Langdurige brugschade, stakingen en weersproblemen kunnen echte incidenten zijn. Deze selectie voorspelt alleen binnen de geselecteerde duurpopulatie; bij aanvang weet je nog niet of een storing langer dan 24 uur duurt. Evalueer voor inzet ook op alle geldige duren.", MAX_DURATION_MINUTES),
- sprintf("- Een duurverschil groter dan %s minuut leidt tot uitsluiting, niet tot een verzonnen correctie. Dit verwijdert vooral vroege jaren en verandert de populatie. Zie `yearly_retention.csv` en `threshold_sensitivity.csv`.", MAX_DIFFERENCE_MINUTES),
- "- Binnenlands betekent: alle gestandaardiseerde trajecteindpunten staan op de expliciete Nederlandse lijst, en geen buitenlandse naam is gevonden in de locatievelden. Een gemengd binnenlands/internationaal record gaat volledig eruit. Dit is een bewuste, conservatieve afbakening; het bewijst niet dat de feitelijke storing over de grens lag.",
- "- Ontbrekende of onbekende gestandaardiseerde trajecten worden apart gezet: de vrije NS-tekst is niet betrouwbaar genoeg om automatisch binnenlandse eindpunten te garanderen. Onbekende toekomstige eindpunten worden nooit automatisch Nederlands.",
- "- Testberichten worden expliciet herkend. Reisplannerproblemen, informatieberichten en toelichtingen worden apart gezet; die kunnen anders dubbel tellen naast een oorspronkelijke storing. De exacte patronen staan in het script. Niet-herkenbare testberichten zijn zonder verdere broninformatie niet gegarandeerd detecteerbaar.",
- "- Ontbrekende station- en oorzaakgegevens blijven NA, met indicatoren. Er worden geen stations of oorzaken verzonnen. Alleen een ontbrekende cause_group krijgt unknown. Alle rijen met NA verwijderen zou onnodig historische data weggooien.",
- "- Lokale brontijden worden geïnterpreteerd als Europe/Amsterdam. Niet-bestaande en dubbelzinnige zomertijd/wintertijdmomenten gaan ter controle apart. Outputtijdstippen staan in UTC; maand, weekdag (maandag=1) en uur blijven lokaal.",
- "- Target: duration_minutes > 60. De oorspronkelijke statistische oorzaak blijft voor inspectie aanwezig, maar hoort niet in modelpredictoren. Ook eindtijd en alle duurvelden zijn geen predictoren. De laatste oorzaak kan eveneens informatie van na de start bevatten.",
- "- Geen automatische verwijdering van echte storingsgroepen zoals werkzaamheden, stakingen of onbekende oorzaken. Geen IQR-filter: dat zou juist lange storingen uit de te voorspellen klasse verwijderen.", "",
- "## Uitvoeren", "", "```sh", "Rscript \"Data Cleaning/clean_disruptions.R\"", "```", "",
- "Alleen base R nodig. Grenzen en lijsten staan bovenaan/in het script. Het script controleert totalen, IDs, filters, target en de opgeslagen CSV. Outputs en data/disruptions_2011_2025_clean.csv worden bij opnieuw uitvoeren vervangen; de raw-bron niet.", "",
- "Brondefinities en beperkingen: https://www.rijdendetreinen.nl/open-data/treinstoringen",
- "Bronvermelding dataset: Rijden de Treinen, CC BY 4.0. Opschoonscript opgesteld met AI-assistentie.")
+ "A row can match several rules. The table counts each row once, at the first rule it matches. `excluded_disruptions.csv` keeps the original values, CSV row number, first reason, all reasons and any foreign names found.", "",
+ "## Choices and limitations", "",
+ "- This is a strict, reproducible analysis selection, not proof that every excluded record is wrong. The raw data are preserved; the clean CSV in data/ is rebuilt.",
+ sprintf("- Maximum duration: %s minutes. Both the reported and the calculated duration must be within the limit. Long bridge damage, strikes and weather problems can be genuine incidents. This selection only predicts within the selected duration population; at onset you do not yet know whether a disruption will last longer than 24 hours. For deployment, also evaluate on all valid durations.", MAX_DURATION_MINUTES),
+ sprintf("- A duration difference above %s minute leads to exclusion, not to an invented correction. This mainly removes early years and changes the population. See `yearly_retention.csv`, `yearly_profile.csv` and `threshold_sensitivity.csv`.", MAX_DIFFERENCE_MINUTES),
+ "- Domestic means: all standardised route endpoints are on the explicit Dutch list, and no foreign name is found in the location fields. A mixed domestic/international record is excluded entirely. This is a deliberate, conservative scope; it does not prove that the actual disruption was across the border.",
+ "- Missing or unknown standardised routes are set aside: the free NS text is not reliable enough to guarantee domestic endpoints automatically. Unknown future endpoints are never automatically treated as Dutch.",
+ "- Test messages are recognised explicitly. Journey-planner problems, information messages and explanations are set aside, because they could otherwise be counted twice next to an original disruption. The exact patterns are in the script. Unrecognisable test messages cannot be guaranteed to be detected without further source information.",
+ "- Missing station and cause data remain NA, with indicators. No stations or causes are invented. Only a missing cause_group becomes unknown. Removing all rows with NA would needlessly discard historical data.",
+ "- Local source times are interpreted as Europe/Amsterdam. Non-existent and ambiguous daylight-saving moments are set aside for checking. Output timestamps are in UTC; month, weekday (Monday=1) and hour remain local.",
+ "- `long_disruption` (duration_minutes > 60) is a helper column from the original binary plan; the final modelling target is 102 duration classes (see moddeling/01_target and docs/PROCESS.md, decision 2). The original statistical cause is kept for inspection but must not be a model predictor. End time and all duration fields are not predictors either. The last recorded cause may also contain information from after the start.",
+ "- No automatic removal of genuine disruption groups such as engineering work, strikes or unknown causes. No IQR filter: that would remove exactly the long disruptions in the class we want to predict.", "",
+ "## Run", "", "```sh", "Rscript \"Data Cleaning/clean_disruptions.R\"", "```", "",
+ "Only base R is needed. Limits and lists are at the top of / in the script. The script checks totals, IDs, filters, target and the saved CSV. Outputs and data/disruptions_2011_2025_clean.csv are replaced when re-run; the raw source is not.", "",
+ "Source definitions and limitations: https://www.rijdendetreinen.nl/open-data/treinstoringen",
+ "Dataset attribution: Rijden de Treinen, CC BY 4.0. Cleaning script prepared with AI assistance.")
 writeLines(report, file.path(OUTPUT, "cleaning_report.md"), useBytes = TRUE)
 print(audit, row.names = FALSE)
 cat("\nSaved", nrow(clean), "rows to", OUTPUT, "\n")

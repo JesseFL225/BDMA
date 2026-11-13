@@ -1,0 +1,10 @@
+"cause_group","n","share","median_duration_min","share_over_60_min"
+"rolling stock",18457,0.4171,27,0.2332
+"infrastructure",11045,0.2496,111,0.7133
+"external",5228,0.1182,33,0.2571
+"accidents",4534,0.1025,129,0.6846
+"engineering work",1640,0.0371,106,0.6756
+"logistical",1447,0.0327,116,0.6994
+"unknown",909,0.0205,53,0.3861
+"staff",543,0.0123,481,0.9374
+"weather",445,0.0101,166,0.8202

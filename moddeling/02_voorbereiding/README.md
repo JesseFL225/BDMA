@@ -25,7 +25,7 @@ Run scripts from the BDMA repository root. Dependencies: base R and the bundled
   in an isolated environment. The cutoff is passed from the frozen class table.
   The Step 01 driver is NOT sourced, its cutoff is NOT reselected, and its
   outputs are NOT regenerated. No independent assignment formula is introduced.
-- Existing conventions: `docs/parallel_modelling_plan.md`.
+- Agreed conventions and their rationale: `docs/PROCESS.md` (phase 2).
 
 The clean CSV and every Step 01 file were hash-checked before and after tests
 and were unchanged. Hashes and R/session versions are in `output/verification_report.md`.

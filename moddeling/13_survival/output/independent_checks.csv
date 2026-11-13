@@ -1,0 +1,5 @@
+check,passed
+survival_time independent probability/logloss/accuracy/RPS verification,True
+survival_context independent probability/logloss/accuracy/RPS verification,True
+survival_recent_time independent probability/logloss/accuracy/RPS verification,True
+survival_recent_context independent probability/logloss/accuracy/RPS verification,True

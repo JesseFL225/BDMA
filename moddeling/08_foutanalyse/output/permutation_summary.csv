@@ -1,0 +1,7 @@
+"model","feature_set","group","mean_log_loss_increase","sd_log_loss_increase"
+"random_forest_prior_smoothed","archived_context","cause",0.264854963551544,0.00703659280442545
+"random_forest_prior_smoothed","archived_context","month",0.000329828810990307,0.00119096780296388
+"random_forest_prior_smoothed","time_only","month",-0.00180060923632785,0.00102757431546064
+"random_forest_prior_smoothed","archived_context","route_station_context",0.0224213883500098,0.0034121457093703
+"random_forest_prior_smoothed","archived_context","time_of_week",0.0213423133636301,0.00170793910728114
+"random_forest_prior_smoothed","time_only","time_of_week",0.0410817678176005,0.00501015699124043
