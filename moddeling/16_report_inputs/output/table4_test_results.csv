@@ -1,0 +1,5 @@
+"model","feature_set","log_loss","prob_on_true_class_geomean","gain_over_baseline","gain_95ci_low","gain_95ci_high","relative_prob_increase_vs_baseline","exact_class","within_one_class","underestimation_rate","rps","central80_coverage","mean_finite_80pct_width_min"
+"Global frequency baseline (2017–2023)","time_only",3.2065,0.0405,NA,NA,NA,NA,0.1015,0.2149,0.8985,0.06422,0.9085,240
+"Survival model (2017–2023)","time_only",3.162,0.0423,0.0445,0.0246,0.0663,0.0455,0.1093,0.2223,0.8788,0.05908,0.9159,236.4
+"Cause-group baseline (2011–2023)","archived_context",3.0273,0.0484,NA,NA,NA,NA,0.1179,0.2601,0.848,0.05178,0.8983,214.3
+"Random forest (2011–2023)","archived_context",3.0189,0.0489,0.0083,0.0012,0.0151,0.0083,0.1202,0.2603,0.8384,0.05048,0.9097,222.9

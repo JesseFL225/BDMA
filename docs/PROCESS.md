@@ -35,7 +35,7 @@ which extra experiments would follow. The actual order was:
 
 ```
 Data Cleaning → 01 → 02 → 07 → 03 → 04 → 05 → 06 → 08
-             → 10 → 11 → 12 → 13 → 09 (final test) → 14 → 15
+             → 10 → 11 → 12 → 13 → 09 (final test) → 14 → 15 → 16
 ```
 
 Folder names are partly Dutch (`moddeling`, `voorbereiding`, `foutanalyse`, …).
@@ -306,6 +306,32 @@ Survival was trained on 2011–2023 and, as a sensitivity check (decision 5), fr
      e.g. "unknown cause" → "defective train"). Concrete evidence for decision 6.
 - **Consequence:** a recommendation for follow-up research, not a model result.
 
+### Phase 10 — Decision 12: prepare the report, and which model to present as preferred (`16_report_inputs/`)
+
+- **What:** all report tables and figures built from the saved results; the test
+  metrics were recomputed from the raw saved predictions as a check (they match Step 09
+  exactly). Added decision-level diagnostics: Brier score and AUC for "ends before
+  30/60/120 minutes", from the saved predictions of the frozen models. No training, no
+  new model choice.
+- **Finding:** the time-only survival model barely ranks disruptions (AUC 0.57 at 60 min;
+  most predictions between 50% and 60%). Adding the cause lifts AUC to 0.76 (cause table)
+  or 0.78 (forest). **The information matters far more than the algorithm.**
+- **Decision 12 — present the random forest as the preferred model.**
+  - *Alternative:* present the time-only survival model as preferred, because it uses
+    only information certainly known at onset and has the larger gain over its baseline.
+  - *Chosen:* the random forest with archived context, on the condition that the cause
+    comes from the first message.
+  - *Why:* it has the lowest validation log loss of all 12 model/scenario combinations,
+    which is the selection rule fixed before the test; it beats its baseline on the test
+    and ranks best; and the pilot shows a cause is present in the first message (40/40,
+    substantively the same as the final cause in 37/40). The survival model's practical
+    value is low despite its significant gain.
+  - *Consequence:* the report's headline is "information beats algorithm"; survival is the
+    fallback when no cause is known. This is a presentation decision for the team to
+    confirm; it does not change any frozen model.
+- **Code:** `moddeling/run_all.R` is the safe single entry point (frozen-hash check, all
+  automated checks, report inputs; no training).
+
 ---
 
 ## 4. All decision points summarised
@@ -323,6 +349,7 @@ Survival was trained on 2011–2023 and, as a sensitivity check (decision 5), fr
 | 9 | Choice | One winner | One per information scenario | Scenarios are not comparable | Two models tested |
 | 10 | Choice | Logistic (highest accuracy) | Lowest log loss | Metric fixed in advance | Forest for context |
 | 11 | After test | Build an enriched model | Feasibility pilot only | 2025 already used; show coverage first | Recommendation, no claim |
+| 12 | Report | Survival as headline model | Random forest as preferred, survival as fallback | Lowest validation log loss overall; survival AUC only 0.57 | Headline: information beats algorithm |
 
 ---
 
@@ -356,11 +383,11 @@ read by the final test or the independent checks.
 
 ## 6. What still needs to happen
 
-1. **Report** (max. 5 pages excl. appendix): start from
-   `moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md`. Include at least
-   three model families from validation (phase 4), not only the two tested ones.
-   Describe the prediction moment as "at the first public message" (phase 9).
-2. **Presentation** (max. 10 slides): outline in the handover, §8.
+1. **Report** (max. 5 pages excl. appendix): follow
+   `moddeling/16_report_inputs/REPORT_INPUTS.md`; all figures and tables are ready.
+   Include at least three model families from validation (phase 4), not only the two
+   tested ones. Describe the prediction moment as "at the first public message" (phase 9).
+2. **Presentation** (max. 10 slides): slide-by-slide outline in REPORT_INPUTS.md.
 3. **Code submission:** the repository as it is, with the root README as entry point.
    Do not reopen 2025 for model selection.
 4. **Pull request** from branch `Oliver` to `main`, reviewed by Mart.

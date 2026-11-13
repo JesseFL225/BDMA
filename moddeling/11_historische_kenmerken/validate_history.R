@@ -1,3 +1,6 @@
+# Synthetic checks for the point-in-time history features (Step 11): a feature
+# for a disruption may only use disruptions that had already ENDED before it
+# started. Uses a tiny hand-made fixture; no real data or test outcomes.
 source("moddeling/11_historische_kenmerken/history_features.R")
 fixture <- data.frame(rdt_id = as.character(1:5),
  start_time = c("2020-01-01T00:00:00Z", "2020-01-01T01:00:00Z", "2020-01-01T02:00:00Z", "2020-01-01T02:00:00Z", "2020-01-02T02:00:00Z"),

@@ -1,3 +1,6 @@
+# Synthetic checks for the survival model (Step 13): the person-period expansion
+# (one "not yet ended" row per survived interval, then one "ended" row) and the
+# conversion of interval hazards back into 102 class probabilities.
 source("moddeling/13_survival/survival.R")
 r <- risk_rows(c(1L, 2L, 101L, 102L))
 stopifnot(identical(as.integer(table(r$person)), c(1L, 2L, 101L, 101L)),

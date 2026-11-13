@@ -59,29 +59,41 @@ def parse_message(row,path,line):
       situation_text=' | '.join((e.text or '').strip() for e in record.findall('./PresentatieSituatie/Uitingen[@Taal="nl"]/Uiting'))),None
 
 def candidates_for(row,messages,tolerance=120):
-    start=stamp(row['start_time']);rs={s.strip().upper() for s in row['rdt_station_codes'].split(',') if s.strip() not in ('','NA')}
-    out=[]
-    for m in messages:
+    """Return every first NS message within 10 minutes of an RDT disruption, with an
+    `eligible` flag for the pre-registered linkage rules (time window, station overlap)."""
+    rdt_start=stamp(row['start_time'])
+    rdt_stations={s.strip().upper() for s in row['rdt_station_codes'].split(',') if s.strip() not in ('','NA')}
+    candidates=[]
+    for message in messages:
         # Publication time is the linkage clock; receive time is the strict feature-availability clock.
-        mt=stamp(m['published']) or stamp(m['received'])
-        delta=(mt-start).total_seconds()
-        ss=set(filter(None,m['station_codes'].split('|')));common=rs&ss
-        overlap=len(common)/min(len(rs),len(ss)) if rs and ss else 0
-        required=min(2,len(rs),len(ss))
+        message_time=stamp(message['published']) or stamp(message['received'])
+        delta=(message_time-rdt_start).total_seconds()
+        message_stations=set(filter(None,message['station_codes'].split('|')))
+        common=rdt_stations&message_stations
+        overlap=len(common)/min(len(rdt_stations),len(message_stations)) if rdt_stations and message_stations else 0
+        required=min(2,len(rdt_stations),len(message_stations))
         eligible=bool(abs(delta)<=tolerance and common and len(common)>=required and overlap>=.5)
         if abs(delta)<=600:
-            out.append(dict(rdt_id=row['rdt_id'],dossier=m['dossier'],publication_delta_seconds=round(delta,3),
-              available_delta_seconds=round((stamp(m['available'])-start).total_seconds(),3),
-              matched_station_codes='|'.join(sorted(common)),rdt_station_codes='|'.join(sorted(rs)),
-              first_station_codes=m['station_codes'],station_overlap_coefficient=overlap,
-              first_sequence=m['sequence'],first_phase=m['phase'],eligible=eligible,
-              source_file=m['source_file'],source_line=m['source_line']))
-    return out
+            candidates.append(dict(rdt_id=row['rdt_id'],dossier=message['dossier'],publication_delta_seconds=round(delta,3),
+              available_delta_seconds=round((stamp(message['available'])-rdt_start).total_seconds(),3),
+              matched_station_codes='|'.join(sorted(common)),rdt_station_codes='|'.join(sorted(rdt_stations)),
+              first_station_codes=message['station_codes'],station_overlap_coefficient=overlap,
+              first_sequence=message['sequence'],first_phase=message['phase'],eligible=eligible,
+              source_file=message['source_file'],source_line=message['source_line']))
+    return candidates
+
+def verify_frozen(frozen):
+    """Every file frozen for the 2025 test must be unchanged. Git-ignored model caches
+    (output/models/) may be absent in a fresh clone; those are skipped, never other files."""
+    for item in frozen:
+        path=ROOT/item['path']
+        if not path.exists() and '/output/models/' in item['path']:continue
+        assert hashlib.md5(path.read_bytes()).hexdigest()==item['md5'],f"Frozen file changed: {item['path']}"
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
-    frozen=json.loads(json.dumps(list(csv.DictReader(open(ROOT/'moddeling/09_modelkeuze_en_test/output/frozen_manifest.csv')))))
-    for item in frozen:assert hashlib.md5((ROOT/item['path']).read_bytes()).hexdigest()==item['md5']
+    frozen=list(csv.DictReader(open(ROOT/'moddeling/09_modelkeuze_en_test/output/frozen_manifest.csv')))
+    verify_frozen(frozen)
     manifest=json.loads((OUT/'download_manifest.json').read_text())
     if len(manifest)!=12:raise RuntimeError('Download inventory incomplete: finish the twelve-file pilot first')
     messages=[];inventory=[];errors=[];other=[]
@@ -168,7 +180,7 @@ def main():
           impact_available=sum(bool(r['impact']) for r in fs),forecast_time_available=sum(bool(r['forecast_from']) for r in fs),
           exact_start_available=sum(r['available_at_exact_rdt_start'] for r in fs),cause_changed=sum(r['cause_changed'] for r in fs)))
     write_csv(OUT/'coverage_summary.csv',summary)
-    for item in frozen:assert hashlib.md5((ROOT/item['path']).read_bytes()).hexdigest()==item['md5']
+    verify_frozen(frozen)
     write_csv(OUT/'checks.csv',[dict(check='Frozen test source/model/data hashes unchanged',passed=True),
       dict(check='Only prespecified 2017/2020/2023 pilot dates retained',passed=all(stamp(r['start_time']).year in (2017,2020,2023) for r in cohort)),
       dict(check='Accepted links one-to-one',passed=len({f['dossier'] for f in features})==len(features)),

@@ -7,7 +7,9 @@ For: Mart and whoever finishes the report, presentation and code submission.
 
 1. [PROCESS.md](PROCESS.md): the story, all steps and decision points with their reasons.
 2. This document: exact numbers, what you may and may not claim, and how to finish.
-3. [`moddeling/README.md`](../moddeling/README.md): step overview and reproduction.
+3. [`moddeling/16_report_inputs/REPORT_INPUTS.md`](../moddeling/16_report_inputs/REPORT_INPUTS.md):
+   **the writer's brief**: per report section what to write, with figures and tables.
+4. [`moddeling/README.md`](../moddeling/README.md): step overview and reproduction.
 
 ---
 
@@ -96,6 +98,19 @@ labels were read. Details: `moddeling/09_modelkeuze_en_test/TEST_PROTOCOL.md`.
 - The Brier score for "resolved before 60/120 minutes" is slightly worse for forest
   than for the cause baseline. So there is no gain for every decision.
 
+**Decision-level view (added in Step 16 from the saved predictions; extra evaluation,
+not selection):** for "ends before 60 min" the AUC is 0.57 for time-only survival,
+0.76 for the cause baseline and 0.78 for the forest; Brier 0.239 / 0.184 / 0.185.
+Knowing the cause matters far more than the algorithm. The time-only model is
+calibrated but barely ranks disruptions (most predictions between 50% and 60%).
+
+**Preferred model for the report: the random forest with archived context.** It has
+the lowest validation log loss of all 12 combinations (the rule fixed in advance), beats
+its baseline on the test and ranks best. Condition: the cause must come from the first
+message (the pilot found a cause in 40/40 first messages, substantively equal to the
+final cause in 37/40). Survival is the time-only fallback. Full argument:
+`moddeling/16_report_inputs/REPORT_INPUTS.md`, component 5.
+
 Conclusion: a modest gain in overall probability prediction, no reliably precise end
 time. The test was independently verified (`verify_saved_test.py`); all 5,948 test
 IDs were kept. **Do not tune or select on 2025 anymore.**
@@ -160,8 +175,9 @@ the appendix. It is not a model result and not a national percentage. Details:
 
 ## 8. How to finish
 
-**Report** (max. 5 pages). Start from `moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md`.
-That is the only current report text; older drafts were removed.
+**Report** (max. 5 pages). Follow `moddeling/16_report_inputs/REPORT_INPUTS.md` section by
+section; reuse wording from `moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md`
+where useful. All figures and tables are ready in `moddeling/16_report_inputs/output/`.
 Guideline: ~1.5 pages question/data/preparation, ~2 pages models and evaluation
 (including the final test), ~1.5 pages errors, recommendations and limitations. Use
 one main comparison and one uncertainty or calibration figure. Full grids, subgroups
@@ -171,10 +187,12 @@ two tested. Make B1 and B3 consistent with the ten-minute classes.
 **Presentation** (max. 10 slides): 1 question and stakeholder; 2 data and selection;
 3 target and time split; 4 baselines and models; 5 survival intuition; 6 validation
 and model choice; 7 final test; 8 errors and uncertainty; 9 limitations;
-10 recommendation. Useful figures: `moddeling/08_foutanalyse/output/*.png` and
-`moddeling/13_survival/output/probability_diagnostics.png`.
+10 recommendation. Figures: `moddeling/16_report_inputs/output/` (slide-by-slide mapping
+in REPORT_INPUTS.md).
 
-**Code.** Submit the repository with the root README as entry point. Model caches
+**Code.** Submit the repository with the root README as entry point. The single safe
+entry point for graders is `Rscript moddeling/run_all.R` (~40 s, no training). Never edit
+the files in `frozen_manifest.csv`, not even comments. Model caches
 (`output/models/`) are local and Git-ignored; the scripts rebuild them. An unchanged
 reproduction is fine, but a new model choice on 2025 is not. `final_test.R` refuses a
 second run while `TEST_OUTCOMES_OPENED.txt` exists; do not delete that file.

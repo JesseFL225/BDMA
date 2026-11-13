@@ -31,6 +31,7 @@ before the final test (09).
 | 13 | [09_modelkeuze_en_test](09_modelkeuze_en_test/README.md) (model choice and test) | Freeze choice, test 2025 once | Oliver and Mart | **Final result** |
 | 14 | [14_bronnenonderzoek](14_bronnenonderzoek/README.md) (source research) | Public sources for extra features | Oliver | Research only |
 | 15 | [15_koppelpilot](15_koppelpilot/README.md) (linkage pilot) | Link first NS messages (3 days) | Oliver | 40/42 linked; no model |
+| 16 | [16_report_inputs](16_report_inputs/README.md) | All report figures/tables, writer's brief, code guide | Oliver | **Start here for the report** |
 
 Before these: `../Data Cleaning/` (raw to clean data) and `../descriptive data analysis/`
 (exploration of the raw data).
@@ -63,6 +64,15 @@ validation). `class_levels` fixes the order of the 102 classes. See the READMEs 
 steps 02 and 07 for the full API.
 
 ## Reproducing
+
+**Safe single entry point (use this):**
+
+```sh
+Rscript moddeling/run_all.R    # ~40 s: frozen-hash check, all checks, report inputs; no training
+```
+
+The commands below retrain models. Retraining steps 05 and 13 overwrites model files
+that are frozen for the 2025 test, so only do that in a separate copy of the repository.
 
 R 4.4–4.5. Base R is enough for steps 01, 02, 03 and 07. Also needed: `glmnet`
 (step 04, verified 4.1-10), `ranger` and `xgboost` (steps 05, 06, 08, 10, 11, 13).

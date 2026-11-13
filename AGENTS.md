@@ -20,9 +20,11 @@ must **not** do, which misunderstandings are common, and what every folder and f
 
 1. `docs/PROCESS.md`: all steps and decision points, with their reasons.
 2. `docs/HANDOVER.md`: exact numbers, limitations, instructions for finishing.
-3. `moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md`: the only current report text.
-4. `moddeling/README.md`: step overview and reproduction commands.
-5. Only when needed: the README of a specific step (see the map below).
+3. `moddeling/16_report_inputs/REPORT_INPUTS.md`: **for writing the report or deck**,
+   per assignment component what to write, which numbers, figures and tables.
+4. `moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md`: draft wording for section 5.
+5. `moddeling/README.md`: step overview and reproduction commands.
+6. Only when needed: the README of a specific step (see the map below).
 
 ## Hard rules
 
@@ -37,9 +39,15 @@ must **not** do, which misunderstandings are common, and what every folder and f
    `Data Cleaning/clean_disruptions.R` writes to `data/`.
 5. New model code uses `prepare_data()` (step 02) and `evaluate_predictions()`
    (step 07). Do not modify these shared functions.
-6. Do not overwrite the frozen files in `moddeling/09_modelkeuze_en_test/output/`
-   (`frozen_manifest.csv`, `*_before_labels.csv.gz`, `prediction_hashes_before_labels.csv`).
-7. Commit or push only when the user asks.
+6. **Never edit any file listed in `moddeling/09_modelkeuze_en_test/output/frozen_manifest.csv`,
+   not even a comment.** These 17 files (including `prepare_data.R`, `evaluate.R`,
+   `tree_workflow.R`, `random_forest.R`, `survival.R`, the clean data and the models) are
+   hash-checked to prove the 2025 test used exactly this code. Their explanation lives in
+   `moddeling/16_report_inputs/README.md` (code guide) instead. Also do not overwrite
+   `*_before_labels.csv.gz` or `prediction_hashes_before_labels.csv`.
+7. After any change, run `Rscript moddeling/run_all.R` (~40 s, no training). It checks
+   the frozen hashes, re-runs every automated check and rebuilds the report inputs.
+8. Commit or push only when the user asks.
 
 ## Common misunderstandings
 
@@ -52,7 +60,8 @@ must **not** do, which misunderstandings are common, and what every folder and f
 | "2025 is locked" in a step README | The situation during that step. The final test was run afterwards in step 09. |
 | Ordinal advice in `12_modelstrategie/` | Superseded by survival (step 13). Kept as a record of the discussion. |
 | 2024 results | Validation, used repeatedly. **Not** an independent test; only 2025 is. |
-| Two chosen models (survival and forest) | Two information scenarios (time-only and archived context), not competitors. |
+| Two chosen models (survival and forest) | Two information scenarios (time-only and archived context). The **preferred model is the random forest** (lowest validation log loss of all 12 combinations), on condition that the cause is known at the first message. Survival is the time-only fallback: calibrated but weak at ranking (AUC 0.57). See REPORT_INPUTS.md. |
+| AUC values (0.57, 0.76, 0.78) | Added in Step 16 from the saved predictions of the frozen models: extra evaluation, not model selection. |
 | "Archived context" (cause, route) | The last stored values; they may have been changed after onset. Not proven usable live. |
 | Interval width 213.78 min and 222.88 min | Different model and year: context survival on 2024 versus context forest on 2025. |
 | "Within one class" | Not the same as "at most 10 minutes off"; the open final class has no midpoint. |
@@ -88,7 +97,9 @@ must **not** do, which misunderstandings are common, and what every folder and f
 | Cleaning filters and counts | `Data Cleaning/output/cleaning_report.md`, `filter_audit.csv` |
 | Differences between years | `Data Cleaning/output/yearly_profile.csv` |
 | Class definition | `moddeling/01_target/output/classes.csv` |
-| Figures for slides | `moddeling/08_foutanalyse/output/*.png`, `moddeling/13_survival/output/probability_diagnostics.png` |
+| **Report-ready figures and tables** | `moddeling/16_report_inputs/output/` (fig1–fig6, table1–table5) |
+| Decision-level test results (Brier, AUC per threshold) | `moddeling/16_report_inputs/output/table5_test_decision_level.csv` |
+| Feature dictionary (variables used) | `moddeling/16_report_inputs/output/table1_feature_dictionary.csv` |
 
 Do not load the large `*_predictions.csv.gz` and `*_before_labels.csv.gz` files into
 your context: they hold per-row probabilities (102 columns). Use the summary CSVs.
@@ -142,7 +153,9 @@ summaries/plots of the raw data in `raw_analysis_output/`.
 | `09_modelkeuze_en_test/` | `selection_plan.csv` (frozen choice), `TEST_PROTOCOL.md`, `final_test.R` (ran once), `test_diagnostics.R`, `verify_saved_test.py`; `output/` = test predictions, `test_*.csv` metrics, frozen manifest, `FINAL_TEST_REPORT.md`, `B5_FINAL_REPORT_TEXT.md` |
 | `14_bronnenonderzoek/` | README only: public sources for extra predictors (NS/NDOV, KNMI, stations) |
 | `15_koppelpilot/` | `download.py`, `pilot.py`, `report.py`, `test_pilot.py`; links first NS messages to disruptions on 3 days; `output/PILOT_REPORT.md` |
-| `run_oliver.R` | Runs steps 05, 06 and 08 in sequence |
+| `16_report_inputs/` | `REPORT_INPUTS.md` (what to write per report section), `make_report_inputs.R` (all report figures/tables from saved results, 18 checks), `README.md` (code guide for the frozen files); `output/` = fig1–fig6, table1–table5 |
+| `run_all.R` | **Safe single entry point:** frozen-hash check, all automated checks, re-verification, report inputs. No training |
+| `run_oliver.R` | Retrains steps 05, 06 and 08 (overwrites frozen models: only in a separate copy) |
 
 Git-ignored and therefore not in the repository: `output/models/` (fitted models,
 rebuilt by the scripts), `.R-library/` (local packages), `data/external/` (pilot
@@ -152,5 +165,6 @@ downloads, re-downloaded by `15_koppelpilot/download.py`).
 
 Upload only these files; nothing more is needed to understand the project:
 `AGENTS.md`, `docs/PROCESS.md`, `docs/HANDOVER.md`,
-`moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md` and, for exact numbers,
-`moddeling/09_modelkeuze_en_test/output/test_summary.csv`.
+`moddeling/16_report_inputs/REPORT_INPUTS.md`,
+`moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md`, and the figures in
+`moddeling/16_report_inputs/output/` that you want to place in the report or deck.

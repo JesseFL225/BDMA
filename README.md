@@ -13,7 +13,8 @@ The report, presentation and code submission still need to be finished.
 |---|---|
 | Understand what we did, which decisions we took and why | [docs/PROCESS.md](docs/PROCESS.md) |
 | Get exact numbers, limitations and how to finish the report/slides | [docs/HANDOVER.md](docs/HANDOVER.md) |
-| Read the draft B5 report text | [moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md](moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md) |
+| **Write the report or the deck** (what to say per section, with ready figures and tables) | [moddeling/16_report_inputs/REPORT_INPUTS.md](moddeling/16_report_inputs/REPORT_INPUTS.md) |
+| Read the draft B5 wording | [moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md](moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md) |
 | Reproduce a step or understand the code | [moddeling/README.md](moddeling/README.md) |
 | Work on this project with an AI assistant (ChatGPT, Claude, Copilot…) | [AGENTS.md](AGENTS.md): rules, pitfalls, a map of every file, and which files to upload |
 
@@ -25,7 +26,9 @@ The report, presentation and code submission still need to be finished.
 | Archived context (cause, route) | Random forest (trained 2011–2023) | 3.0189 | 3.0273 | 12.02% |
 
 Both models beat their baseline, but the gain is modest and a precise end time remains
-unpredictable. See the handover for uncertainty and limitations.
+unpredictable. The main finding: **knowing the cause matters far more than the algorithm**
+(AUC for "ends within 60 min": 0.57 without cause, 0.78 with cause). The preferred model is
+the random forest, provided the cause is available at the first message.
 
 ## Folders
 
@@ -45,10 +48,12 @@ analysis). They were kept because scripts refer to them; see the glossary in AGE
 From this folder, with R 4.4 or newer:
 
 ```sh
-Rscript "Data Cleaning/clean_disruptions.R"                     # rebuild the clean data
-Rscript moddeling/02_voorbereiding/validate_preparation.R        # check the shared basis
-python3 moddeling/09_modelkeuze_en_test/verify_saved_test.py     # verify the final test
+Rscript moddeling/run_all.R   # ~40 s: checks everything and rebuilds all report figures/tables
 ```
+
+It verifies that the code, data and models used for the final test are unchanged,
+re-runs every automated check, re-verifies the saved predictions and regenerates
+`moddeling/16_report_inputs/output/`. It trains no models.
 
 The full order and required packages are in [moddeling/README.md](moddeling/README.md).
 Do not re-run the final test (`final_test.R`): 2025 has been used once and stays that way.

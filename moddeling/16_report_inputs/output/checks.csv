@@ -1,0 +1,19 @@
+"check","passed"
+"Clean data has 44,248 rows",TRUE
+"Validation table has 12 model rows (6 per feature set)",TRUE
+"Brier survival_recent_time_baseline <30 min reproduces Step 09",TRUE
+"Brier survival_recent_time_baseline <60 min reproduces Step 09",TRUE
+"Brier survival_recent_time_baseline <120 min reproduces Step 09",TRUE
+"Log loss survival_recent_time_baseline reproduces Step 09",TRUE
+"Brier survival_recent_time <30 min reproduces Step 09",TRUE
+"Brier survival_recent_time <60 min reproduces Step 09",TRUE
+"Brier survival_recent_time <120 min reproduces Step 09",TRUE
+"Log loss survival_recent_time reproduces Step 09",TRUE
+"Brier forest_context_baseline <30 min reproduces Step 09",TRUE
+"Brier forest_context_baseline <60 min reproduces Step 09",TRUE
+"Brier forest_context_baseline <120 min reproduces Step 09",TRUE
+"Log loss forest_context_baseline reproduces Step 09",TRUE
+"Brier forest_context <30 min reproduces Step 09",TRUE
+"Brier forest_context <60 min reproduces Step 09",TRUE
+"Brier forest_context <120 min reproduces Step 09",TRUE
+"Log loss forest_context reproduces Step 09",TRUE

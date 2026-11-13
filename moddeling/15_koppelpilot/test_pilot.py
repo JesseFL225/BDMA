@@ -1,3 +1,5 @@
+"""Synthetic unit tests for the Step 15 linkage rules: time window, station overlap,
+shared-hub rejection, time zones, ambiguous candidates and exclusion of detour stations."""
 import unittest
 import csv,io
 from pathlib import Path
