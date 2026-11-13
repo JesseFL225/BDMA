@@ -165,11 +165,9 @@ The final open class remains separate; no class offset is converted into minute 
 - `validate_logistic_regression.R`: reusable synthetic and actual-data checks.
 - `plot_results.R`: regenerates vector PDF figures from saved summaries without
   fitting models. Two figures: loss comparison and aggregated confusion matrices.
-- `write_report.R`: regenerates the Section 5 paragraph from saved metrics.
 - `output/`: tuning fold/mean/selection tables, final diagnostics, four-model
   comparison, compressed validation predictions, per-class/observation metrics,
   full confusion matrices, ordinal summaries, verification reports and figures.
-- `output/report_section_5.md`: academically written paragraph using actual results.
 
 From the repository root in R:
 
@@ -246,9 +244,10 @@ applies to tree algorithms. Compare time-only methods separately from
 retrospective methods and report baseline performance even when a more complex
 model loses. The shared contract and original baseline results remain unchanged.
 
-## Suggested final report paragraph
+## Report text
 
-See `output/report_section_5.md` for a self-contained English paragraph.
+The combined, final B5 text (including these results) is
+`moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md`.
 
 ## Change log
 

@@ -1,0 +1,7 @@
+"feature_set","candidate","mean_log_loss","sd_log_loss"
+"time_only","depth2_round100",3.2367426029655,0.129498688749634
+"time_only","depth3_round100",3.23374708619962,0.130633951122526
+"time_only","depth2_round250",3.23085706234261,0.129966650722567
+"archived_context","depth2_round100",3.10408410870051,0.121267302458244
+"archived_context","depth3_round100",3.07589518921286,0.125603540838862
+"archived_context","depth2_round250",3.07589128980096,0.131613443480224

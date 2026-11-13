@@ -1,0 +1,2 @@
+"split","model","feature_set","n","log_loss","accuracy","macro_f1","within_one_class_pct","underestimation_rate","overestimation_rate","observed_classes","macro_f1_classes"
+"test","survival_recent_time_baseline","time_only",5948,3.20650496589125,0.101546738399462,0.00180756063109004,21.4862138533961,0.898453261600538,0,90,102

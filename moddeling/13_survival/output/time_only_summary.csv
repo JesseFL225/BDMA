@@ -1,0 +1,2 @@
+"split","model","feature_set","n","log_loss","accuracy","macro_f1","within_one_class_pct","underestimation_rate","overestimation_rate","observed_classes","macro_f1_classes"
+"validation","discrete_time_hazard_xgboost","time_only",5296,3.19352355753798,0.119335347432024,0.00393926788951316,22.9984894259819,0.859516616314199,0.0211480362537764,97,102

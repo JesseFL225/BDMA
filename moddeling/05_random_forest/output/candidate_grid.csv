@@ -1,0 +1,4 @@
+"candidate","mtry_rule","min_node_size"
+"sqrt_leaf100","sqrt",100
+"sqrt_leaf30","sqrt",30
+"half_leaf100","half",100

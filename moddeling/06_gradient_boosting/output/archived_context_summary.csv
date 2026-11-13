@@ -1,0 +1,2 @@
+"split","model","feature_set","n","log_loss","accuracy","macro_f1","within_one_class_pct","underestimation_rate","overestimation_rate","observed_classes","macro_f1_classes"
+"validation","xgboost_multiclass","archived_context",5296,3.08441088478518,0.11631419939577,0.0103952104853603,28.4365558912387,0.753965256797583,0.129720543806647,97,102

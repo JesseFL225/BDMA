@@ -1,0 +1,4 @@
+"candidate","max_depth","eta","nrounds"
+"depth2_round80",2,0.1,80
+"depth3_round80",3,0.1,80
+"depth2_round160",2,0.1,160

@@ -1,0 +1,4 @@
+"candidate","max_depth","nrounds"
+"depth2_round100",2,100
+"depth4_round100",4,100
+"depth2_round300",2,300

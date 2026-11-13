@@ -1,0 +1,7 @@
+"feature_set","candidate","mean_log_loss","sd_log_loss"
+"time_only","sqrt_leaf100",3.2529204467421,0.136277091131514
+"time_only","sqrt_leaf30",3.25597547144523,0.1371121627681
+"time_only","half_leaf100",3.2752601078448,0.147552225564258
+"archived_context","sqrt_leaf100",3.08123533360259,0.12793175671506
+"archived_context","sqrt_leaf30",3.08284463382487,0.127741911637797
+"archived_context","half_leaf100",3.10379452967745,0.154206618170893
