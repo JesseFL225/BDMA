@@ -2,7 +2,7 @@
 
 Owner: Oliver. Status: implemented, trained and evaluated on 2024 validation. Not selected.
 
-> **Status 13 november 2026:** afgerond. Waar hieronder staat dat 2025 "locked"/"dicht" is of dat er geen testevaluatie is, beschrijft dat de situatie tijdens deze stap. De eindtest is daarna uitgevoerd in [stap 09](../09_modelkeuze_en_test/README.md). Het procesverhaal staat in [docs/PROCESVERLOOP.md](../../docs/PROCESVERLOOP.md).
+> **Status 13 November 2026:** completed. Where this README says 2025 is "locked" or that there is no test evaluation, it describes the situation during this step. The final test was run afterwards in [step 09](../09_modelkeuze_en_test/README.md). The full story is in [docs/PROCESS.md](../../docs/PROCESS.md).
 
 ## Goal and method
 

@@ -1,38 +1,38 @@
-# Pilotresultaten — eerste NS/NDOV-meldingen
+# Pilot results — first NS/NDOV messages
 
-Uitgevoerd op 13 november 2026. Haalbaarheidsonderzoek, geen modelresultaat.
+Run on 13 November 2026. Feasibility study, not a model result.
 
-| Pilotdag | Clean storingen | Uniek voorlopig gekoppeld | Ambigu | Geen kandidaat | Initiële aanwijzingen | Prognosetijd aanwezig |
+| Pilot day | Clean disruptions | Uniquely linked (provisional) | Ambiguous | No candidate | Initial-message evidence | Forecast time present |
 |---|---:|---:|---:|---:|---:|---:|
 | 2017-11-10 | 7 | 7 | 0 | 0 | 7 | 2 |
 | 2020-11-10 | 18 | 17 | 0 | 1 | 15 | 4 |
 | 2023-11-10 | 17 | 16 | 1 | 0 | 16 | 16 |
 
-Totaal: 40/42 voorlopig eenduidig gekoppeld (95.2%). Dit is de koppelopbrengst van drie gekozen dagen, geen bewezen matchprecisie of landelijke dekkingsschatting.
-38/40 gekoppelde berichten hebben volgnummer 1 en een initiële fase. Een numerieke prognosetijd is aanwezig bij 22/40; de betekenis/code moet worden behouden.
-Bij 5/40 verschilt de eerste oorzaak van de uiteindelijke oorzaak in de bestaande CSV. Vergelijking na normalisatie van hoofdletters, witruimte en inleidend ‘door’/‘een’; overige synoniemen zijn niet samengevoegd. De oorzaak werd niet gebruikt om de koppeling te kiezen.
+Total: 40/42 provisionally linked one-to-one (95.2%). This is the linkage yield on three chosen days, not a proven match precision or a national coverage estimate.
+38/40 linked messages have sequence number 1 and an initial phase. A numeric forecast time is present in 22/40; its meaning/code must be kept.
+In 5/40 the first cause differs from the final cause in the existing CSV. Compared after normalising case, whitespace and a leading ‘door’/‘een’; other synonyms are not merged. The cause was not used to choose the link.
 
-## Tijd en beschikbaarheid
+## Time and availability
 
-Mediaan verschil tussen veilige berichtbeschikbaarheid en RDT-start: 1.000 seconden; minimum 0.000, maximum 34.544.
-9/40 eerste berichten waren volgens deze strikte klok uiterlijk op de exacte RDT-start beschikbaar.
-Een positieve vertraging wordt niet verborgen. Voor vervolgonderzoek past voorspellen bij ontvangst van de eerste melding beter dan claims over het exacte fysieke incidentbegin. Dit verandert het operationele voorspelmoment en moet expliciet worden vastgelegd.
+Median difference between safe message availability and the RDT start: 1.000 seconds; minimum 0.000, maximum 34.544.
+9/40 first messages were available at or before the exact RDT start on this strict clock.
+A positive delay is not hidden. For follow-up work, predicting at receipt of the first message fits better than claims about the exact physical incident start. This changes the operational prediction moment and must be recorded explicitly.
 
-## Bronkwaliteit en interpretatie
+## Source quality and interpretation
 
-12/12 downloads succesvol. Totaal 172,148 gecomprimeerde bytes. De bestanden staan lokaal en zijn via SHA-256 geverifieerd.
-Prognosecodes in gekoppelde eerste berichten: {'2': 2, '6': 2, '1': 16, '4': 20}.
-PIL is gebruikt voor koppeling; VTBL is alleen geïnventariseerd. Geen latere updates toegevoegd aan eerste berichten. Uiteindelijke locatie wordt wel voor koppeling gebruikt: een resterende retrospectieve selectiebeperking.
-Eén dag lookback en volgnummer/fase helpen onvolledige beginhistorie te herkennen, maar bewijzen geen archiefvolledigheid. Unieke tijd-/locatiekandidaten zijn geen handmatig bevestigde ground truth.
-Alle drie dagen zijn in november; uitkomsten mogen niet naar alle seizoenen/jaren worden geëxtrapoleerd. Oorzaak, eindtijd en modelscores zijn geen koppelcriteria.
+12/12 downloads succeeded. Total 172,148 compressed bytes. Files are stored locally and verified with SHA-256.
+Forecast codes in linked first messages: {'2': 2, '6': 2, '1': 16, '4': 20}.
+PIL was used for linkage; VTBL was only inventoried. No later updates were added to first messages. The final location is still used for linkage: a remaining retrospective selection limitation.
+A one-day lookback and sequence/phase help detect incomplete start histories, but do not prove archive completeness. Unique time/location candidates are not manually confirmed ground truth.
+All three days are in November; results must not be extrapolated to all seasons/years. Cause, end time and model scores are not linkage criteria.
 
-## Conclusie en volgende stap
+## Conclusion and next step
 
-De pilot toont of oorspronkelijke operationele informatie technisch te ontsluiten is. Er is nog geen bewijs van hogere voorspelkwaliteit.
-Breid eerst de koppelvalidatie uit naar een vooraf gekozen seizoensgespreide steekproef, controleer dubbelzinnige en niet-gekoppelde gevallen en bepaal het voorspelmoment. Stel daarna pas een verrijkte onderzoeksdataset samen.
-Gebruik de eerste NS-herstelprognose als afzonderlijke baseline waar semantisch passend. Vergelijk modellen met en zonder prognose, op dezelfde rijen. Een ondergrens of onbekende prognose mag niet als exacte puntschatting worden gescoord.
-De oorspronkelijke clean CSV, modellen en bevroren testbestanden zijn ongewijzigd. 2025 blijft een reeds bekeken eindtest; nieuwe training vereist een nieuw evaluatieplan.
+The pilot shows whether original operational information can be retrieved technically. There is no evidence yet of better predictive quality.
+First extend the linkage validation to a pre-chosen, season-spread sample, review ambiguous and unlinked cases, and fix the prediction moment. Only then build an enriched research dataset.
+Use the first NS recovery forecast as a separate baseline where semantically appropriate. Compare models with and without the forecast on the same rows. A lower bound or unknown forecast must not be scored as an exact point estimate.
+The original clean CSV, models and frozen test files are unchanged. 2025 remains an already-viewed final test; new training requires a new evaluation plan.
 
-## Controles
+## Checks
 
-Zie checks.csv, independent_checks.csv en test_pilot.py. De hercontrole reconstrueert elke uitgegeven feature direct uit de oorspronkelijke XML-regel. Code en rapport zijn met AI-assistentie opgesteld.
+See checks.csv, independent_checks.csv and test_pilot.py. The re-check rebuilds every exported feature directly from the original XML line. Code and report were prepared with AI assistance.

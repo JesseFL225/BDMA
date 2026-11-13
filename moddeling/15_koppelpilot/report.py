@@ -36,31 +36,31 @@ total=len(links);matched=len(features);initial=sum(yes(f['initial_evidence']) fo
 forecast=sum(bool(f['forecast_from']) for f in features)
 delays=[float(f['available_delta_seconds']) for f in features]
 changed=sum(yes(f['cause_changed']) for f in features)
-rows=['# Pilotresultaten — eerste NS/NDOV-meldingen','',
-'Uitgevoerd op 13 november 2026. Haalbaarheidsonderzoek, geen modelresultaat.','',
-'| Pilotdag | Clean storingen | Uniek voorlopig gekoppeld | Ambigu | Geen kandidaat | Initiële aanwijzingen | Prognosetijd aanwezig |',
+rows=['# Pilot results — first NS/NDOV messages','',
+'Run on 13 November 2026. Feasibility study, not a model result.','',
+'| Pilot day | Clean disruptions | Uniquely linked (provisional) | Ambiguous | No candidate | Initial-message evidence | Forecast time present |',
 '|---|---:|---:|---:|---:|---:|---:|']
 for c in coverage:
     rows.append('| '+' | '.join(c[k] for k in ['day','clean_disruptions','unique_provisional','ambiguous','no_candidate','initial_evidence','forecast_time_available'])+' |')
-rows+=['',f'Totaal: {matched}/{total} voorlopig eenduidig gekoppeld ({100*matched/total:.1f}%). Dit is de koppelopbrengst van drie gekozen dagen, geen bewezen matchprecisie of landelijke dekkingsschatting.',
-f'{initial}/{matched} gekoppelde berichten hebben volgnummer 1 en een initiële fase. Een numerieke prognosetijd is aanwezig bij {forecast}/{matched}; de betekenis/code moet worden behouden.',
-f'Bij {changed}/{matched} verschilt de eerste oorzaak van de uiteindelijke oorzaak in de bestaande CSV. Vergelijking na normalisatie van hoofdletters, witruimte en inleidend ‘door’/‘een’; overige synoniemen zijn niet samengevoegd. De oorzaak werd niet gebruikt om de koppeling te kiezen.','',
-'## Tijd en beschikbaarheid','',
-f'Mediaan verschil tussen veilige berichtbeschikbaarheid en RDT-start: {statistics.median(delays):.3f} seconden; minimum {min(delays):.3f}, maximum {max(delays):.3f}.',
-f'{sum(yes(f["available_at_exact_rdt_start"]) for f in features)}/{matched} eerste berichten waren volgens deze strikte klok uiterlijk op de exacte RDT-start beschikbaar.',
-'Een positieve vertraging wordt niet verborgen. Voor vervolgonderzoek past voorspellen bij ontvangst van de eerste melding beter dan claims over het exacte fysieke incidentbegin. Dit verandert het operationele voorspelmoment en moet expliciet worden vastgelegd.','',
-'## Bronkwaliteit en interpretatie','',
-f'{sum(i["status"]=="ok" for i in manifest)}/12 downloads succesvol. Totaal {sum(i.get("bytes",0) for i in manifest):,} gecomprimeerde bytes. De bestanden staan lokaal en zijn via SHA-256 geverifieerd.',
-f'Prognosecodes in gekoppelde eerste berichten: {dict(Counter(f["forecast_code"] or "missing" for f in features))}.',
-'PIL is gebruikt voor koppeling; VTBL is alleen geïnventariseerd. Geen latere updates toegevoegd aan eerste berichten. Uiteindelijke locatie wordt wel voor koppeling gebruikt: een resterende retrospectieve selectiebeperking.',
-'Eén dag lookback en volgnummer/fase helpen onvolledige beginhistorie te herkennen, maar bewijzen geen archiefvolledigheid. Unieke tijd-/locatiekandidaten zijn geen handmatig bevestigde ground truth.',
-'Alle drie dagen zijn in november; uitkomsten mogen niet naar alle seizoenen/jaren worden geëxtrapoleerd. Oorzaak, eindtijd en modelscores zijn geen koppelcriteria.','',
-'## Conclusie en volgende stap','',
-'De pilot toont of oorspronkelijke operationele informatie technisch te ontsluiten is. Er is nog geen bewijs van hogere voorspelkwaliteit.',
-'Breid eerst de koppelvalidatie uit naar een vooraf gekozen seizoensgespreide steekproef, controleer dubbelzinnige en niet-gekoppelde gevallen en bepaal het voorspelmoment. Stel daarna pas een verrijkte onderzoeksdataset samen.',
-'Gebruik de eerste NS-herstelprognose als afzonderlijke baseline waar semantisch passend. Vergelijk modellen met en zonder prognose, op dezelfde rijen. Een ondergrens of onbekende prognose mag niet als exacte puntschatting worden gescoord.',
-'De oorspronkelijke clean CSV, modellen en bevroren testbestanden zijn ongewijzigd. 2025 blijft een reeds bekeken eindtest; nieuwe training vereist een nieuw evaluatieplan.','',
-'## Controles','',
-'Zie checks.csv, independent_checks.csv en test_pilot.py. De hercontrole reconstrueert elke uitgegeven feature direct uit de oorspronkelijke XML-regel. Code en rapport zijn met AI-assistentie opgesteld.']
+rows+=['',f'Total: {matched}/{total} provisionally linked one-to-one ({100*matched/total:.1f}%). This is the linkage yield on three chosen days, not a proven match precision or a national coverage estimate.',
+f'{initial}/{matched} linked messages have sequence number 1 and an initial phase. A numeric forecast time is present in {forecast}/{matched}; its meaning/code must be kept.',
+f'In {changed}/{matched} the first cause differs from the final cause in the existing CSV. Compared after normalising case, whitespace and a leading ‘door’/‘een’; other synonyms are not merged. The cause was not used to choose the link.','',
+'## Time and availability','',
+f'Median difference between safe message availability and the RDT start: {statistics.median(delays):.3f} seconds; minimum {min(delays):.3f}, maximum {max(delays):.3f}.',
+f'{sum(yes(f["available_at_exact_rdt_start"]) for f in features)}/{matched} first messages were available at or before the exact RDT start on this strict clock.',
+'A positive delay is not hidden. For follow-up work, predicting at receipt of the first message fits better than claims about the exact physical incident start. This changes the operational prediction moment and must be recorded explicitly.','',
+'## Source quality and interpretation','',
+f'{sum(i["status"]=="ok" for i in manifest)}/12 downloads succeeded. Total {sum(i.get("bytes",0) for i in manifest):,} compressed bytes. Files are stored locally and verified with SHA-256.',
+f'Forecast codes in linked first messages: {dict(Counter(f["forecast_code"] or "missing" for f in features))}.',
+'PIL was used for linkage; VTBL was only inventoried. No later updates were added to first messages. The final location is still used for linkage: a remaining retrospective selection limitation.',
+'A one-day lookback and sequence/phase help detect incomplete start histories, but do not prove archive completeness. Unique time/location candidates are not manually confirmed ground truth.',
+'All three days are in November; results must not be extrapolated to all seasons/years. Cause, end time and model scores are not linkage criteria.','',
+'## Conclusion and next step','',
+'The pilot shows whether original operational information can be retrieved technically. There is no evidence yet of better predictive quality.',
+'First extend the linkage validation to a pre-chosen, season-spread sample, review ambiguous and unlinked cases, and fix the prediction moment. Only then build an enriched research dataset.',
+'Use the first NS recovery forecast as a separate baseline where semantically appropriate. Compare models with and without the forecast on the same rows. A lower bound or unknown forecast must not be scored as an exact point estimate.',
+'The original clean CSV, models and frozen test files are unchanged. 2025 remains an already-viewed final test; new training requires a new evaluation plan.','',
+'## Checks','',
+'See checks.csv, independent_checks.csv and test_pilot.py. The re-check rebuilds every exported feature directly from the original XML line. Code and report were prepared with AI assistance.']
 (OUT/'PILOT_REPORT.md').write_text('\n'.join(rows)+'\n')
 print('\n'.join(rows[:15]));print('Independent raw-message verification passed.')

@@ -2,7 +2,7 @@
 
 Owners: Oliver and Mart. The user authorized the frozen model choice and 2025
 assessment on 13 November 2026. The handoff and decision log are in
-[OVERDRACHT_MODELLERING.md](../../docs/OVERDRACHT_MODELLERING.md).
+[HANDOVER.md](../../docs/HANDOVER.md).
 
 ## Inputs and decisions
 

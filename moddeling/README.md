@@ -1,54 +1,53 @@
-# Moddeling — stappenoverzicht en reproductie
+# Moddeling — step overview and reproduction
 
-(De mapnaam `moddeling` is historisch en bewust niet hernoemd; veel scripts verwijzen ernaar.)
+(The folder name `moddeling` is historical and deliberately not renamed; many scripts refer to it.)
 
-Het verhaal achter deze stappen, met alle afslagen en hun reden, staat in
-[docs/PROCESVERLOOP.md](../docs/PROCESVERLOOP.md). Cijfers en afrondingsinstructies
-staan in [docs/OVERDRACHT_MODELLERING.md](../docs/OVERDRACHT_MODELLERING.md).
+The story behind these steps, with every decision point and its reason, is in
+[docs/PROCESS.md](../docs/PROCESS.md). Numbers and finishing instructions are in
+[docs/HANDOVER.md](../docs/HANDOVER.md). A file-by-file map is in [AGENTS.md](../AGENTS.md).
 
-Status 13 november 2026: **alle stappen afgerond, eindtest op 2025 uitgevoerd.**
-Waar een stap-README nog zegt dat 2025 "locked" of "dicht" is, beschrijft dat de
-situatie tijdens die stap.
+Status 13 November 2026: **all steps completed, final test on 2025 done.**
+Where a step README still says 2025 is "locked", it describes the situation during that step.
 
-## Stappen in uitvoeringsvolgorde
+## Steps in execution order
 
-De mapnummers zijn vooraf toegekend; de experimenten 10–13 zijn later toegevoegd
-en vóór de eindtest (09) uitgevoerd.
+Folder numbers were assigned in advance; experiments 10–13 were added later and run
+before the final test (09).
 
-| Volgorde | Map | Wat | Eigenaar | Uitkomst |
+| Order | Folder | What | Owner | Outcome |
 |---:|---|---|---|---|
-| 1 | [01_target](01_target/README.md) | 102 klassen van 10 min, restklasse ≥ 1010 | Mart | Vaste target |
-| 2 | [02_voorbereiding](02_voorbereiding/README.md) | Gedeelde split en preprocessing (`prepare_data()`) | Mart | Contract voor alle modellen |
-| 3 | [07_evaluatie](07_evaluatie/README.md) | Gedeelde evaluator (`evaluate_predictions()`) | Mart | Contract voor alle modellen |
-| 4 | [03_baselines](03_baselines/README.md) | Globale en oorzaakgroep-frequenties | Mart | Ondergrens |
-| 5 | [04_logistic_regression](04_logistic_regression/README.md) | Multinomiale ridge regression | Mart | Hoogste exacte context-accuracy |
-| 6 | [05_random_forest](05_random_forest/README.md) | Probability forest | Oliver | **Gekozen contextmodel** |
-| 7 | [06_gradient_boosting](06_gradient_boosting/README.md) | Multiclass XGBoost | Oliver | Niet beter dan forest |
-| 8 | [08_foutanalyse](08_foutanalyse/README.md) | Vergelijking, subgroepen, importance, figuren | Oliver | Forest wint validatie |
-| 9 | [10_regressie_experiment](10_regressie_experiment/README.md) | Duur direct in minuten | Oliver | Niet overgenomen |
-| 10 | [11_historische_kenmerken](11_historische_kenmerken/README.md) | Eerdere storingen als features | Oliver | Geen winst, niet overgenomen |
-| 11 | [12_modelstrategie](12_modelstrategie/README.md) | Strategie: ordinaal voorstel | Oliver | Vervangen door survival |
-| 12 | [13_survival](13_survival/README.md) | Discrete-time survival, 2017-gevoeligheid, onzekerheid | Oliver | **Gekozen tijd-only model** |
-| 13 | [09_modelkeuze_en_test](09_modelkeuze_en_test/README.md) | Keuze bevriezen, eenmalige test 2025 | Oliver en Mart | **Eindresultaat** |
-| 14 | [14_bronnenonderzoek](14_bronnenonderzoek/README.md) | Publieke bronnen voor extra features | Oliver | Alleen onderzoek |
-| 15 | [15_koppelpilot](15_koppelpilot/README.md) | Eerste NS-meldingen koppelen (3 dagen) | Oliver | 40/42 gekoppeld; geen model |
+| 1 | [01_target](01_target/README.md) | 102 ten-minute classes, final class ≥ 1010 | Mart | Fixed target |
+| 2 | [02_voorbereiding](02_voorbereiding/README.md) (preparation) | Shared split and preprocessing (`prepare_data()`) | Mart | Contract for all models |
+| 3 | [07_evaluatie](07_evaluatie/README.md) (evaluation) | Shared evaluator (`evaluate_predictions()`) | Mart | Contract for all models |
+| 4 | [03_baselines](03_baselines/README.md) | Global and cause-group frequencies | Mart | Lower bound |
+| 5 | [04_logistic_regression](04_logistic_regression/README.md) | Multinomial ridge regression | Mart | Highest exact context accuracy |
+| 6 | [05_random_forest](05_random_forest/README.md) | Probability forest | Oliver | **Chosen context model** |
+| 7 | [06_gradient_boosting](06_gradient_boosting/README.md) | Multiclass XGBoost | Oliver | Not better than forest |
+| 8 | [08_foutanalyse](08_foutanalyse/README.md) (error analysis) | Comparison, subgroups, importance, figures | Oliver | Forest wins validation |
+| 9 | [10_regressie_experiment](10_regressie_experiment/README.md) | Duration directly in minutes | Oliver | Not adopted |
+| 10 | [11_historische_kenmerken](11_historische_kenmerken/README.md) (historical features) | Earlier disruptions as features | Oliver | No gain, not adopted |
+| 11 | [12_modelstrategie](12_modelstrategie/README.md) (strategy) | Ordinal proposal | Oliver | Superseded by survival |
+| 12 | [13_survival](13_survival/README.md) | Discrete-time survival, 2017 sensitivity, uncertainty | Oliver | **Chosen time-only model** |
+| 13 | [09_modelkeuze_en_test](09_modelkeuze_en_test/README.md) (model choice and test) | Freeze choice, test 2025 once | Oliver and Mart | **Final result** |
+| 14 | [14_bronnenonderzoek](14_bronnenonderzoek/README.md) (source research) | Public sources for extra features | Oliver | Research only |
+| 15 | [15_koppelpilot](15_koppelpilot/README.md) (linkage pilot) | Link first NS messages (3 days) | Oliver | 40/42 linked; no model |
 
-Daarvoor: `../Data Cleaning/` (ruwe naar clean data) en `../descriptive data analysis/`
-(verkenning van de ruwe data).
+Before these: `../Data Cleaning/` (raw to clean data) and `../descriptive data analysis/`
+(exploration of the raw data).
 
-## Afspraken die voor alle stappen gelden
+## Rules for all steps
 
-- Scripts starten vanuit de **hoofdmap** van de repository.
-- Code staat per stap in de stapmap, resultaten in `output/` van die stap.
-- Alleen `Data Cleaning/` schrijft naar `data/`. Modelscripts lezen alleen.
-- Iedere modelstap gebruikt `prepare_data()` (02) en `evaluate_predictions()` (07).
-  Niemand bouwt een eigen variant.
-- Seed 42. Chronologische splits; tuning op de folds t/m 2021 → 2022 en t/m 2022 → 2023.
-- Twee feature sets: `time_only` en `archived_context` (retrospectief, niet live bewezen).
-- Duur, eindtijd en statistische oorzaak zijn nooit predictor.
-- Fitted models komen in `output/models/` (Git-ignored); de scripts bouwen ze opnieuw op.
+- Run scripts from the repository **root**.
+- Code lives in the step folder, results in that step's `output/`.
+- Only `Data Cleaning/` writes to `data/`. Model scripts only read.
+- Every model step uses `prepare_data()` (02) and `evaluate_predictions()` (07).
+  Nobody builds their own variant.
+- Seed 42. Chronological splits; tuning on the folds through 2021 → 2022 and through 2022 → 2023.
+- Two feature sets: `time_only` and `archived_context` (retrospective, not proven live).
+- Duration, end time and statistical cause are never predictors.
+- Fitted models go to `output/models/` (Git-ignored); the scripts rebuild them.
 
-## Gedeeld contract gebruiken (voor nieuwe modelcode)
+## Using the shared contract (for new model code)
 
 ```r
 source("moddeling/02_voorbereiding/prepare_data.R")
@@ -59,50 +58,51 @@ result <- evaluate_predictions(predictions,
   expected_true_class = prepared$validation$y)
 ```
 
-Matrices staan in `prepared$train$X$time_only` en `$archived_context` (idem voor
-validation). `class_levels` legt de volgorde van de 102 klassen vast. Zie de READMEs
-van stap 02 en 07 voor de volledige API.
+Matrices are in `prepared$train$X$time_only` and `$archived_context` (likewise for
+validation). `class_levels` fixes the order of the 102 classes. See the READMEs of
+steps 02 and 07 for the full API.
 
-## Reproduceren
+## Reproducing
 
-R 4.4–4.5. Base R volstaat voor de stappen 01, 02, 03 en 07. Verder nodig: `glmnet`
-(stap 04, geverifieerd 4.1-10), `ranger` en `xgboost` (stappen 05, 06, 08, 10, 11, 13).
-Python 3 (standaardbibliotheek) voor de verificatiescripts en stap 15.
+R 4.4–4.5. Base R is enough for steps 01, 02, 03 and 07. Also needed: `glmnet`
+(step 04, verified 4.1-10), `ranger` and `xgboost` (steps 05, 06, 08, 10, 11, 13).
+Python 3 (standard library) for the verification scripts and step 15.
 
 ```sh
-# 0. Packages (optioneel; installeert ranger/xgboost in de Git-ignored .R-library/)
+# 0. Packages (optional; installs ranger/xgboost into the Git-ignored .R-library/)
 Rscript moddeling/05_random_forest/install_dependencies.R
 
-# 1. Data (alleen nodig om de clean CSV opnieuw op te bouwen)
+# 1. Data (only needed to rebuild the clean CSV)
 Rscript "Data Cleaning/clean_disruptions.R"
+python3 "Data Cleaning/yearly_profile.py"
 
-# 2. Gedeelde basis, baselines en logistic regression (Mart)
+# 2. Shared basis, baselines and logistic regression (Mart)
 Rscript moddeling/02_voorbereiding/validate_preparation.R
 Rscript moddeling/07_evaluatie/validate_evaluation.R
 Rscript moddeling/03_baselines/run_baselines.R
 Rscript moddeling/04_logistic_regression/run_logistic_regression.R
 
-# 3. Bomen en foutanalyse (Oliver); gebruikt de outputs van stap 03/04
-Rscript moddeling/run_oliver.R        # = stappen 05, 06 en 08 achter elkaar
+# 3. Tree models and error analysis (Oliver); uses the outputs of steps 03/04
+Rscript moddeling/run_oliver.R        # = steps 05, 06 and 08 in sequence
 
-# 4. Ontwikkelexperimenten
+# 4. Development experiments
 Rscript moddeling/10_regressie_experiment/run_regression.R
 Rscript moddeling/11_historische_kenmerken/run_history_regression.R
 Rscript moddeling/13_survival/run_survival.R
 python3 moddeling/13_survival/verify_predictions.py
 
-# 5. Eindtest: NIET opnieuw draaien. Alleen de opgeslagen resultaten controleren:
+# 5. Final test: do NOT re-run. Only verify the saved results:
 python3 moddeling/09_modelkeuze_en_test/verify_saved_test.py
 
-# 6. Koppelpilot (eerste commando heeft internet nodig; 12 kleine bestanden)
+# 6. Linkage pilot (the first command needs internet; 12 small files)
 python3 -u moddeling/15_koppelpilot/download.py
 python3 moddeling/15_koppelpilot/test_pilot.py
 python3 moddeling/15_koppelpilot/pilot.py
 python3 moddeling/15_koppelpilot/report.py
 ```
 
-Gebruik bij voorkeur een nieuwe R-sessie per stap. Het opnieuw trainen van de
-bomen en het survivalmodel kan lang duren. `final_test.R` weigert te draaien zodra
-`09_modelkeuze_en_test/output/TEST_OUTCOMES_OPENED.txt` bestaat; verwijder dat
-bestand niet. Na een hertraining kunnen de hashes van modelbestanden verschillen,
-ook als de voorspellingen gelijk zijn. Overschrijf de bevroren provenance in stap 09 niet.
+Preferably use a fresh R session per step. Retraining the trees and the survival model
+can take a long time. `final_test.R` refuses to run once
+`09_modelkeuze_en_test/output/TEST_OUTCOMES_OPENED.txt` exists; do not delete that
+file. After retraining, model-file hashes can differ even when predictions are
+identical. Do not overwrite the frozen provenance in step 09.

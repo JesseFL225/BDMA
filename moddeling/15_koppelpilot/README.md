@@ -1,166 +1,163 @@
-# Stap 15 — Koppelpilot historische eerste storingsmeldingen
+# Step 15 — Linkage pilot of historical first disruption messages
 
-Eigenaar: Oliver. Ontwikkelpilot, geen nieuwe modeltraining of nieuwe eindtest.
-Zie `output/PILOT_REPORT.md` voor de gemeten resultaten na uitvoering.
+Owner: Oliver. Development pilot, no new model training and no new final test.
+See `output/PILOT_REPORT.md` for the measured results.
 
-## Status en uitkomst (13 november 2026, afgerond)
+## Status and outcome (13 November 2026, completed)
 
-Alle 12 downloads zijn gelukt en met SHA-256 gecontroleerd. De 7 unittests,
-de pipeline en de onafhankelijke hercontrole (`report.py`) zijn geslaagd.
-Let op: een eerdere tussentijdse run draaide vóórdat de 2020- en 2023-bestanden
-binnen waren en gaf daardoor 0 koppelingen voor die jaren. Die uitkomst is
-vervangen; de huidige outputs zijn gebaseerd op alle twaalf bestanden.
+All 12 downloads succeeded and were checked with SHA-256. The 7 unit tests, the
+pipeline and the independent re-check (`report.py`) passed. Note: an earlier interim
+run ran before the 2020 and 2023 files had arrived and therefore showed 0 links for
+those years. That result was replaced; the current outputs are based on all twelve files.
 
-| Pilotdag | Clean storingen | Uniek voorlopig gekoppeld | Ambigu | Geen kandidaat | Prognosetijd aanwezig |
+| Pilot day | Clean disruptions | Uniquely linked (provisional) | Ambiguous | No candidate | Forecast time present |
 |---|---:|---:|---:|---:|---:|
 | 2017-11-10 | 7 | 7 | 0 | 0 | 2 |
 | 2020-11-10 | 18 | 17 | 0 | 1 | 4 |
 | 2023-11-10 | 17 | 16 | 1 | 0 | 16 |
-| **Totaal** | **42** | **40 (95,2%)** | **1** | **1** | **22** |
+| **Total** | **42** | **40 (95.2%)** | **1** | **1** | **22** |
 
-Wat dit wel en niet zegt:
+What this does and does not show:
 
-- **Technisch haalbaar.** Voor deze drie dagen is bij bijna iedere storing een
-  eerste NS-melding met oorzaak en impact terug te vinden. 38/40 hebben volgnummer 1
-  én een initiële fase. Dit is een koppelopbrengst, geen bewezen precisie: er is
-  nog geen handmatige controle gedaan.
-- **RDT-start ≈ eerste publieke melding.** Het verschil tussen de veilige
-  beschikbaarheid van het eerste bericht en `start_time` is mediaan 1 seconde
-  (min 0, max 35 s). De `start_time` in onze dataset is dus vrijwel zeker het
-  moment van de eerste NS-publicatie, niet het fysieke incidentbegin. Dat moet in
-  het verslag zo worden benoemd: ons huidige voorspelmoment is "bij de eerste
-  publieke melding". Slechts 9/40 berichten waren strikt op of vóór die seconde
-  beschikbaar; een voorspelmoment "bij ontvangst eerste melding" lost dit op.
-- **Oorzaak verandert soms.** Bij 5/40 verschilt de eerste oorzaak van de
-  uiteindelijke. Eén geval is puur formulering ("storing in tunnel" → "storing in
-  een tunnel", ons normalisatieregeltje haalt alleen een *inleidend* "een" weg) en
-  één is een synoniem ("object" → "rommel op het spoor"). Inhoudelijk veranderd:
-  "eerdere verstoring" → "seinstoring", "onbekende oorzaak" → "defecte trein",
-  "object op het spoor" → "aanrijding". Dit bevestigt de lekzorg rond archived cause,
-  maar is te klein om een percentage voor de hele dataset te claimen.
-- **Prognose groeit door de jaren.** Een prognosetijd staat in 2/7 (2017), 4/17
-  (2020) en 16/16 (2023) eerste berichten. Dekking hangt dus sterk af van het jaar;
-  een prognose-feature werkt mogelijk alleen voor recente jaren. De betekenis van de
-  prognosecodes (1, 2, 4, 6) is nog niet tegen de documentatie gecontroleerd.
-- **De twee missers zijn bewust geweigerd.** 35090 (2020) heeft een kandidaat op
-  0 s, maar slechts één gedeeld station (AMF) terwijl de regel er twee vereist.
-  50491 (2023) heeft twee geldige NS-dossiers (6026882 en 6026884, rond de tunnel
-  Rotterdam/Den Haag). In beide gevallen lijkt handmatig een match aannemelijk,
-  maar de regels zijn vooraf vastgelegd en worden **niet achteraf** op deze data
-  aangepast. Een eventuele tie-breaker (bijv. exact gelijke stationset of kleinste
-  tijdsverschil) moet vóór een volgende ronde worden vastgelegd.
+- **Technically feasible.** For these three days a first NS message with cause and
+  impact can be found for almost every disruption. 38/40 have sequence number 1 and
+  an initial phase. This is a linkage yield, not proven precision: no manual review
+  has been done yet.
+- **RDT start ≈ first public message.** The difference between the safe availability of
+  the first message and `start_time` is a median of 1 second (min 0, max 35 s). The
+  `start_time` in our dataset is therefore almost certainly the moment of the first NS
+  publication, not the physical start of the incident. The report should say so: our
+  current prediction moment is "at the first public message". Only 9/40 messages were
+  strictly available at or before that second; a prediction moment "at receipt of the
+  first message" solves this.
+- **Cause sometimes changes.** In 5/40 the first cause differs from the final one. One
+  case is pure wording ("storing in tunnel" → "storing in een tunnel"; our normalisation
+  only removes a *leading* "een") and one is a synonym ("object" → "rommel op het spoor",
+  i.e. "debris on the track"). Changed in substance: "eerdere verstoring" (earlier
+  disruption) → "seinstoring" (signal failure), "onbekende oorzaak" (unknown cause) →
+  "defecte trein" (defective train), "object op het spoor" (object on the track) →
+  "aanrijding" (collision). This confirms the leakage concern around archived cause,
+  but is too small to claim a percentage for the whole dataset.
+- **Forecasts become more common over the years.** A forecast time is present in 2/7
+  (2017), 4/17 (2020) and 16/16 (2023) first messages. Coverage depends strongly on the
+  year; a forecast feature may only work for recent years. The meaning of the forecast
+  codes (1, 2, 4, 6) has not yet been checked against the documentation.
+- **The two misses were rejected on purpose.** 35090 (2020) has a candidate at 0 s, but
+  only one shared station (AMF) while the rule requires two. 50491 (2023) has two valid
+  NS dossiers (6026882 and 6026884, around the Rotterdam/The Hague tunnel). In both
+  cases a manual match looks plausible, but the rules were fixed in advance and are
+  **not** adjusted afterwards on these data. Any tie-breaker (e.g. identical station set
+  or smallest time difference) must be fixed before a next round.
 
-Advies: geen nieuw model op basis van deze pilot. Als de groep de verrijking wil
-doorzetten, eerst een grotere, vooraf gekozen seizoensgespreide koppelsteekproef
-met handmatige review. Voor het huidige verslag is de pilot vooral nuttig als
-onderbouwing van de beperking "archived cause/traject kunnen achteraf wijzigen" en
-als concrete aanbeveling voor vervolgonderzoek.
+Advice: no new model based on this pilot. If the group wants to pursue enrichment,
+first run a larger, pre-chosen, season-spread linkage sample with manual review. For the
+current report the pilot is mainly useful as support for the limitation "archived
+cause/route can change afterwards" and as a concrete recommendation for follow-up research.
 
-## Vraag en vooraf gekozen steekproef
+## Question and pre-chosen sample
 
-Kunnen we de eerste publiek vastgelegde NS/NDOV-melding bij een storing vinden,
-met oorspronkelijke oorzaak, impact en eventueel herstelprognose?
+Can we find the first publicly recorded NS/NDOV message for a disruption, with the
+original cause, impact and any recovery forecast?
 
-We onderzoeken 10 november in 2017, 2020 en 2023, plus de voorgaande UTC-dag als
-lookback per jaar. De al onderzochte voorbeeldbron is 10 november 2023; dezelfde
-kalenderdatum in twee eerdere jaren onderzoekt schema-/koppelstabiliteit. Dit is
-geen willekeurige of seizoensrepresentatieve steekproef. De pilot bevat alle
-storingen uit de bestaande clean selectie die op die lokale kalenderdagen starten.
-2024 en 2025 zijn geen onderdeel van deze koppelpilot. De vorige 2025-eindtest
-blijft afgerond; een verrijkt model heeft een nieuw evaluatieplan nodig.
+We study 10 November in 2017, 2020 and 2023, plus the preceding UTC day as lookback per
+year. The source already examined was 10 November 2023; the same calendar date in two
+earlier years tests schema/linkage stability. This is not a random or seasonally
+representative sample. The pilot includes all disruptions from the existing clean
+selection that start on those local calendar days. 2024 and 2025 are not part of this
+pilot. The earlier 2025 final test remains completed; an enriched model needs a new
+evaluation plan.
 
-Twaalf kleine CSV.xz-bestanden: twee typen (PIL, VTBL), drie datums met ieder een
-voorgaande dag. Bron: het samengestelde archief van Adriaan van Natijne en Simon
-Pellegrom, https://trein.fwrite.org/ . De collectie gebruikt CC BY 4.0; zie de
-bron voor de voorwaarden van de onderliggende berichttypen. Publicatie-index en
-beschrijving staan in stap 14. Geen leverancier benaderd of websiteblokkade omzeild.
+Twelve small CSV.xz files: two types (PIL, VTBL), three dates each with a preceding day.
+Source: the compiled archive by Adriaan van Natijne and Simon Pellegrom,
+https://trein.fwrite.org/ . The collection uses CC BY 4.0; see the source for the terms
+of the underlying message types. Publication index and description are in step 14. No
+supplier contacted and no website block circumvented.
 
-## Download en audit
+## Download and audit
 
-`download.py` downloadt opeenvolgend, met een pauze en een limiet van 5 MB per
-bestand. Bestaande downloads worden hergebruikt. Bestanden worden lokaal bewaard
-onder `data/external/ndov_pilot/` (Git-ignored); de manifesten bewaren bron-URL,
-bestandsgrootte en SHA-256. Een fout wordt geregistreerd, niet vervangen door
-gefabriceerde data. De bron-CSV en bestaande modellen blijven ongewijzigd.
+`download.py` downloads sequentially, with a pause and a 5 MB limit per file. Existing
+downloads are reused. Files are stored locally under `data/external/ndov_pilot/`
+(Git-ignored); the manifest keeps source URL, file size and SHA-256. A failure is
+recorded, not replaced by fabricated data. The source CSV and existing models remain
+unchanged.
 
-## Berichtverwerking
+## Message processing
 
-`pilot.py` verwerkt XML met een parser, niet met tekstpatronen. PIL bevat
-`LandelijkePatroonInformatie`; we analyseren ongeplande storingen (`EV`). VTBL is
-vrije service-informatie met een ander schema; we inventariseren de aanwezige
-schema's maar koppelen die niet automatisch als dezelfde storing. De pilot
-claimt dus geen volledige verwerking van alle NS-serviceberichten.
+`pilot.py` processes XML with a parser, not with text patterns. PIL contains
+`LandelijkePatroonInformatie` (national pattern information); we analyse unplanned
+disruptions (`EV`). VTBL is free service information with a different schema; we
+inventory the schemas present but do not link them automatically as the same
+disruption. The pilot therefore does not claim to process all NS service messages.
 
-De vierde archiefkolom blijkt in de bekeken bestanden een bronverwijzing te
-kunnen bevatten. We vertrouwen die niet blind als inhoudshash, maar berekenen
-zelf SHA-256 over de XML.
+The fourth archive column turned out to possibly contain a source reference in the
+inspected files. We do not blindly trust it as a content hash, but compute our own
+SHA-256 over the XML.
 
-Duplicaten met dezelfde XML-payload worden samengenomen, met de vroegste
-waargenomen beschikbaarheid. Per NS-dossier gebruiken we uitsluitend het vroegste
-beschikbare bericht in het opgehaalde venster. We vullen geen ontbrekende oorzaak
-of prognose aan uit een latere update. Volgnummer 1, een initiële fase (1/1A/1B)
-en geen verwijderbericht geven extra aanwijzing dat de startmelding aanwezig is.
-Dat is een controle, geen garantie dat het archief alles heeft ontvangen.
+Duplicates with the same XML payload are merged, keeping the earliest observed
+availability. Per NS dossier we use only the earliest available message in the
+retrieved window. We do not fill a missing cause or forecast from a later update.
+Sequence number 1, an initial phase (1/1A/1B) and no deletion message are extra
+evidence that the start message is present. That is a check, not a guarantee that the
+archive received everything.
 
-Vier tijden blijven gescheiden:
+Four times are kept separate:
 
-- `incident_begin`: in het NS-bericht geregistreerd incidentbegin.
-- `rdt_start`: start in onze bestaande dataset, vaak dicht bij de melding.
-- `published`/`released`: product-/vrijgavetijd in het bronbericht.
-- `received`: ontvangsttijd bij de archiefverzamelaar.
+- `incident_begin`: incident start recorded in the NS message.
+- `rdt_start`: start in our existing dataset, often close to the message.
+- `published`/`released`: product/release time in the source message.
+- `received`: receive time at the archive collector.
 
-Voor veilige beschikbaarheid gebruiken we het maximum van producttijd,
-vrijgavetijd en archiefontvangst. De parser vereist tijdzones en rekent in UTC.
-Een kleine positieve vertraging wordt gerapporteerd, niet op nul gezet.
+For safe availability we use the maximum of product time, release time and archive
+receipt. The parser requires time zones and computes in UTC. A small positive delay is
+reported, not set to zero.
 
-## Vooraf vastgelegde koppelregels
+## Linkage rules fixed in advance
 
-De bron heeft NS-dossiernummers; die zijn NIET hetzelfde als `rdt_id`.
-Een kandidaat moet voldoen aan alle volgende regels:
+The source has NS dossier numbers; these are NOT the same as `rdt_id`. A candidate
+must satisfy all of the following rules:
 
-1. Eerste producttijd maximaal 120 seconden vóór of na `rdt_start`.
-2. Overlap in stationcodes uit de getroffen baanvak-/trajectsecties. Geen stations
-   uit omreisadviezen meenemen. Hoofdletters en spaties worden genormaliseerd.
-3. Minstens twee gemeenschappelijke stations, behalve als één van de sets slechts
-   één station bevat. Overlap gedeeld door de kleinste setgrootte minstens 0,5.
-4. Precies één kandidaat voor de RDT-storing én precies één RDT-storing voor het
-   NS-dossier. Geen arbitraire keuze wanneer er meerdere kandidaten zijn.
+1. First product time at most 120 seconds before or after `rdt_start`.
+2. Overlap in station codes from the affected route sections. Stations from detour
+   advice are not included. Case and spaces are normalised.
+3. At least two shared stations, unless one of the sets contains only one station.
+   Overlap divided by the smaller set size at least 0.5.
+4. Exactly one candidate for the RDT disruption and exactly one RDT disruption for the
+   NS dossier. No arbitrary choice when there are several candidates.
 
-Kandidaten binnen tien minuten worden daarnaast voor inspectie opgeslagen, ook
-als ze niet voldoen. De grenzen zijn niet op duur, afloop of modelscores gekozen.
-Bij de oorzaakvergelijking normaliseren we hoofdletters, witruimte en alleen de
-inleidende woorden ‘door’ en ‘een’; tekstverschil en genormaliseerd verschil
-blijven afzonderlijke auditvelden. Andere synoniemen worden niet samengevoegd.
-Uiteindelijke oorzaak wordt alleen achteraf naast de eerste oorzaak gezet en
-is geen koppelcriterium. Duur/eindtijd zijn geen koppelcriteria.
+Candidates within ten minutes are also stored for inspection, even if they do not
+qualify. The limits were not chosen on duration, outcome or model scores. For the cause
+comparison we normalise case, whitespace and only the leading words "door" and "een";
+text difference and normalised difference remain separate audit fields. Other synonyms
+are not merged. The final cause is only placed next to the first cause afterwards and is
+not a linkage criterion. Duration/end time are not linkage criteria.
 
-Unieke kandidaten heten **voorlopige koppelingen**, niet bewezen ground truth.
-We koppelen mede met retrospectieve stationslijsten. Een latere locatieaanpassing
-kan daardoor selectie of foute koppelingen veroorzaken. Een kleine audit kan geen
-algemene precisieclaim rechtvaardigen. Kijk naar tijd en locatie in `candidate_audit.csv`.
+Unique candidates are called **provisional links**, not proven ground truth. Linkage
+partly uses retrospective station lists. A later location change can therefore cause
+selection or wrong links. A small audit cannot justify a general precision claim. Look
+at time and location in `candidate_audit.csv`.
 
-## Kenmerken en moment van voorspellen
+## Features and prediction moment
 
-`first_message_features_REVIEW_ONLY.csv` bevat de eerste oorzaak, impactcode,
-gevolgen, locatie en prognose inclusief betekenis/code en tijdstippen. Het is een
-auditbestand, geen direct trainingsbestand. De kolom `cause_final_for_audit_only`
-is uitdrukkelijk geen feature. Bronbestand en regelnummer maken controles mogelijk.
+`first_message_features_REVIEW_ONLY.csv` contains the first cause, impact code, effects,
+location and forecast including meaning/code and timestamps. It is an audit file, not a
+direct training file. The column `cause_final_for_audit_only` is explicitly not a
+feature. Source file and line number make checks possible.
 
-Beschikbaar op de exacte RDT-start wordt apart geteld. Een alternatief voorspelmoment
-is ontvangst van de eerste publieke melding: max(RDT-start, beschikbaarheid).
-Dat is een expliciete verandering van het operationele moment. Gebruik nooit de
-koppeltolerantie van 120 seconden als impliciete toestemming voor toekomstige data.
+Availability at the exact RDT start is counted separately. An alternative prediction
+moment is receipt of the first public message: max(RDT start, availability). That is an
+explicit change of the operational moment. Never use the 120-second linkage tolerance as
+implicit permission for future data.
 
-Een prognosetijd is niet altijd een exacte puntschatting: de code/tekst kan een
-ondergrens, een interval of onbekend uitdrukken. We bewaren dit onderscheid en
-berekenen hier geen misleidende MAE over alle prognoses. Bovendien betreft de
-bronprognose normaal herstel van de treindienst; dat moet nog worden afgestemd
-op onze eindtijddefinitie. Een later model moet de eerste bruikbare NS-prognose
-als eigen baseline vergelijken en met/zonder die invoer rapporteren.
+A forecast time is not always an exact point estimate: the code/text can express a lower
+bound, an interval or unknown. We keep this distinction and do not compute a misleading
+MAE over all forecasts. Moreover, the source forecast concerns normal recovery of the
+train service; that still needs to be aligned with our end-time definition. A later model
+must compare the first usable NS forecast as its own baseline and report with/without
+that input.
 
-## Reproductie
+## Reproduction
 
-Vanuit de repositoryroot, alleen de eerste opdracht heeft netwerk nodig:
+From the repository root; only the first command needs network access:
 
 ```sh
 python3 -u moddeling/15_koppelpilot/download.py
@@ -169,29 +166,28 @@ python3 moddeling/15_koppelpilot/pilot.py
 python3 moddeling/15_koppelpilot/report.py
 ```
 
-De synthetische tests controleren tijdzone-/tijdsgrenzen, onvoldoende overlap bij
-een gedeeld knooppunt, meervoudige kandidaten en uitsluiting van adviesstations.
-De pipeline controleert manifesthashes en alle eerder bevroren test-inputs/models.
+The synthetic tests check time-zone/time limits, insufficient overlap at a shared hub,
+multiple candidates and exclusion of advice stations. The pipeline checks manifest
+hashes and all previously frozen test inputs/models.
 
-## Outputs en overdracht
+## Outputs
 
-- `download_manifest.json`: alle aangevraagde bestanden, successen en fouten.
-- `message_inventory.csv`: aantallen berichten en ontvangen tijdsbereik per bestand.
-- `parse_errors.csv`, `non_pil_schemas.csv`: parserfouten en alternatieve schema's.
-- `first_observed_dossiers.csv`: eerste waargenomen EV-bericht per brondossier.
-- `candidate_audit.csv`: tijd-/locatiebewijs en alle nabije kandidaten.
-- `linkage_results.csv`: alle geselecteerde clean storingen, inclusief niet-gekoppelde.
-- `first_message_features_REVIEW_ONLY.csv`: voorlopige eerste-berichtkenmerken.
-- `coverage_summary.csv`, `checks.csv`, `PILOT_REPORT.md`: conclusie en controles.
+- `download_manifest.json`: all requested files, successes and failures.
+- `message_inventory.csv`: message counts and received time range per file.
+- `parse_errors.csv`, `non_pil_schemas.csv`: parser errors and alternative schemas.
+- `first_observed_dossiers.csv`: first observed EV message per source dossier.
+- `candidate_audit.csv`: time/location evidence and all nearby candidates.
+- `linkage_results.csv`: all selected clean disruptions, including unlinked ones.
+- `first_message_features_REVIEW_ONLY.csv`: provisional first-message features.
+- `coverage_summary.csv`, `checks.csv`, `independent_checks.csv`, `PILOT_REPORT.md`: conclusion and checks.
 
-Bij goede uitkomst volgt eerst een grotere, seizoensgespreide koppelvalidatie met
-handmatige review en expliciete featurebeschikbaarheid. Pas daarna een nieuw
-modelonderzoek. Niet stilzwijgend koppelen aan of overschrijven van de clean CSV.
-Geen commits, pushes of trainingsruns in deze pilot. Code met AI-assistentie.
+With a good outcome, a larger, season-spread linkage validation with manual review and
+explicit feature availability comes first. Only then a new modelling study. Do not
+silently link to or overwrite the clean CSV. Code prepared with AI assistance.
 
-## Technische bron
+## Technical source
 
-https://data.ndovloket.nl/docs/infoplus/VI/ndov-ri-cdm-common-vi-v1.0.3.xsd
-beschrijft onder meer de gevolgen voor de treindienst en prognosevelden. Oudere
-schemadocumentatie is ondersteunend; aangetroffen versies/waarden zijn leidend
-voor de audit en moeten vóór verdere generalisatie per periode worden gecontroleerd.
+https://data.ndovloket.nl/docs/infoplus/VI/ndov-ri-cdm-common-vi-v1.0.3.xsd describes,
+among others, the effects on train service and the forecast fields. Older schema
+documentation is supporting; the versions/values actually found are leading for the
+audit and must be checked per period before further generalisation.

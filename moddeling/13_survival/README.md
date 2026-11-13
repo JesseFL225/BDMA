@@ -4,7 +4,7 @@ Owner: Oliver; review with Mart. Status: implemented; validation outputs and
 selection are in `output/selection_and_uncertainty.md`. Development experiment
 before Step 09, not a final test result.
 
-> **Status 13 november 2026:** afgerond. De 2017-variant is gekozen als tijd-only model en daarna getest in [stap 09](../09_modelkeuze_en_test/README.md). Waar hieronder staat dat 2025 "locked" is, beschrijft dat de situatie tijdens deze stap. Procesverhaal: [docs/PROCESVERLOOP.md](../../docs/PROCESVERLOOP.md).
+> **Status 13 November 2026:** completed. The 2017 variant was chosen as the time-only model and then tested in [step 09](../09_modelkeuze_en_test/README.md). Where this README says 2025 is "locked", it describes the situation during this step. Full story: [docs/PROCESS.md](../../docs/PROCESS.md).
 
 ## Question and assignment fit
 

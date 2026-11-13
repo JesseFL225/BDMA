@@ -1,58 +1,62 @@
-# Voorspellen van de duur van treinstoringen (BDMA, Part B)
+# Predicting the duration of train disruptions (BDMA, Part B)
 
-Bij het begin van een treinstoring voorspellen we een kansverdeling over 102
-tijdvakken van 10 minuten (laatste: ≥ 1010 minuten). Data: Rijden de Treinen,
-2011–2025, 44.248 geselecteerde binnenlandse storingen.
+At the start of a train disruption we predict a probability distribution over 102
+ten-minute intervals (the last one: ≥ 1010 minutes). Data: Rijden de Treinen,
+2011–2025, 44,248 selected domestic disruptions.
 
-**Status (13 november 2026):** modellering afgerond en eindtest op 2025 uitgevoerd.
-Verslag, presentatie en code-inlevering moeten nog worden afgerond.
+**Status (13 November 2026):** modelling completed and final test on 2025 done.
+The report, presentation and code submission still need to be finished.
 
-## Begin hier
+## Start here
 
-| Wil je… | Lees |
+| If you want to… | Read |
 |---|---|
-| Begrijpen wat we gedaan hebben, welke afslagen we namen en waarom | [docs/PROCESVERLOOP.md](docs/PROCESVERLOOP.md) |
-| Exacte cijfers, beperkingen en hoe je het verslag/de slides afrondt | [docs/OVERDRACHT_MODELLERING.md](docs/OVERDRACHT_MODELLERING.md) |
-| De conceptrapporttekst voor B5 (Engels) | [moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md](moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md) |
-| Een stap reproduceren of de code begrijpen | [moddeling/README.md](moddeling/README.md) |
+| Understand what we did, which decisions we took and why | [docs/PROCESS.md](docs/PROCESS.md) |
+| Get exact numbers, limitations and how to finish the report/slides | [docs/HANDOVER.md](docs/HANDOVER.md) |
+| Read the draft B5 report text | [moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md](moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md) |
+| Reproduce a step or understand the code | [moddeling/README.md](moddeling/README.md) |
+| Work on this project with an AI assistant (ChatGPT, Claude, Copilot…) | [AGENTS.md](AGENTS.md): rules, pitfalls, a map of every file, and which files to upload |
 
-## Resultaat in het kort (eindtest 2025, lagere log loss is beter)
+## Result in short (final test 2025, lower log loss is better)
 
-| Informatie bij voorspelling | Gekozen model | Log loss | Baseline | Exact goed |
+| Information at prediction time | Chosen model | Log loss | Baseline | Exact class |
 |---|---|---:|---:|---:|
-| Alleen tijdkenmerken | Survival-boosting (getraind 2017–2023) | 3,1620 | 3,2065 | 10,93% |
-| Opgeslagen context (oorzaak, traject) | Random forest (getraind 2011–2023) | 3,0189 | 3,0273 | 12,02% |
+| Time features only | Survival boosting (trained 2017–2023) | 3.1620 | 3.2065 | 10.93% |
+| Archived context (cause, route) | Random forest (trained 2011–2023) | 3.0189 | 3.0273 | 12.02% |
 
-Beide modellen verslaan hun baseline, maar de winst is bescheiden en een precieze
-eindtijd blijft onvoorspelbaar. Zie de overdracht voor onzekerheid en beperkingen.
+Both models beat their baseline, but the gain is modest and a precise end time remains
+unpredictable. See the handover for uncertainty and limitations.
 
-## Mappen
+## Folders
 
 ```
-data/                       ruwe en clean dataset (alleen Data Cleaning schrijft hierin)
-Data Cleaning/              ruwe → clean data, met rapport per filter
-descriptive data analysis/  verkenning van de ruwe data
-moddeling/                  alle modelstappen 01–15, elk met README, code en output/
-docs/                       procesverloop en overdracht
+data/                       raw and clean dataset (only Data Cleaning writes here)
+Data Cleaning/              raw → clean data, with a report per filter
+descriptive data analysis/  exploration of the raw data
+moddeling/                  all modelling steps 01–15, each with README, code and output/
+docs/                       process story and handover
 ```
 
-## Snel starten
+Some folder names are Dutch (e.g. `moddeling` = modelling, `foutanalyse` = error
+analysis). They were kept because scripts refer to them; see the glossary in AGENTS.md.
 
-Vanuit deze map, met R 4.4 of nieuwer:
+## Quick start
+
+From this folder, with R 4.4 or newer:
 
 ```sh
-Rscript "Data Cleaning/clean_disruptions.R"                     # clean data opnieuw opbouwen
-Rscript moddeling/02_voorbereiding/validate_preparation.R        # gedeelde basis controleren
-python3 moddeling/09_modelkeuze_en_test/verify_saved_test.py     # eindtest controleren
+Rscript "Data Cleaning/clean_disruptions.R"                     # rebuild the clean data
+Rscript moddeling/02_voorbereiding/validate_preparation.R        # check the shared basis
+python3 moddeling/09_modelkeuze_en_test/verify_saved_test.py     # verify the final test
 ```
 
-De volledige volgorde en benodigde packages staan in [moddeling/README.md](moddeling/README.md).
-Draai de eindtest (`final_test.R`) niet opnieuw: 2025 is één keer gebruikt en blijft dat.
+The full order and required packages are in [moddeling/README.md](moddeling/README.md).
+Do not re-run the final test (`final_test.R`): 2025 has been used once and stays that way.
 
-## Team en bron
+## Team and source
 
-Jesse (data-aanlevering), Mart (verkenning, target, gedeelde voorbereiding en evaluatie,
-baselines, logistic regression), Oliver (cleaning, bomenmodellen, foutanalyse,
-experimenten, survival, eindtest, bronnenonderzoek).
+Jesse (data supply), Mart (exploration, target, shared preparation and evaluation,
+baselines, logistic regression), Oliver (cleaning, tree models, error analysis,
+experiments, survival, final test, source research).
 Data: [Rijden de Treinen](https://www.rijdendetreinen.nl/open-data/treinstoringen), CC BY 4.0.
-AI-assistentie is gebruikt bij code, analyse en documentatie.
+AI assistance was used for code, analysis and documentation.
