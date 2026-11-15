@@ -20,3 +20,4 @@ data/external/
 
 # OS files
 .DS_Store
+graphify-out/
