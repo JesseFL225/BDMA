@@ -67,6 +67,8 @@ must **not** do, which misunderstandings are common, and what every folder and f
 | "Within one class" | Not the same as "at most 10 minutes off"; the open final class has no midpoint. |
 | `start_time` | The moment of the first public NS message (step 15), not the physical start. |
 | Logistic regression has the highest accuracy | True (12.76% on validation), but the choice was fixed on log loss in advance. |
+| `fig1_duration_distribution.png` | Its bars are (0, 10], (10, 20], …, while the classes are [0, 10), [10, 20), …. The report uses `descriptive data analysis/clean_analysis_output/figure_descriptive_analysis.png` instead. |
+| "The largest class is 0–10 minutes" | True for all years together (13.4%) and for the training years, but in the test year 2025 the largest class is 20–30 minutes (12.2%); 0–10 minutes holds 10.2% there (`report_numbers.csv`). |
 | Dutch words in folder names and data values | Folder names were kept because scripts refer to them (glossary below). Data values such as `cause_nl` are source data. All documentation is in English. |
 
 ## Glossary of Dutch names
@@ -98,6 +100,9 @@ must **not** do, which misunderstandings are common, and what every folder and f
 | Differences between years | `Data Cleaning/output/yearly_profile.csv` |
 | Class definition | `moddeling/01_target/output/classes.csv` |
 | **Report-ready figures and tables** | `moddeling/16_report_inputs/output/` (fig1–fig6, table1–table5) |
+| Figure 1 and the Appendix F figures of the report | `descriptive data analysis/clean_analysis_output/` (`figure_descriptive_analysis.png`, `figure_still_going.png`, `figure_entropy_chart.png`) |
+| Descriptive numbers quoted in report steps 2–4 | `descriptive data analysis/clean_analysis_output/report_numbers.csv` and the other CSVs in that folder |
+| Review of the data preparation | `descriptive data analysis/REVIEW_data_preparation.md`, `clean_analysis_output/review_checks.csv` |
 | Decision-level test results (Brier, AUC per threshold) | `moddeling/16_report_inputs/output/table5_test_decision_level.csv` |
 | Feature dictionary (variables used) | `moddeling/16_report_inputs/output/table1_feature_dictionary.csv` |
 
@@ -132,8 +137,16 @@ figures and sources), `README.md` (status per section and checklist for the edit
   `yearly_retention.csv`, `yearly_profile.csv`: per-year retention and profile.
   `threshold_sensitivity.csv`: effect of other limits.
 
-**`descriptive data analysis/`** (phase 0): `raw_descriptive_analysis.R` and its
-summaries/plots of the raw data in `raw_analysis_output/`.
+**`descriptive data analysis/`**
+- Phase 0: `raw_descriptive_analysis.R` and its summaries/plots of the raw data in
+  `raw_analysis_output/`.
+- After cleaning (report steps 2–4): `review_clean_data.R` (20 checks of the cleaning; a
+  failed check stops the script), `REVIEW_data_preparation.md` (findings and follow-up) and
+  `clean_descriptive_analysis.R` (base R: target, cause groups, start time, entropy and
+  information gain, years). Results in `clean_analysis_output/`:
+  `figure_descriptive_analysis.png` (report Figure 1), `figure_still_going.png` and
+  `figure_entropy_chart.png` (Appendix F), `report_numbers.csv` (the descriptive numbers
+  quoted in the report), `review_checks.csv` and the tables behind the figures.
 
 **`docs/`**: `PROCESS.md` (story and decisions), `HANDOVER.md` (numbers and finishing).
 
@@ -157,7 +170,7 @@ summaries/plots of the raw data in `raw_analysis_output/`.
 | `14_bronnenonderzoek/` | README only: public sources for extra predictors (NS/NDOV, KNMI, stations) |
 | `15_koppelpilot/` | `download.py`, `pilot.py`, `report.py`, `test_pilot.py`; links first NS messages to disruptions on 3 days; `output/PILOT_REPORT.md` |
 | `16_report_inputs/` | `REPORT_INPUTS.md` (what to write per report section), `make_report_inputs.R` (all report figures/tables from saved results, 18 checks), `README.md` (code guide for the frozen files); `output/` = fig1–fig6, table1–table5 |
-| `run_all.R` | **Safe single entry point:** frozen-hash check, all automated checks, re-verification, report inputs. No training |
+| `run_all.R` | **Safe single entry point:** frozen-hash check, review checks and descriptive analysis of the clean data, all automated checks, re-verification, report inputs. No training |
 | `run_oliver.R` | Retrains steps 05, 06 and 08 (overwrites frozen models: only in a separate copy) |
 
 Git-ignored and therefore not in the repository: `output/models/` (fitted models,

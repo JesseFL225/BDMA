@@ -89,6 +89,10 @@ archived context) because the stored cause may be revised.
 - **Fig 1 `fig1_duration_distribution.png`:** median 51 min; 45.1% last over 60 min;
   7.0% over 300 min; 1.02% in the final class (≥ 1010 min). Message: strongly
   right-skewed, so exact prediction is hard and the long tail matters.
+  *Note (19 November):* the bars of this figure are (0, 10], (10, 20], …, while the classes
+  are [0, 10), [10, 20), …. The report and the deck use panel A of
+  `descriptive data analysis/clean_analysis_output/figure_descriptive_analysis.png`
+  instead, whose bars are the classes.
 - **Fig 2 `fig2_yearly_shift.png`:** the 2017 break (share kept and median duration).
   Message: why we also trained from 2017.
 - **Table 2 `table2_cause_groups.csv`:** cause groups differ enormously in duration:
@@ -200,7 +204,10 @@ the **random forest with archived context**.
 
 1. Question and stakeholder (traveller information at the first message)
 2. Data and cleaning (62,540 → 44,248; fig 2)
-3. Target: a distribution over 10-minute intervals (fig 1)
+3. Target: a distribution over 10-minute intervals (panel A of
+   `descriptive data analysis/clean_analysis_output/figure_descriptive_analysis.png`, not
+   fig 1, see the note above; `figure_still_going.png` in the same folder shows the same
+   target as the share still going after t minutes, per cause group)
 4. Setup: two information scenarios, chronological split, log loss
 5. Models compared (the six families)
 6. Validation results (fig 3)

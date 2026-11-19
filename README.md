@@ -14,6 +14,8 @@ The report, presentation and code submission still need to be finished.
 | Understand what we did, which decisions we took and why | [docs/PROCESS.md](docs/PROCESS.md) |
 | Get exact numbers, limitations and how to finish the report/slides | [docs/HANDOVER.md](docs/HANDOVER.md) |
 | **Write the report or the deck** (what to say per section, with ready figures and tables) | [moddeling/16_report_inputs/REPORT_INPUTS.md](moddeling/16_report_inputs/REPORT_INPUTS.md) |
+| Write report steps B2–B5 from a checklist, and see the status per section | [report/B2-B5_writing_guide.md](report/B2-B5_writing_guide.md), [report/README.md](report/README.md) |
+| See the review of the data preparation and the descriptive analysis behind report steps 2–4 | [descriptive data analysis/REVIEW_data_preparation.md](descriptive%20data%20analysis/REVIEW_data_preparation.md), `descriptive data analysis/clean_descriptive_analysis.R` |
 | Read the draft B5 wording | [moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md](moddeling/09_modelkeuze_en_test/output/B5_FINAL_REPORT_TEXT.md) |
 | Reproduce a step or understand the code | [moddeling/README.md](moddeling/README.md) |
 | Work on this project with an AI assistant (ChatGPT, Claude, Copilot…) | [AGENTS.md](AGENTS.md): rules, pitfalls, a map of every file, and which files to upload |
@@ -35,8 +37,10 @@ the random forest, provided the cause is available at the first message.
 ```
 data/                       raw and clean dataset (only Data Cleaning writes here)
 Data Cleaning/              raw → clean data, with a report per filter
-descriptive data analysis/  exploration of the raw data
-moddeling/                  all modelling steps 01–15, each with README, code and output/
+descriptive data analysis/  exploration of the raw data; review of the cleaning and descriptive
+                            analysis of the clean data (report Figure 1 and Appendix F)
+moddeling/                  all modelling steps 01–16, each with README, code and output/
+report/                     writing guide for report steps B2–B5 and status per section
 docs/                       process story and handover
 ```
 
@@ -48,12 +52,13 @@ analysis). They were kept because scripts refer to them; see the glossary in AGE
 From this folder, with R 4.4 or newer:
 
 ```sh
-Rscript moddeling/run_all.R   # ~40 s: checks everything and rebuilds all report figures/tables
+Rscript moddeling/run_all.R   # ~45 s: checks everything and rebuilds all report figures/tables
 ```
 
 It verifies that the code, data and models used for the final test are unchanged,
-re-runs every automated check, re-verifies the saved predictions and regenerates
-`moddeling/16_report_inputs/output/`. It trains no models.
+re-runs every automated check (including the review checks of the clean data),
+re-verifies the saved predictions and regenerates `moddeling/16_report_inputs/output/`
+and `descriptive data analysis/clean_analysis_output/`. It trains no models.
 
 The full order and required packages are in [moddeling/README.md](moddeling/README.md).
 Do not re-run the final test (`final_test.R`): 2025 has been used once and stays that way.
@@ -62,6 +67,7 @@ Do not re-run the final test (`final_test.R`): 2025 has been used once and stays
 
 Jesse (data supply), Mart (exploration, target, shared preparation and evaluation,
 baselines, logistic regression), Oliver (cleaning, tree models, error analysis,
-experiments, survival, final test, source research).
+experiments, survival, final test, source research), Max (review of the data
+preparation, descriptive analysis of the clean data).
 Data: [Rijden de Treinen](https://www.rijdendetreinen.nl/open-data/treinstoringen), CC BY 4.0.
 AI assistance was used for code, analysis and documentation.
