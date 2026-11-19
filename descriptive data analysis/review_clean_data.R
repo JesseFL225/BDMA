@@ -16,7 +16,8 @@
 # Output: descriptive data analysis/clean_analysis_output/review_checks.csv
 #
 # The script only reads the data. It never changes a file in data/.
-# A check that passes prints TRUE. The numbers behind the review findings are
+# A check that passes prints TRUE; a check that fails stops the script, so that
+# moddeling/run_all.R notices it. The numbers behind the review findings are
 # saved in review_checks.csv.
 #
 # Reproduction of the cleaning itself was checked separately: running
@@ -48,33 +49,42 @@ filter_audit[, c("step", "description", "removed_this_step", "remaining_rows")]
 
 ##### 2. Do the files add up? #####
 
+# check() returns its input, so a passed check still prints TRUE. A failed check
+# stops the script; the error message names the check.
+check <- function(passed) {
+  if (!isTRUE(passed)) {
+    stop("This review check failed.")
+  }
+  return(passed)
+}
+
 # The row counts named in the report.
-nrow(raw) == 62540
-nrow(disruptions) == 44248
+check(nrow(raw) == 62540)
+check(nrow(disruptions) == 44248)
 
 # Every raw record is either kept or excluded, never both.
-nrow(disruptions) + nrow(excluded) == nrow(raw)
-all(disruptions$rdt_id %in% raw$rdt_id)
-all(excluded$rdt_id %in% raw$rdt_id)
-sum(disruptions$rdt_id %in% excluded$rdt_id) == 0
+check(nrow(disruptions) + nrow(excluded) == nrow(raw))
+check(all(disruptions$rdt_id %in% raw$rdt_id))
+check(all(excluded$rdt_id %in% raw$rdt_id))
+check(sum(disruptions$rdt_id %in% excluded$rdt_id) == 0)
 
 # One row is one disruption: no ID occurs twice.
-sum(duplicated(raw$rdt_id)) == 0
-sum(duplicated(disruptions$rdt_id)) == 0
+check(sum(duplicated(raw$rdt_id)) == 0)
+check(sum(duplicated(disruptions$rdt_id)) == 0)
 
 # The filter table (Appendix B of the report) matches the excluded records.
-sum(filter_audit$removed_this_step) == nrow(excluded)
+check(sum(filter_audit$removed_this_step) == nrow(excluded))
 table(excluded$first_exclusion_reason)
 
 # The stacked raw file covers every year, and the year label fits the start time.
 table(raw$source_year)
-all(raw$source_year == as.integer(substr(raw$start_time, start = 1, stop = 4)))
+check(all(raw$source_year == as.integer(substr(raw$start_time, start = 1, stop = 4))))
 
 # The clean file is the file that the models were tested on (same MD5 hash).
 frozen_files <- read.csv("moddeling/09_modelkeuze_en_test/output/frozen_manifest.csv")
 frozen_hash <- frozen_files$md5[frozen_files$path == "data/disruptions_2011_2025_clean.csv"]
 clean_hash <- unname(tools::md5sum("data/disruptions_2011_2025_clean.csv"))
-clean_hash == frozen_hash
+check(clean_hash == frozen_hash)
 
 
 ##### 3. Is the clean file valid? #####
@@ -87,18 +97,18 @@ colSums(is.na(disruptions))
 ## 3.2 The target: duration in minutes
 
 summary(disruptions$duration_minutes)
-all(disruptions$duration_minutes >= 1 & disruptions$duration_minutes <= 1440)
-all(disruptions$duration_minutes %% 1 == 0)
+check(all(disruptions$duration_minutes >= 1 & disruptions$duration_minutes <= 1440))
+check(all(disruptions$duration_minutes %% 1 == 0))
 
 # Recalculate the duration from the start and end time. Both are stored in UTC.
 start_time <- as.POSIXct(disruptions$start_time, format = "%Y-%m-%dT%H:%M:%SZ", tz = "UTC")
 end_time <- as.POSIXct(disruptions$end_time, format = "%Y-%m-%dT%H:%M:%SZ", tz = "UTC")
-sum(is.na(start_time)) == 0
-sum(is.na(end_time)) == 0
+check(sum(is.na(start_time)) == 0)
+check(sum(is.na(end_time)) == 0)
 
 calculated_minutes <- as.numeric(difftime(end_time, start_time, units = "mins"))
 max(abs(disruptions$duration_minutes - calculated_minutes))
-all(abs(disruptions$duration_minutes - calculated_minutes) <= 1)
+check(all(abs(disruptions$duration_minutes - calculated_minutes) <= 1))
 
 ## 3.3 The time columns are local Dutch time
 
@@ -107,10 +117,10 @@ local_month <- as.integer(format(start_time, format = "%m", tz = "Europe/Amsterd
 local_weekday <- as.integer(format(start_time, format = "%u", tz = "Europe/Amsterdam"))
 local_hour <- as.integer(format(start_time, format = "%H", tz = "Europe/Amsterdam"))
 
-all(local_year == disruptions$start_year)
-all(local_month == disruptions$start_month)
-all(local_weekday == disruptions$start_weekday)
-all(local_hour == disruptions$start_hour)
+check(all(local_year == disruptions$start_year))
+check(all(local_month == disruptions$start_month))
+check(all(local_weekday == disruptions$start_weekday))
+check(all(local_hour == disruptions$start_hour))
 
 
 ##### 4. What do the filters remove? #####

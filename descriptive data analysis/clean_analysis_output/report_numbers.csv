@@ -18,3 +18,12 @@
 "Training years 2011-2023: unknown cause (%)",1.1
 "Validation year 2024: unknown cause (%)",4.6
 "Test year 2025: unknown cause (%)",5.1
+"Test year 2025: share of disruptions in the class 0-10 minutes (%)",10.2
+"Test year 2025: share of disruptions in its largest class, 20-30 minutes (%)",12.2
+"Entropy of 'longer than 60 minutes' (bits)",0.99
+"Information gain of the cause group (% of that entropy)",16.9
+"Information gain of the start hour (% of that entropy)",1.9
+"Information gain of the weekday (% of that entropy)",0
+"Information gain of the month (% of that entropy)",0.1
+"Entropy of the 102 target classes (bits)",4.69
+"Information gain of the cause group for the 102 classes (% of that entropy)",5.9

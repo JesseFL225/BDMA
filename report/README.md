@@ -24,7 +24,7 @@ Each step (B2, B3, B4, B5) has the same parts:
 | B5 Modelling + performance | To write, from the guide (Table 2, Figure 3) |
 | B6 Insights | Your draft; its numbers match the outputs |
 | Appendix A–E | Your draft; Table A1 corrected after the data review; add Table A2 from the bottom of the guide |
-| Appendix F | Descriptive statistics, in the doc (Max): Table F1 cause groups, Table F2 years |
+| Appendix F | Descriptive statistics, in the doc (Max): Table F1 cause groups, Table F2 years, Figure F1 share still going per cause group, Figure F2 entropy chart (information gain) |
 
 ## Figures and tables
 
@@ -39,6 +39,8 @@ In `moddeling/16_report_inputs/output/` unless a path is given.
 | Figure 3 (B5) | `fig5_information_vs_algorithm.png` |
 | Figure C1 (appendix) | `fig3_validation_comparison.png` |
 | Figure D1 (appendix) | `fig4_test_gain_over_baseline.png` |
+| Figure F1 (appendix) | `descriptive data analysis/clean_analysis_output/figure_still_going.png` |
+| Figure F2 (appendix) | `descriptive data analysis/clean_analysis_output/figure_entropy_chart.png` |
 
 ## Still open before 8 December
 
