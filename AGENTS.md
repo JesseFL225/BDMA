@@ -117,6 +117,9 @@ what was checked and with which package versions.
 - `README.md`: entry point for humans. `AGENTS.md`: this file. `CLAUDE.md`: imports this file for Claude Code.
 - `Train-disruptions.Rproj`: RStudio project. `.gitignore`: excludes model caches, local packages and downloads.
 
+**`report/`**: `B2-B5_writing_guide.md` (per step: must mention, if there is room, avoid,
+figures and sources), `README.md` (status per section and checklist for the editor).
+
 **`data/`**
 - `disruptions_2011_2025_raw.csv`: source data, never modified (62,540 records).
 - `disruptions_2011_2025_clean.csv`: cleaned data used by all models (44,248 rows).
