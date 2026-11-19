@@ -1,0 +1,20 @@
+"number","value"
+"Cleaned disruptions",44248
+"Median duration (minutes)",51
+"Mean duration (minutes)",109
+"Longer than 60 minutes (%)",45.1
+"300 minutes or longer (%)",7
+"Median duration of the disruptions longer than 60 minutes (minutes)",143
+"Target classes",102
+"Largest class: share of disruptions (%)",13.4
+"Classes with fewer than 50 disruptions",55
+"Start 06:00-23:59: share of disruptions (%)",93.9
+"Start 06:00-23:59: lowest hourly share over 60 minutes (%)",37.5
+"Start 06:00-23:59: highest hourly share over 60 minutes (%)",52.6
+"Start 01:00-05:59: share of disruptions (%)",5.2
+"Start 01:00-05:59: share over 60 minutes (%)",74.7
+"2011-2016: share of raw records kept (%)",11.7
+"2017-2025: share of raw records kept (%)",88.9
+"Training years 2011-2023: unknown cause (%)",1.1
+"Validation year 2024: unknown cause (%)",4.6
+"Test year 2025: unknown cause (%)",5.1

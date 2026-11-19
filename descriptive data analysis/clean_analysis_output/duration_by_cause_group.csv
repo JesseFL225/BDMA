@@ -1,0 +1,10 @@
+"cause_group","disruptions","share_of_disruptions_pct","first_quartile_minutes","median_minutes","third_quartile_minutes","share_over_60_min_pct"
+"rolling stock",18457,41.7,11,27,57,23.3
+"infrastructure",11045,25,51,111,194,71.3
+"external",5228,11.8,17,33,62,25.7
+"accidents",4534,10.2,41,129,199,68.5
+"engineering work",1640,3.7,48,106,250.25,67.6
+"logistical",1447,3.3,52,116,199.5,69.9
+"unknown",909,2.1,31,53,75,38.6
+"staff",543,1.2,268.5,481,1122,93.7
+"weather",445,1,89,166,323,82
