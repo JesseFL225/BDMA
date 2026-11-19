@@ -1,0 +1,11 @@
+"cause_group","disruptions","after_30_min_pct","after_60_min_pct","after_120_min_pct"
+"all disruptions",44248,64.2,45.1,27.1
+"rolling stock",18457,46.2,23.3,9.4
+"infrastructure",11045,83.3,71.3,45.8
+"external",5228,53.8,25.7,9.9
+"accidents",4534,79.7,68.5,51.9
+"engineering work",1640,87.6,67.6,46
+"logistical",1447,85.7,69.9,48
+"unknown",909,75.4,38.6,12.1
+"staff",543,95.8,93.7,89.5
+"weather",445,88.1,82,65.8
