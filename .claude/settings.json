@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/Olive/.local/bin/graphify hook-guard search",
+            "command": "if [ -x \"$HOME/.local/bin/graphify\" ]; then \"$HOME/.local/bin/graphify\" hook-guard search; fi",
             "timeout": 10
           }
         ]
@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/Olive/.local/bin/graphify hook-guard read",
+            "command": "if [ -x \"$HOME/.local/bin/graphify\" ]; then \"$HOME/.local/bin/graphify\" hook-guard read; fi",
             "timeout": 10
           }
         ]
@@ -28,7 +28,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/Olive/.local/bin/graphify hook-guard compact",
+            "command": "if [ -x \"$HOME/.local/bin/graphify\" ]; then \"$HOME/.local/bin/graphify\" hook-guard compact; fi",
             "timeout": 10
           }
         ]
