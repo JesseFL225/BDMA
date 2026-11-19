@@ -9,6 +9,7 @@ TIMEZONE <- "Europe/Amsterdam"
 INPUT <- "data/disruptions_2011_2025_raw.csv"
 OUTPUT <- "Data Cleaning/output"
 CLEAN_OUTPUT <- "data/disruptions_2011_2025_clean.csv"
+EXPECTED_RAW_ROWS <- 62540 # The raw file is never changed; fewer rows mean an incomplete read.
 
 stopifnot(file.exists(INPUT))
 dir.create(OUTPUT, recursive = TRUE, showWarnings = FALSE)
@@ -19,6 +20,9 @@ expected <- c("rdt_id", "ns_lines", "rdt_lines", "rdt_lines_id",
  "statistical_cause_nl", "statistical_cause_en", "cause_group",
  "start_time", "end_time", "duration_minutes", "source_year")
 stopifnot(identical(names(raw), expected), nrow(raw) > 0)
+# In a non-UTF-8 locale read.csv() stops at the first accented character and only warns.
+if (nrow(raw) != EXPECTED_RAW_ROWS) stop("Read ", nrow(raw), " of ", EXPECTED_RAW_ROWS,
+  " raw records. Run R in a UTF-8 locale, for example with LC_ALL=C.UTF-8.")
 x <- raw
 for (nm in names(x)) {
   x[[nm]] <- trimws(gsub("[[:space:]]+", " ", x[[nm]]))

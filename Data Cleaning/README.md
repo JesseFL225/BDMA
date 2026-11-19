@@ -10,6 +10,17 @@ This reads `data/disruptions_2011_2025_raw.csv` and regenerates the file in data
 `data/disruptions_2011_2025_clean.csv`: 44,248 disruptions with the current input and settings.
 The raw dataset is never overwritten.
 
+Rerun the cleaning only in a separate copy of the repository. The clean file is frozen for
+the 2025 test (`moddeling/09_modelkeuze_en_test/output/frozen_manifest.csv`). On another
+machine or R version a few `difference_minutes` values are written with one digit more or
+less. The data stay the same, but the MD5 changes and `moddeling/run_all.R` then stops with
+"Frozen files changed". If the file was overwritten, restore it with
+`git checkout -- data/disruptions_2011_2025_clean.csv`.
+
+Run R in a UTF-8 locale (for example `LC_ALL=C.UTF-8`). In another locale `read.csv()` stops
+at the first accented character with only a warning; the script then stops because it read
+fewer than 62,540 raw records.
+
 The `output` folder contains the step-by-step Dutch report, filter counts,
 excluded records with all reasons, endpoint classification, missingness,
 retention by year and threshold sensitivity.
@@ -30,7 +41,7 @@ python3 "Data Cleaning/yearly_profile.py"
 Note: the `long_disruption` column (duration > 60) stems from the original binary
 plan. The modelling target is the 102-class duration target in `moddeling/01_target/`.
 
-Run validation, including rebuilding the outputs:
+Run validation, including rebuilding the outputs (it reruns the cleaning, so use a separate copy):
 
 ```sh
 Rscript "Data Cleaning/test_clean_disruptions.R"
