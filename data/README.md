@@ -9,6 +9,13 @@ Rebuild the clean dataset from the repository root with:
 Rscript "Data Cleaning/clean_disruptions.R"
 ```
 
+Rebuild only in a separate copy of the repository. On another machine or R version a few
+`difference_minutes` values are written with one digit more or less. The data stay the same,
+but the MD5 of the clean file changes and `moddeling/run_all.R` then stops with "Frozen files
+changed". If the file was overwritten, restore it with
+`git checkout -- data/disruptions_2011_2025_clean.csv`. Run R in a UTF-8 locale: the script
+stops when it reads fewer than 62,540 raw records.
+
 See `../Data Cleaning/output/cleaning_report.md` for filters and limitations, and
 `../docs/PROCESS.md` ("How the dataset changed") for dataset versions and differences
 between years. Model steps read these files and never do their own cleaning.

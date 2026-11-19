@@ -14,6 +14,22 @@ and nothing may change: the clean file is frozen for the 2025 test.
 The points below are about how the report describes the data (1 to 6) and about small
 fixes in the documentation and the cleaning script (7 to 9).
 
+## Follow-up on 19 November 2026
+
+The findings were handled on the same day.
+
+| Finding | Status |
+|---|---|
+| 1 | Sections 2 and 4 of the report describe 2011 to 2016 as a small, selected sample |
+| 2 | Reworded in the report (section 1 and Table B1) and in the writing guide. The label of step 5 in Table B1 now differs from `filter_audit.csv`; the numbers are the same |
+| 3 and 4 | Table A1 in the report is corrected and has the target, the split variable and the column "Known at the first message?". `table1_feature_dictionary.csv` (step 16) still has the earlier wording |
+| 5 | Not in the report text, for lack of space; recorded here only |
+| 6 | In section 2 of the report, together with the pilot result (5 of 40) |
+| 7 | Note added to `data/README.md` and `Data Cleaning/README.md` |
+| 8 | `clean_disruptions.R` now stops when it reads fewer than 62,540 raw records |
+| 9 | Not changed: the team follows the writing guide, which names NS and ProRail |
+| Figure 1 | The report uses the new three-panel figure. `fig1_duration_distribution.png` is unchanged and not used |
+
 ## What was checked and passed
 
 | Check | Result |

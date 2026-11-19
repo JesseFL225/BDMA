@@ -9,12 +9,16 @@ so you can write it in your own words:
 - **Use**: the figure or table that supports the section.
 - **Sources**: where every number comes from. Do not use numbers that are not here.
 
+Status on 19 November: the B2 limitations, B3 and the B4 descriptives are written in the
+Google Doc (Max) and were checked against this guide. Still to write from the guide: the B2
+data description, the B4 preparation and B5.
+
 Page budget for the whole report (max. 5 pages excl. appendix): B1 0.5 · B2 0.5 ·
 B3 0.5 · B4 1.25 · B5 1.75 · B6 0.5–0.75. Your B1 and B6 drafts already fit this.
 Main-text figures/tables suggested: Figure 1 and Table 1 in B4, Table 2 and Figure 3
 in B5. Everything else goes in the appendix you already drafted (A–E).
 
-All figure and table files are in `moddeling/16_report_inputs/output/`.
+Figure and table files are in `moddeling/16_report_inputs/output/` unless a path is given.
 
 ---
 
@@ -83,7 +87,9 @@ the stakeholder and the decision, limitations and biases, and a concise data dic
 9 groups, missing %); `Data Cleaning/output/cleaning_report.md` (344);
 `Data Cleaning/output/yearly_profile.csv` (retention, medians, unknown cause per year);
 `moddeling/15_koppelpilot/output/PILOT_REPORT.md` (5/40) and `docs/HANDOVER.md` §6
-(3 substantive).
+(3 substantive). The doc also uses
+`descriptive data analysis/clean_analysis_output/review_checks.csv` for limitation 3: 334
+disruptions whose cause was replaced by a general one, median 139 against 50 minutes.
 
 ---
 
@@ -158,7 +164,7 @@ an explanation of what it shows.
 1. **Combining.** Yearly files 2011–2025 combined into one table of 62,540 records.
 2. **Cleaning: 12 rules, 62,540 → 44,248** (Appendix B, Table B1). Name the largest:
    - reported and calculated duration differ by more than 1 minute: 11,031;
-   - foreign route or station: 5,078;
+   - international service or foreign route/station: 5,078;
    - route cannot be classified reliably: 999;
    - missing, non-finite or non-positive duration: 692;
    - duration over 24 hours: 344.
@@ -172,7 +178,9 @@ an explanation of what it shows.
      (`stations_missing`, `routes_missing`, `cause_missing`) marks it;
    - missing cause group → "unknown";
    - numeric gaps → training-set median.
-   No rows dropped just for having an empty field.
+   No rows dropped just for having an empty field. In the clean data `stations_missing` is
+   1 for every disruption before 2017 and 0 from 2017, and `routes_missing` is always 0
+   (records without a route are removed).
 5. **Features** (all derived from the same table, no merges):
    - from `start_time` (local Amsterdam time): hour, weekday, month, weekend, rush hour
      (weekdays 07–09 and 16–19);
@@ -204,7 +212,7 @@ an explanation of what it shows.
    | Rolling stock | 41.7% | 27 | 23% |
    | Infrastructure | 25.0% | 111 | 71% |
    | External | 11.8% | 33 | 26% |
-   | Accidents | 10.3% | 129 | 68% |
+   | Accidents | 10.2% | 129 | 68% |
    | Engineering work | 3.7% | 106 | 68% |
    | Logistical | 3.3% | 116 | 70% |
    | Unknown | 2.1% | 53 | 39% |
@@ -234,8 +242,16 @@ an explanation of what it shows.
 
 ### Use
 
-Figure 1 `fig1_duration_distribution.png` · Table 1 from `table2_cause_groups.csv` ·
-Figure 2 `fig2_yearly_shift.png` (main text or appendix) · Appendix B, Table B1.
+- Figure 1: in the doc this is the three-panel figure
+  `descriptive data analysis/clean_analysis_output/figure_descriptive_analysis.png`
+  (A duration classes, B cause groups, C start hour). It replaces
+  `fig1_duration_distribution.png`, whose bars are (0, 10], (10, 20], … while the classes
+  are [0, 10), [10, 20), ….
+- Table 1 from `table2_cause_groups.csv`: in the doc as Appendix F, Table F1. If it stays
+  in the appendix, Table 2 (B5) becomes Table 1.
+- Figure 2 `fig2_yearly_shift.png` (main text or appendix). The doc has the same numbers
+  in Appendix F, Table F2.
+- Appendix B, Table B1.
 
 ### Sources
 
@@ -243,7 +259,10 @@ Figure 2 `fig2_yearly_shift.png` (main text or appendix) · Appendix B, Table B1
 `descriptive data analysis/raw_analysis_output/variable_dictionary.csv` (missing %);
 `moddeling/16_report_inputs/output/table1_feature_dictionary.csv` (features);
 `moddeling/02_voorbereiding/output/feature_sets.csv` (45/74) and `split_counts.csv`;
-Figure 1 subtitle (median and shares); `table2_cause_groups.csv`.
+Figure 1 subtitle (median and shares); `table2_cause_groups.csv`. The descriptive numbers in
+the doc come from `descriptive data analysis/clean_analysis_output/` (`report_numbers.csv`,
+`duration_by_cause_group.csv`, `duration_by_start_hour.csv`, `duration_by_year.csv`,
+`variance_explained.csv`).
 
 ---
 
@@ -413,3 +432,9 @@ before labels); `moddeling/08_foutanalyse/output/permutation_summary.csv` (impor
 | source_year | Year label of the source file | 0% |
 
 Source: `descriptive data analysis/raw_analysis_output/variable_dictionary.csv`.
+
+Table A1 in the doc was corrected after the review of the data preparation (19 November):
+a column "Known at the first message?", rows for the target and the split variable, and the
+meaning of `route_count`, `station_count`, `routes_missing / stations_missing` and `hub_*`.
+Do not copy it again from `table1_feature_dictionary.csv`, which still has the earlier
+wording for these rows.

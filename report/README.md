@@ -18,22 +18,23 @@ Each step (B2, B3, B4, B5) has the same parts:
 | Section | Status |
 |---|---|
 | B1 Data selection | Your draft |
-| B2 Data description | To write, from the guide |
-| B3 Business objective | To write, from the guide |
-| B4 Preparation + descriptives | To write, from the guide (Figure 1, Table 1, optional Figure 2) |
+| B2 Data description | Limitations and biases: in the doc (Max). Description: to write, from the guide |
+| B3 Business objective | In the doc (Max), checked against the guide |
+| B4 Preparation + descriptives | Descriptives with Figure 1: in the doc (Max). Preparation: to write, from the guide |
 | B5 Modelling + performance | To write, from the guide (Table 2, Figure 3) |
 | B6 Insights | Your draft; its numbers match the outputs |
-| Appendix A–E | Your draft; add Table A2 from the bottom of the guide |
+| Appendix A–E | Your draft; Table A1 corrected after the data review; add Table A2 from the bottom of the guide |
+| Appendix F | Descriptive statistics, in the doc (Max): Table F1 cause groups, Table F2 years |
 
 ## Figures and tables
 
-All in `moddeling/16_report_inputs/output/`.
+In `moddeling/16_report_inputs/output/` unless a path is given.
 
 | In report | File |
 |---|---|
-| Figure 1 (B4) | `fig1_duration_distribution.png` |
+| Figure 1 (B4) | `descriptive data analysis/clean_analysis_output/figure_descriptive_analysis.png` (in the doc; replaces `fig1_duration_distribution.png`, whose bars do not match the target classes) |
 | Figure 2 (B4 or appendix) | `fig2_yearly_shift.png` |
-| Table 1 (B4) | `table2_cause_groups.csv` |
+| Table 1 (B4) | `table2_cause_groups.csv`; in the doc as Appendix F, Table F1. If it stays in the appendix, Table 2 (B5) becomes Table 1 |
 | Table 2 (B5) | `table4_test_results.csv` |
 | Figure 3 (B5) | `fig5_information_vs_algorithm.png` |
 | Figure C1 (appendix) | `fig3_validation_comparison.png` |
