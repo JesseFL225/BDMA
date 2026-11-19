@@ -1,0 +1,25 @@
+"check","value"
+"Raw records",62540
+"Clean disruptions",44248
+"Excluded records",18292
+"Excluded records (% of raw)",29.2
+"Filter 12: records removed (duration mismatch)",11031
+"Filter 12: reported duration shorter than end minus start (%)",100
+"Filter 12: median difference (minutes)",-23
+"2011-2016: share of raw records kept (%)",11.7
+"2011-2016: median duration of kept records (minutes)",118
+"2011-2016: median duration of records removed by filter 12 (minutes)",90
+"Filter 5: records removed (foreign route or station)",5078
+"Filter 5: removed on a foreign name in the text only",630
+"Filter 5: of these, with a Dutch standardised route",504
+"Filter 8: records removed (duration of zero minutes or missing)",692
+"Clean data: disruptions of one or two minutes",1350
+"Clean data: disruptions of one or two minutes (%)",3.1
+"Filter 11: records removed (longer than 24 hours)",344
+"Clean data: disruptions without station information",1715
+"Clean data: disruptions before 2017",1715
+"Clean data: disruptions without a route",0
+"Clean data: stored cause differs from statistical cause",334
+"Median duration when the cause was changed (minutes)",139
+"Median duration when the cause was not changed (minutes)",50
+"Clean data: records sharing start second and route",30
