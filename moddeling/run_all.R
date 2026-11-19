@@ -10,6 +10,8 @@
 #   3. Re-runs the linkage-pilot unit tests.
 #   4. Rebuilds the per-year data profile and every report table and figure
 #      (moddeling/16_report_inputs/output/).
+#   5. Re-runs the review checks of the clean data and the descriptive analysis
+#      behind report steps 2 to 4 (descriptive data analysis/clean_analysis_output/).
 #
 # What it deliberately does NOT do:
 #   - Retrain models. Retraining Steps 05 and 13 would overwrite model files that
@@ -19,7 +21,11 @@
 #   - Re-run the final test. 2025 has been used once (see TEST_OUTCOMES_OPENED.txt).
 # =============================================================================
 
+# Each step: program, script, label. A fourth element "quiet" hides the script's own
+# output (long tables); errors are still shown and still stop the run.
 steps <- list(
+  c("Rscript", "descriptive data analysis/review_clean_data.R",     "Review checks of the clean data (20 checks)", "quiet"),
+  c("Rscript", "descriptive data analysis/clean_descriptive_analysis.R", "Descriptive analysis: report Figure 1 and Appendix F", "quiet"),
   c("Rscript", "moddeling/02_voorbereiding/validate_preparation.R", "Shared preparation checks (Step 02)"),
   c("Rscript", "moddeling/07_evaluatie/validate_evaluation.R",      "Shared evaluator checks (Step 07)"),
   c("Rscript", "moddeling/11_historische_kenmerken/validate_history.R", "History-feature checks (Step 11)"),
@@ -58,7 +64,8 @@ tryCatch({
   for (i in seq_along(steps)) {
     s <- steps[[i]]
     cat(sprintf("\n[%d/%d] %s\n", i, length(steps), s[3]))
-    status <- system2(s[1], shQuote(s[2]), stdout = "", stderr = "")
+    quiet <- length(s) > 3 && s[4] == "quiet"
+    status <- system2(s[1], shQuote(s[2]), stdout = if (quiet) FALSE else "", stderr = "")
     if (!identical(status, 0L)) stop(sprintf("Step failed: %s %s (exit code %s)", s[1], s[2], status))
   }
 }, finally = {
